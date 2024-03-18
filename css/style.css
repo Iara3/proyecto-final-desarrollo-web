@@ -424,11 +424,11 @@ body{
 
 /*fondo*/
 .headerDestinos{
-    background-image: url(../assets/img/fondos/fondodestinos.png);
+    background-image: url(../assets/img/fondos/fondo-destinos.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 100%;
-    height: 650px;
+    height: 100vh;
     width: 100%;
 }
 
@@ -436,23 +436,21 @@ body{
 .seccionHeaderDestinos{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    height: 85%;
 }
 
 .redesDestinos{
-    height: 500px;
-    width: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5px;
+    gap: 10px;
+    margin-left: 15px;
 }
 
 .redesDestinos img{
-    height: 55px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     cursor: pointer;
 }
 
@@ -461,8 +459,8 @@ body{
     color: #ffffff;
     text-align: right;
     font-size: 70px;
-    margin-right: 50px;
     text-shadow: 2px 2px 3px black;
+    margin-right: 15px;
 }
 
 /*aca empiezan las modificaciones para las cards*/
