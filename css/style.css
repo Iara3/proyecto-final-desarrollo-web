@@ -5,52 +5,17 @@
     box-sizing: border-box;
 }
 
-/*Aca se encuentran los diferentes fondos de las 5 páginas*/
 body{
     background-color: #0F1035;
 }
-.headerHome{
-    background-image: url(../assets/img/fondos/imgfondohome.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 650px;
-    width: 100%;
-}
-.headerDestinos{
-    background-image: url(../assets/img/fondos/fondodestinos.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 650px;
-    width: 100%;
-}
-.headerActividades{
-    background-image: url(../assets/img/fondos/fondoactividades.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 650px;
-    width: 100%;
-}
-.headerHoteles{
-    background-image: url(../assets/img/fondos/fondohoteles.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 650px;
-    width: 100%;
-}
-.headerContacto{
-    background-image: url(../assets/img/fondos/fondocontactanos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 600px;
-    width: 100%;
-}
 
-/*Aca empieza la barra de navegación*/
+
+
+
+
+
+/*BARRA DE NAVEGACIÓN*/
+
 .nav{
     background-color: #0f1035d7;
     width: 100%;
@@ -59,11 +24,13 @@ body{
     flex-direction: row;
     justify-content: center;
 }
+
 .contenedorNav{
     width: 100%;
     height: auto;
     margin-left: 15px;
 }
+
 .contenedorLinksNav{
     height: 75px;
     width: 100%;
@@ -73,6 +40,7 @@ body{
     align-items: center;
     gap: 40px;
 }
+
 .linksNav{
     font-family: "Pavanam";
     font-size: 25px;
@@ -80,31 +48,42 @@ body{
     letter-spacing: 1px;
     text-decoration: none;
 } 
+
 .logoNav{
     width: 200px;
     height: auto;
     background-color: #0F1035;
     border-radius: 35px 35px 100px 100px;
 }
+
 .logoCuenta{
     height: 55px;
     width: auto;
     cursor: pointer;
 }
+
 .divnavCuenta{
     width: 60px;
     height: auto;
     align-self: center;
     margin-right: 15px;
 }
+
 .listaNav{
     list-style: none;
 }
+
 .listaNav a:hover{
     color: rgb(228, 144, 34);
 }
 
-/*Aca comienza el footer*/
+
+
+
+
+
+/*FOOTER*/
+
 .footer{
     background-color: #0F1035;
     width: 100%;
@@ -113,39 +92,46 @@ body{
     flex-direction: row;
     box-shadow: 0px 0px 100px 40px #a5a6d1;
 }
+
 .divfooterUno{
     justify-self: left;
     width: 100%;
     height: auto;
     margin-left: 15px;
 }
+
 .logoFooter{
     width: 180px;
     height: auto;
 }
+
 .divfooterDos{
     width: 100%;
     height: auto;
     justify-self: center;
     align-self: center;
 }
+
 .divfooterDos p{
     color: white;
     font-family: "Pavanam";
     font-size: 25px;
     text-align: center;
 }
+
 .contenedorRedesFooter{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
 }
+
 .imgFooter{
     cursor: pointer;
     width: 60px;
     height: auto;
 }
+
 .divfooterTres{
     width: 100%;
     height: auto;
@@ -153,25 +139,46 @@ body{
     align-self: center;
     margin-right: 15px;
 }
+
 .listaFooter{
     color: white;
     list-style: none;
     text-align: right;
 }
+
 .listaFooter a{
     color: white;
     text-decoration: none;
 }
 
-/*modificacion de las sombras del footer de la página contacto*/
+/*modificación de las sombras del footer de la página contacto*/
+
 .footerContacto{
     box-shadow: none;
 }
 
 
-/*aca se encuentran las modificaciones de los tiutlos de las 5 paginas y las redes sociales*/
 
-/*modificaciones (título, botón) página home*/
+
+
+
+
+
+
+
+/*PÁGINA HOME*/
+
+/*fondo*/
+.headerHome{
+    background-image: url(../assets/img/fondos/imgfondohome.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+}
+
+/*modificaciones (título principal, botón)*/
 .contenedorh1Argentina{
     color: #ffffff;
     font-family: "Pavanam";
@@ -184,12 +191,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .h1Argentina{
     font-family: "Paytone One";
     color: #ffffff;
     font-size: 100px;
     text-shadow: 2px 2px 3px black;
 }
+
 .contenedorBotonexplorar{
     display: flex;
     flex-direction: row;
@@ -197,6 +206,7 @@ body{
     align-items: center;
     height: 70px;
 }
+
 .contenedorBotonexplorar a{
     font-family: "Pavanam";
     color: #ffffff;
@@ -209,106 +219,7 @@ body{
     border-radius: 3px;
 }
 
-/* modificaciones (título, redes sociales) página destinos */
-.seccionHeaderDestinos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.redesDestinos{
-    height: 500px;
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5px;
-}
-.redesDestinos img{
-    height: 55px;
-    width: 55px;
-    cursor: pointer;
-}
-.h1Destinos{
-    font-family: "Paytone one";
-    color: #ffffff;
-    text-align: right;
-    font-size: 70px;
-    margin-right: 50px;
-    text-shadow: 2px 2px 3px black;
-}
-
-/*modificaciones (título, redes sociales) página actividades*/
-.seccionHeaderActividades{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.redesActividades{
-    height: 500px;
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-right: 5px;
-}
-.redesActividades img{
-    height: 55px;
-    width: 55px;
-    cursor: pointer;
-}
-.h1Actividades{
-    font-family: "Paytone one";
-    color: #ffffff;
-    text-align: left;
-    font-size: 70px;
-    margin-left: 50px;
-    text-shadow: 2px 2px 3px black;
-}
-
-/*modificaciones (titulo, redes sociales) página hoteles*/
-.seccionHeaderHoteles{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-}
-.redesHoteles{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.redesHoteles img{
-    height: 55px;
-    width: 55px;
-    cursor: pointer;
-}
-.h1Hoteles{
-    font-family: "Paytone one";
-    color: #ffffff;
-    text-align: center;
-    font-size: 70px;
-    text-shadow: 2px 2px 3px black;
-    height: 320px;
-    margin-top: 80px;
-}
-/*modificaciones(titulo) página contacto*/
-.h1Contacto{
-    font-family: "Paytone One";
-    color: #ffffff;
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 3px black;
-}
-
-/*aca empiezan las modificaciones de la página home o index*/
+/*aca empiezan las modificaciones de la sección 2*/
 .redesHome{
     width: 100%;
     display: flex;
@@ -316,11 +227,13 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .redesHome img{
     height: 70px;
     width: 70px;
     cursor: pointer;
 }
+
 .seguinosRedesHome{
     color: white;
     font-family: "Pavanam";
@@ -328,82 +241,7 @@ body{
     font-size: 25px;
 }
 
-/*modificaciones de "destinos populares", "actividades" (título) página home*/
-.h3DestinosPopulares{
-    color: #ffffff;
-    font-family: "Pavanam";
-    font-weight: lighter;
-    font-size: 35px;
-    margin-left: 60px;
-    margin-bottom: 15px;
-}
-.contenedorDestinos{
-    display: flex;
-    flex-direction: row;
-}
-.contenedorImgDestinos{
-    position: relative;
-}
-.ulDestinos{
-    position: absolute;
-    bottom: 0;
-    margin: 10px;
-    list-style: none;
-}
-.liUno{
-    color: #ffffff;
-    font-family: "Pavanam";
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-}
-.liDos{
-    color: #ffffff;
-    font-family: "Pavanam";
-    font-weight: lighter;
-    font-size: 20px;
-    cursor: pointer;
-}
-.verMasLink{
-    color: #ffffff;
-    font-family: "Pavanam";
-    font-weight: lighter;
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-}
-.verMasLink:hover{
-    color: orange;
-}
-
-/*modificaciones título actividades página home*/
-.h3Actividades{
-    color: #ffffff;
-    font-family: "Pavanam";
-    font-weight: lighter;
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-/*modificaciones título Hoteles página home*/
-.h3Hoteles{
-    color: #ffffff;
-    font-family: "Pavanam";
-    font-weight: lighter;
-    font-size: 35px;
-    text-align: right;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-right: 60px;
-}
-
-
-/*aca se encuentran las modificaciones de la presentacion (3 img) de la página home con grid*/
+/*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
 .presentacionGrid{
     height: 700px;
     width: 100%;
@@ -413,22 +251,27 @@ body{
     justify-content: center;
     align-content: center;
 }
+
 .presentacionGrid img{
     height: 480px;
     width: 350px;
 }
+
 .imgAzul{
     grid-column-start: 2;
     grid-row-start: 2;
 }
+
 .imgUnoPresentacion{
     grid-column-start: 3;
     grid-row-start: 1;
 }
+
 .imgDosPresentacion{
     grid-column-start: 1;
     grid-row-start: 3;
 }
+
 .articlePresentacion{
     display: flex;
     flex-direction: column;
@@ -437,6 +280,7 @@ body{
     grid-row-start: 1;
     grid-row-end: 5;
 }
+
 .articlePresentacion h2{
     font-family: "Paytone One";
     color: #ffffff;
@@ -444,12 +288,14 @@ body{
     letter-spacing: 3px;
     font-weight: lighter;
 }
+
 .articlePresentacion p{
     font-family: "Pavanam";
     color: #ffffff;
     font-size: 25px;
     font-weight: lighter;
 }
+
 .articlePresentacion a{
     text-decoration: none;
     background-color: orangered;
@@ -462,8 +308,142 @@ body{
     align-self: center;
 }
 
+/*modificaciones sección 3*/
 
-/*Aca empiezan las modificaciones para el main de la página destinos*/
+/*modificaciones título Destinos Populares*/
+.h3DestinosPopulares{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 35px;
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+
+.contenedorDestinos{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedorImgDestinos{
+    position: relative;
+}
+
+.ulDestinos{
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    list-style: none;
+}
+
+.liUno{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.liDos{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.verMasLink{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.verMasLink:hover{
+    color: orange;
+}
+
+/*modificaciones título Actividades*/
+.h3Actividades{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/*modificaciones título Hoteles*/
+.h3Hoteles{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 35px;
+    text-align: right;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+/*PÁGINA DESTINOS*/
+
+/*fondo*/
+.headerDestinos{
+    background-image: url(../assets/img/fondos/fondodestinos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 650px;
+    width: 100%;
+}
+
+/*modificaciones título principal y redes sociales*/
+.seccionHeaderDestinos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redesDestinos{
+    height: 500px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.redesDestinos img{
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+}
+
+.h1Destinos{
+    font-family: "Paytone one";
+    color: #ffffff;
+    text-align: right;
+    font-size: 70px;
+    margin-right: 50px;
+    text-shadow: 2px 2px 3px black;
+}
 
 /*aca empiezan las modificaciones para las cards*/
 .seccionDestinos{
@@ -472,10 +452,12 @@ body{
     align-items: center;
     gap: 30px;
 }
+
 .espacioTop{
     margin-top: 25px;
 }
-/*aca se encuentran las modificaciones para la card de tres imágenes de la página destinos*/
+
+/*aca se encuentran las modificaciones para la card de tres imágenes*/
 .fondoContenedor{
     background-image: url(../assets/img/fondos/fondo-seccion-destinos.png);
     background-repeat: no-repeat;
@@ -487,6 +469,7 @@ body{
     align-items: center;
     gap: 20px;
 }
+
 .contenedorImagenes{
     background-color: #0F1035;
     width: 265px;
@@ -510,6 +493,7 @@ body{
     font-weight: lighter;
     text-align: center;
 }
+
 .contenedorArticulo{
     display: flex;
     flex-direction: column;
@@ -519,6 +503,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .seccionDestinos h2{
     color: white;
     font-family: "Pavanam";
@@ -526,6 +511,7 @@ body{
     text-align: center;
     
 }
+
 .seccionDestinos h3{
     font-family: "Pavanam";
     color: #ffffff;
@@ -537,8 +523,7 @@ body{
     width: 100%;
 }
 
-
-/*aca está la card de dos imágenes de la página destinos*/
+/*aca está la card de dos imágenes*/
 .contenedorarticuloDos{
     display: flex;
     flex-direction: column;
@@ -548,6 +533,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .contenedortextoDos{
     border-top: 3px;
     border-right: 0px;
@@ -562,6 +548,7 @@ body{
     padding: 2px;
     font-weight: lighter;
 }
+
 .contenedorimagenesDos{
     background-color: #0F1035;
     width: 265px;
@@ -572,7 +559,6 @@ body{
 }
 
 /*aca se encuentra la opción actividades/hoteles del final de la página destinos*/
-
 .opcionesGrid{
     margin-top: 25px;
     margin-bottom: 25px;
@@ -585,6 +571,7 @@ body{
     justify-items: center;
     gap: 5px;
 }
+
 .opcion1H3{
     font-family: "Pavanam";
     color: #ffffff;
@@ -595,6 +582,7 @@ body{
     grid-row-start: 1;
     grid-row-end: 2;
 }
+
 .opcion1Act{
     height: 240px;
     width: 240px;
@@ -604,6 +592,7 @@ body{
     grid-row-end: 3;
     position: relative;
 }
+
 .opcion2Act{
     height: 240px;
     width: 240px;
@@ -613,6 +602,7 @@ body{
     grid-row-end: 3;
     position: relative;
 }
+
 .linkVerMas{
     color: #ffffff;
     font-family: "Pavanam";
@@ -635,6 +625,7 @@ body{
     grid-row-start: 1;
     grid-row-end: 2;
 }
+
 .opcion1Hoteles{
     height: 240px;
     width: 240px;
@@ -644,6 +635,7 @@ body{
     grid-row-end: 3;
     position: relative;
 }
+
 .opcion2Hoteles{
     height: 240px;
     width: 240px;
@@ -653,6 +645,7 @@ body{
     grid-row-end: 3;
     position: relative;
 }
+
 .linkVerMas2{
     color: #ffffff;
     font-family: "Pavanam";
@@ -664,27 +657,33 @@ body{
     grid-row-start: 3;
     grid-row-end: 4;
 }
+
 .linkVerMas:hover{
     color: orange;
 }
+
 .linkVerMas2:hover{
     color:orange;
 }
+
 .imgOpciones{
     width: 100%;
     height: 100%;
 }
+
 .ulOpciones{
     list-style: none;
     position: absolute;
     bottom: 0;
     margin: 6px;
 }
+
 .li1{
     font-family: "pavanam";
     color: #ffffff;
     font-weight: bolder;
 }
+
 .li2{
     font-family: "Pavanam";
     color: #ffffff;
@@ -692,7 +691,60 @@ body{
 }
 
 
-/*aca comienzan las modificaciones del main de la página actividaes*/
+
+
+
+
+
+
+
+
+/*PÁGINA ACTIVIDADES*/
+
+/*fondo*/
+.headerActividades{
+    background-image: url(../assets/img/fondos/fondoactividades.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 650px;
+    width: 100%;
+}
+
+/*modificaciones título y redes sociales*/
+.seccionHeaderActividades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redesActividades{
+    height: 500px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.redesActividades img{
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+}
+
+.h1Actividades{
+    font-family: "Paytone one";
+    color: #ffffff;
+    text-align: left;
+    font-size: 70px;
+    margin-left: 50px;
+    text-shadow: 2px 2px 3px black;
+}
+
+/*aca comienzan las modificaciones del main*/
 .contenedorPrincipal{
     display: grid;
     grid-template-columns: 570px 570px;
@@ -700,6 +752,7 @@ body{
     margin-top: 100px;
     gap: 30px;
 }
+
 .contenedorSecundario{
     width: 550px;
     height: 525px;
@@ -712,6 +765,7 @@ body{
     border-color: orangered;
     border-style: solid;
 }
+
 .contenedorSecundario {
     font-size: 20px;
     text-align: center;
@@ -719,20 +773,24 @@ body{
     font-family: "Pavanam";
     font-weight: lighter;
 }
+
 .legendAct{
     font-size: 30px;
     background-color: #0F1035;
 }
+
 .contenedorUno{
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
+
 .contenedorDos{
     height: 250px;
     width: 250px;
     background-color: rgb(255, 255, 255);
 }
+
 .botonExcursion{
     font-size: 18px;
     text-decoration: none;
@@ -746,7 +804,60 @@ body{
 }
 
 
-/*aca comienzan las modificaciones del main de la página hoteles*/
+
+
+
+
+
+
+
+
+/*PÁGINA HOTELES*/
+
+/*fondo*/
+.headerHoteles{
+    background-image: url(../assets/img/fondos/fondohoteles.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 650px;
+    width: 100%;
+}
+
+/*modificaciones titulo y redes sociales*/
+.seccionHeaderHoteles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.redesHoteles{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.redesHoteles img{
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+}
+
+.h1Hoteles{
+    font-family: "Paytone one";
+    color: #ffffff;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 2px 2px 3px black;
+    height: 320px;
+    margin-top: 80px;
+}
+
+/*aca comienzan las modificaciones del main*/
 .seccionPrincipalHoteles{
     display: flex;
     flex-direction: column;
@@ -756,6 +867,7 @@ body{
     width: 100%;
     height: 950px;
 }
+
 .contenedorHoteles{
     display: flex;
     flex-direction: row;
@@ -768,6 +880,7 @@ body{
     width: 1000px;
     height: 390px;
 }
+
 .articleHoteles{
     display: flex;
     flex-direction: column;
@@ -777,21 +890,25 @@ body{
     height: 365px;
     width: 310px;
 }
+
 .estrellasHoteles{
     align-self: center;
 }
+
 .imgHoteles{
     background-color: #365486;
     width: 290px;
     height: 200px;
     align-self: center;
-}
+} 
+
 .articleHoteles ul{
     list-style: none;
     color: #000000;
     font-family: "Pavanam";
     margin-left: 8px;
 }
+
 .botonReservarHotel{
     align-self: center;
     text-decoration: none;
@@ -805,6 +922,37 @@ body{
     border-radius: 2px;
 }
 
+
+
+
+
+
+
+
+
+
+/*PÁGINA CONTACTO*/
+
+/*fondo*/
+.headerContacto{
+    background-image: url(../assets/img/fondos/fondocontactanos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 600px;
+    width: 100%;
+}
+
+/*modificaciones título*/
+.h1Contacto{
+    font-family: "Paytone One";
+    color: #ffffff;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 3px black;
+}
+
 /*aca se encuentra el form de la página contacto*/
 .formularioContacto{
     width: 100%;
@@ -814,6 +962,7 @@ body{
     justify-content: center;
     align-content: center;
 }
+
 .grid{
     list-style: none;
     width: 1060px;
@@ -838,45 +987,57 @@ body{
     ". areaSeis areaSeis"
     ;
 }
+
 .areaUno{
     grid-area: areaUno;
 }
+
 .areaUno img{
     width: 100%;
     height: 325px;
 }
+
 .areaDos{
     grid-area: areaDos;
 }
+
 .areaDos input{
     width: 100%;
     height: 100%;
 }
+
 .areaTres{
     grid-area: areaTres;
 }
+
 .areaTres input{
     height: 100%;
     width: 100%;
 }
+
 .areaCuatro{
     grid-area: areaCuatro;
 }
+
 .areaCuatro input{
     width: 100%;
     height: 100%;
 }
+
 .areaCinco{
     grid-area: areaCinco;
 }
+
 .areaCinco textarea{
     height: 100%;
     width: 100%;
 }
+
 .areaSeis{
     grid-area: areaSeis;
     justify-self: center;
 }
+
 .areaSeis input{
     width: 150px;
     height: 50px;
@@ -887,17 +1048,27 @@ body{
     border-radius: 3px;
     border: none;
 }
+
 .grid li input::placeholder{
     font-family: "Pavanam";
     font-size: 20px;
 }
+
 .grid li textarea::placeholder{
     font-family: "Pavanam";
     font-size: 20px;
 }
 
 
-/*aca empiezan las media queries*/
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
 
 @media (max-width: 1194px) {
 
