@@ -445,7 +445,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .redesDestinos img{
@@ -457,10 +457,10 @@ body{
 .h1Destinos{
     font-family: "Paytone one";
     color: #ffffff;
-    text-align: right;
+    text-align: left;
     font-size: 70px;
     text-shadow: 2px 2px 3px black;
-    margin-right: 15px;
+    margin-left: 15px;
 }
 
 /*aca empiezan las modificaciones para las cards*/
