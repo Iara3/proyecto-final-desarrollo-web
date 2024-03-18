@@ -220,44 +220,51 @@ body{
 }
 
 /*aca empiezan las modificaciones de la sección 2*/
-.redesHome{
+
+.secciónDosPáginaHome{
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    align-items: center;
+}
+
+/*redes sociales*/
+
+.redesHome{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 10px;
+    margin-left: 15px;
 }
 
 .redesHome img{
-    height: 70px;
-    width: 70px;
+    height: 40px;
+    width: 40px;
     cursor: pointer;
-}
-
-.seguinosRedesHome{
-    color: white;
-    font-family: "Pavanam";
-    text-align: center;
-    font-size: 25px;
 }
 
 /*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
 .presentacionGrid{
-    height: 700px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 75px 75px 450px 400px;
-    grid-template-rows: 75px 75px 75px 400px;
+    grid-template-columns: 75px 75px 260px 400px;
+    grid-template-rows: 75px 75px 75px 1px;
     justify-content: center;
     align-content: center;
 }
 
 .presentacionGrid img{
-    height: 480px;
-    width: 350px;
+    height: 360px;
+    width: 230px;
 }
 
 .imgAzul{
+    border: 3px solid orangered;
     grid-column-start: 2;
     grid-row-start: 2;
 }
@@ -284,7 +291,7 @@ body{
 .articlePresentacion h2{
     font-family: "Paytone One";
     color: #ffffff;
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 3px;
     font-weight: lighter;
 }
@@ -292,8 +299,9 @@ body{
 .articlePresentacion p{
     font-family: "Pavanam";
     color: #ffffff;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: lighter;
+    margin-top: 15px;
 }
 
 .articlePresentacion a{
@@ -302,10 +310,11 @@ body{
     color: #ffffff;
     font-family: "Pavanam";
     font-weight: lighter;
-    font-size: 25px;
+    font-size: 23px;
     padding: 5px 20px 5px 20px;
     border-radius: 4px;
     align-self: center;
+    margin-top: 15px;
 }
 
 /*modificaciones sección 3*/
