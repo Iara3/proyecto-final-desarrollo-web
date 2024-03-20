@@ -93,6 +93,14 @@ body{
     display: none;
 } /*menú hamburguesa para luego activarlo en media query*/
 
+.iconoMenu{
+    font-size: 70px;
+    color: #ffffff7a;
+    text-align: center;
+    margin-left: 15px;
+    user-select: none;
+}
+
 
 
 
@@ -433,6 +441,7 @@ body{
     text-align: right;
     width: 95%;
 }
+
 
 
 
@@ -1123,10 +1132,6 @@ body{
         display: inline-block;
     } /*para agregar el logo principal por fuera del ul*/
 
-    .iconoMenu{
-        color: #ffffff;
-    }
-
     .contenedorNav{
         width: 100%;
         height: 0;
@@ -1154,7 +1159,82 @@ body{
 
     /*ACA TERMINA EL MENÚ HAMBURGUESA*/
 
+
+
+    /*PÁGINA HOME*/
+
+    /*fondo*/
+
+    .headerHome{
+        height: 600px;
+    }
+    
+    /*modificaciones (título principal, botón)*/
+    .contenedorh1Argentina{
+        height: 340px;
+    }
+    
+    /*aca empiezan las modificaciones de la sección 2*/
+    
+    .secciónDosPáginaHome{
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        height: 700px;
+    }
+    
+    /*redes sociales*/
+    
+    .redesHome{
+        flex-direction: row;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+    /*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
+    .presentacionGrid{
+        grid-template-columns: 75px 75px 260px 300px;
+    }
+    
+    .articlePresentacion h2{
+        font-size: 30px; 
+    }
+    
+    /*modificaciones sección 3*/
+    
+    .secciónTresPáginaHome{
+        height: 610px;
+    }
+    
+    .contenedorDestinos{
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+    
+    /*modificación destinos populares*/
+    
+    .h3DestinosPopulares{
+        width: 80%;;
+    }
+    
+    /*modificaciones título Hoteles*/
+    .h3Hoteles{
+        width: 80%;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
