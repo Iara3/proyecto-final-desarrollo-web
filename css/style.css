@@ -83,11 +83,14 @@ body{
     height: auto;
     background-color: #0F1035;
     border-radius: 35px 35px 100px 100px;
-    justify-self: center;
-    align-self: center;
-    position: absolute;
     display: none;
 } /*2do logo para que aparezca en media query*/
+
+.aLogoNav2{
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+}
 
 .nav #toggle, .nav label{
     display: none;
@@ -372,6 +375,7 @@ body{
     height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 20px;
 }
 
