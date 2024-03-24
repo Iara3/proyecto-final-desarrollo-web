@@ -1421,26 +1421,6 @@ body{
 
 /*PÁGINA HOME*/
 
-/*barra de nav modificaciones*/
-
-.logoNav2{
-    display: none;
-}
-
-.aLogoNav3{
-    display: inline-block;
-}
-
-.iconoMenu{
-    font-size: 55px; 
-    margin-left: 0px; 
-    padding-top: 7px; 
-}
-
-.logoCuenta{
-    height: 45px; 
-}
-
 /*fondo*/
 
 .headerHome{
@@ -1567,7 +1547,221 @@ body{
     width: 60%;
 }
 
-/*FOOTER*/
+
+
+
+
+/*PÁGINA DESTINOS*/
+
+/*modificaciones título principal*/
+.seccionHeaderDestinos{
+    height: 80%; 
+}
+
+.h1Destinos{
+    font-size: 30px; 
+}
+
+/*aca empiezan las modificaciones para las cards*/
+
+/*medidas de height de las 3 diferentes secciones*/
+
+.seccionDestinos, .heightMediaQuery{
+    width: 100%;
+    height: 1450px;
+}
+
+.heightMediaQuery2{
+    width: 100%;
+    height: 900px;
+}
+
+.heightMediaQuery3{
+    width: 100%;
+    height: 530px;
+}
+
+
+/*aca se encuentran las modificaciones para la card de tres imágenes*/
+.fondoContenedor{
+    height: 1000px; 
+    width: 100%; 
+    flex-direction: column-reverse; 
+    gap: 0px;
+}
+
+.noReverseMediaQuery{
+    flex-direction: column; 
+}
+
+.contenedorImagenesPrincipal{
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 280px; 
+}
+
+.contenedorImagenes{
+    width: 225px; 
+    height: 260px; 
+}
+
+
+.contenedorTexto p{
+    border-top: 3px;
+    border-right: 3px; 
+    border-bottom: 0px; 
+    border-left: 3px; 
+    border-color: orangered;
+    border-style: solid;
+}
+
+.contenedorArticulo{
+    width: 75%; 
+    height: 130px;
+}
+
+/*aca está la card de dos imágenes*/
+.contenedorarticuloDos{
+    width: 60%; 
+    height: 130px; 
+}
+
+.widthMediaQuery{
+    width: 75%;
+}
+
+.contenedortextoDos{
+    border-top: 3px;
+    border-right: 3px; 
+    border-bottom: 0px; 
+    border-left: 3px; 
+    border-color: orangered;
+    border-style: solid;
+}
+
+.contenedorimagenesDos{
+    width: 225px; 
+    height: 260px; 
+}
+
+/*aca se encuentra la opción actividades/hoteles del final de la página destinos*/
+.opcionesGrid{
+    height: 720px;
+    grid-template-columns: repeat(2, 260px); 
+    grid-template-rows: 30px 240px 50px 30px 240px 30px;
+}
+
+.opcion1H3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.opcion1Act{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.opcion2Act{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.linkVerMas{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.opcion2H3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.opcion1Hoteles{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.opcion2Hoteles{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.linkVerMas2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*BARRA DE NAVEGACIÓN MODIFICACIONES*/
+
+.logoNav2{
+    display: none;
+}
+
+.aLogoNav3{
+    display: inline-block;
+}
+
+.iconoMenu{
+    font-size: 55px; 
+    margin-left: 0px; 
+    padding-top: 7px; 
+}
+
+.logoCuenta{
+    height: 45px; 
+}
+
+
+
+
+
+
+/*FOOTER MODIFICACIONES*/
 
 .footer{
     width: 100%;
