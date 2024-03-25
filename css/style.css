@@ -1139,118 +1139,66 @@ body{
 
 
 
-/*MEDIA QUERIES*/
+@media(max-width: 1300px){
 
-@media (max-width: 768px){
+/*PÁGINA HOME*/
 
-    /*MENÚ HAMBURGUESA*/
+/*modificaciones tamaño título*/
+.contenedorh1Argentina{
+    height: 340px;
+}
 
-    .liLogo{
-        display: none;
-    }/*para quitar el logo principal del ul*/
+/*aca empiezan las modificaciones de la sección 2*/
 
-    .logoNav2{
-        display: inline-block;
-    } /*para agregar el logo principal por fuera del ul*/
+/*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
 
-    .contenedorNav{
-        width: 100%;
-        height: 0;
-        margin-left: 0px;
-        overflow: hidden;
-        margin-top: 75px;
-    }
-    
-    .contenedorLinksNav{
-        width: 170px;
-        height: 270px;
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: #0f1035d7;
-    }
+.presentacionGrid{
+    grid-template-columns: 75px 75px 260px 300px;
+}
 
-    .nav label{
-        display: inline-flex;
-        cursor: pointer;
-    }
+.articlePresentacion h2{
+    font-size: 30px; 
+}
 
-    .nav #toggle:checked ~ .contenedorNav{
-        height: 270px;
-    }
+/*modificaciones sección 3*/
 
-    /*ACA TERMINA EL MENÚ HAMBURGUESA*/
+.secciónTresPáginaHome{
+    height: 610px;
+}
 
+.contenedorDestinos{
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
 
+/*modificación width destinos populares*/
 
-    /*PÁGINA HOME*/
+.h3DestinosPopulares{
+    width: 75%;
+}
 
-    /*fondo*/
+/*modificación width hoteles*/
+.h3Hoteles{
+    width: 75%;
+}
 
-    .headerHome{
-        height: 600px;
-    }
-    
-    /*modificaciones (título principal, botón)*/
-    .contenedorh1Argentina{
-        height: 340px;
-    }
-    
-    /*aca empiezan las modificaciones de la sección 2*/
-    
-    .secciónDosPáginaHome{
-        flex-direction: column; 
-        justify-content: center; 
-        align-items: center; 
-        height: 700px;
-    }
-    
-    /*redes sociales*/
-    
-    .redesHome{
-        flex-direction: row;
-        margin-left: 0px;
-        margin-top: 20px;
-    }
-    
-    /*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
-    .presentacionGrid{
-        grid-template-columns: 75px 75px 260px 300px;
-    }
-    
-    .articlePresentacion h2{
-        font-size: 30px; 
-    }
-    
-    /*modificaciones sección 3*/
-    
-    .secciónTresPáginaHome{
-        height: 610px;
-    }
-    
-    .contenedorDestinos{
-        flex-wrap: wrap; 
-        justify-content: center; 
-    }
-    
-    /*modificación destinos populares*/
-    
-    .h3DestinosPopulares{
-        width: 80%;;
-    }
-    
-    /*modificaciones título Hoteles*/
-    .h3Hoteles{
-        width: 80%;
-    } 
+}
 
 
 
 
 
+
+
+
+
+
+@media(max-width: 1210px){
 
 /*PÁGINA DESTINOS*/
 
 /*modificaciones título principal*/
+
 .seccionHeaderDestinos{
     height: 80%; 
 }
@@ -1278,11 +1226,11 @@ body{
     height: 530px;
 }
 
-
 /*aca se encuentran las modificaciones para la card de tres imágenes*/
+
 .fondoContenedor{
     height: 1000px; 
-    width: 100%; 
+    width: 1100px; 
     flex-direction: column-reverse; 
     gap: 0px;
 }
@@ -1314,11 +1262,270 @@ body{
 }
 
 .contenedorArticulo{
+    width: 60%; 
+    height: 130px;
+}
+
+.fondoElBolsón .contenedorarticuloDos{
+    width: 40%;
+    height: 160px;
+}
+
+/*aca está la card de dos imágenes*/
+
+.contenedorarticuloDos{
+    width: 60%; 
+    height: 130px; 
+}
+
+.widthMediaQuery{
+    width: 60%;
+}
+
+.contenedortextoDos{
+    border-top: 3px;
+    border-right: 3px; 
+    border-bottom: 0px; 
+    border-left: 3px; 
+    border-color: orangered;
+    border-style: solid;
+}
+
+.contenedorimagenesDos{
+    width: 225px; 
+    height: 260px; 
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+
+/*PÁGINA DESTINOS*/
+
+/*contenedor de imágenes*/
+
+.fondoContenedor{
+    height: 1000px; 
+    width: 100%; 
+    flex-direction: column-reverse; 
+    gap: 0px;
+}
+
+.noReverseMediaQuery{
+    flex-direction: column; 
+}
+
+.contenedorImagenesPrincipal{
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 280px; 
+}
+
+/*aca se encuentra la opción actividades/hoteles del final de la página destinos*/
+
+.opcionesGrid{
+height: 720px;
+grid-template-columns: repeat(2, 260px); 
+grid-template-rows: 30px 240px 50px 30px 240px 30px;
+}
+
+.opcion1H3{
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.opcion1Act{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 2;
+grid-row-end: 3;
+}
+
+.opcion2Act{
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 3;
+}
+
+.linkVerMas{
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 3;
+grid-row-end: 4;
+}
+
+.opcion2H3{
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 4;
+grid-row-end: 5;
+}
+
+.opcion1Hoteles{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 5;
+grid-row-end: 6;
+}
+
+.opcion2Hoteles{
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 5;
+grid-row-end: 6;
+}
+
+.linkVerMas2{
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 6;
+grid-row-end: 7;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/ /*768*/
+
+@media (max-width: 900px){
+
+/*MENÚ HAMBURGUESA*/
+
+.liLogo{
+    display: none;
+}/*para quitar el logo principal del ul*/
+
+.logoNav2{
+    display: inline-block;
+} /*para agregar el logo principal por fuera del ul*/
+
+.contenedorNav{
+    width: 100%;
+    height: 0;
+    margin-left: 0px;
+    overflow: hidden;
+    margin-top: 75px;
+}
+
+.contenedorLinksNav{
+    width: 170px;
+    height: 270px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #0f1035d7;
+}
+
+.nav label{
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.nav #toggle:checked ~ .contenedorNav{
+    height: 270px;
+}
+
+/*ACA TERMINA EL MENÚ HAMBURGUESA*/
+
+/*PÁGINA HOME*/
+
+/*fondo*/
+
+.headerHome{
+    height: 600px;
+}
+
+/*aca empiezan las modificaciones de la sección 2*/
+
+.secciónDosPáginaHome{
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 700px;
+}
+
+/*redes sociales*/
+
+.redesHome{
+    flex-direction: row;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+/*PÁGINA DESTINOS*/
+
+/*modificaciones título principal*/
+
+.seccionHeaderDestinos{
+    height: 80%; 
+}
+
+.h1Destinos{
+    font-size: 55px; 
+}
+
+/*aca empiezan las modificaciones para las cards*/
+
+/*medidas de height de las 3 diferentes secciones*/
+
+.seccionDestinos, .heightMediaQuery{
+    width: 100%;
+    height: 1450px;
+}
+
+.heightMediaQuery2{
+    width: 100%;
+    height: 900px;
+}
+
+.heightMediaQuery3{
+    width: 100%;
+    height: 530px;
+}
+
+/*aca se encuentran las modificaciones para la card de tres imágenes*/
+
+.contenedorImagenes{
+    width: 225px; 
+    height: 260px; 
+}
+
+.contenedorTexto p{
+    border-top: 3px;
+    border-right: 3px; 
+    border-bottom: 0px; 
+    border-left: 3px; 
+    border-color: orangered;
+    border-style: solid;
+}
+
+.contenedorArticulo{
     width: 75%; 
     height: 130px;
 }
 
 /*aca está la card de dos imágenes*/
+
 .contenedorarticuloDos{
     width: 60%; 
     height: 130px; 
@@ -1342,71 +1549,7 @@ body{
     height: 260px; 
 }
 
-/*aca se encuentra la opción actividades/hoteles del final de la página destinos*/
-.opcionesGrid{
-    height: 720px;
-    grid-template-columns: repeat(2, 260px); 
-    grid-template-rows: 30px 240px 50px 30px 240px 30px;
 }
-
-.opcion1H3{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.opcion1Act{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.opcion2Act{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.linkVerMas{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-.opcion2H3{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-
-.opcion1Hoteles{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
-
-.opcion2Hoteles{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
-
-.linkVerMas2{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 6;
-    grid-row-end: 7;
-}
-
-}
-
 
 
 
@@ -1418,6 +1561,78 @@ body{
 
 
 @media (max-width: 320px){
+
+/*BARRA DE NAVEGACIÓN MODIFICACIONES*/
+
+.logoNav2{
+    display: none;
+}
+
+.aLogoNav3{
+    display: inline-block;
+}
+
+.iconoMenu{
+    font-size: 55px; 
+    margin-left: 0px; 
+    padding-top: 7px; 
+}
+
+.logoCuenta{
+    height: 45px; 
+}
+
+/*FOOTER MODIFICACIONES*/
+
+.footer{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.divfooterUno{
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.divfooterDos{
+    width: 100%;
+    height: auto;
+}
+
+.divfooterDos p{
+    color: white;
+    font-family: "Pavanam";
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contenedorRedesFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.divfooterTres{
+    width: 100%;
+    height: auto;
+    justify-self: right;
+    align-self: center;
+    margin-right: 0px;
+}
+
+.listaFooter{
+    text-align: center;
+}
 
 /*PÁGINA HOME*/
 
@@ -1434,6 +1649,7 @@ body{
 }
 
 /*modificaciones tamaño título*/
+
 .contenedorh1Argentina{
     font-size: 18px;
     width: 100%;
@@ -1462,6 +1678,7 @@ body{
 }
 
 /*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
+
 .presentacionGrid{
     height: 1180px;
     width: 100%;
@@ -1541,15 +1758,12 @@ body{
 }
 
 /*modificaciones título Hoteles*/
+
 .h3Hoteles{
     font-size: 35px;
     text-align: right;
     width: 60%;
 }
-
-
-
-
 
 /*PÁGINA DESTINOS*/
 
@@ -1582,8 +1796,8 @@ body{
     height: 1150px; 
 }
 
-
 /*aca se encuentran las modificaciones para la card de tres imágenes*/
+
 .fondoContenedor:not(.fondoElBolsón, .noReverseMediaQuery){
     height: 1100px; 
     background-image: none;
@@ -1618,6 +1832,7 @@ body{
 }
 
 /*aca está la card de dos imágenes*/
+
 .contenedorarticuloDos:not(.contenedorArticuloBsAs){
     width: 69%;
     height: 290px;
@@ -1630,9 +1845,10 @@ body{
 
 .widthMediaQuery{
     width: 69%;
-} /*ancho del artículo de bs as y otro*/
+} /*ancho del artículo de bs as y misiones*/
 
 /*aca se encuentra la opción actividades/hoteles del final de la página destinos*/
+
 .opcionesGrid{
     height: 1250px;
     grid-template-columns: 1fr; 
@@ -1695,52 +1911,6 @@ body{
     grid-row-end: 9;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*BARRA DE NAVEGACIÓN MODIFICACIONES*/
-
-.logoNav2{
-    display: none;
-}
-
-.aLogoNav3{
-    display: inline-block;
-}
-
-.iconoMenu{
-    font-size: 55px; 
-    margin-left: 0px; 
-    padding-top: 7px; 
-}
-
-.logoCuenta{
-    height: 45px; 
 }
 
 
@@ -1748,59 +1918,11 @@ body{
 
 
 
-/*FOOTER MODIFICACIONES*/
 
-.footer{
-    width: 100%;
-    height: 350px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
 
-.divfooterUno{
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    text-align: center;
-}
 
-.divfooterDos{
-    width: 100%;
-    height: auto;
-}
 
-.divfooterDos p{
-    color: white;
-    font-family: "Pavanam";
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-}
 
-.contenedorRedesFooter{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    gap: 10px;
-}
-
-.divfooterTres{
-    width: 100%;
-    height: auto;
-    justify-self: right;
-    align-self: center;
-    margin-right: 0px;
-}
-
-.listaFooter{
-    text-align: center;
-}
-
-}
 
 
 
