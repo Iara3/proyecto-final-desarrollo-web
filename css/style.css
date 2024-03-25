@@ -1406,8 +1406,6 @@ grid-row-end: 7;
 
 
 
-/*MEDIA QUERIES*/ /*768*/
-
 @media (max-width: 900px){
 
 /*MENÚ HAMBURGUESA*/
@@ -1560,7 +1558,242 @@ grid-row-end: 7;
 
 
 
-@media (max-width: 320px){
+@media(max-width: 720px){
+
+/*PÁGINA HOME*/
+
+.headerHome{
+    height: 600px;
+}
+
+/*modificaciones tamaño título*/
+
+.contenedorh1Argentina{
+    font-size: 20px; 
+    height: 300px; 
+}
+
+.contenedorh1Argentina p{
+    text-shadow: 2px 2px 3px black; 
+    width: 70%; 
+    text-align: center;
+}
+
+.h1Argentina{
+    font-size: 80px; 
+}
+
+/*aca empiezan las modificaciones de la sección 2*/
+
+.secciónDosPáginaHome{
+    width: 100%;
+    height: 1000px; 
+    margin-bottom: 50px;
+}
+
+/*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
+
+.presentacionGrid{
+    height: 950px; 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55px 55px 55px 350px;
+    grid-template-rows: 700px 75px 75px 75px 200px;
+    margin-bottom: 50px;
+}
+
+.presentacionGrid img{
+    height: 400px;
+    width: 270px; 
+}
+
+.imgAzul{
+    border: 3px solid orangered;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.imgUnoPresentacion{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.imgDosPresentacion{
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.articlePresentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.articlePresentacion h2{
+    font-size: 25px;
+}
+
+.articlePresentacion p{
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+/*modificaciones sección 3*/
+
+/*modificaciones título Destinos Populares*/
+
+.secciónTresPáginaHome{
+    width: 100%;
+    height: 700px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.h3DestinosPopulares{
+    font-size: 35px;
+    text-align: left;
+    width: 60%;
+}
+
+.contenedorDestinos{
+    width: 97%;
+    height: auto;
+    gap: 23px;
+}
+
+/*modificaciones título Hoteles*/
+
+.h3Hoteles{
+    font-size: 35px;
+    text-align: right;
+    width: 60%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 665px){
+
+/*PÁGINA HOME*/
+
+/*secciones*/
+
+.secciónTresPáginaHome{
+    height: 950px; 
+}
+
+}
+
+
+@media(max-width: 565px){
+
+/*FOOTER*/
+
+.footer{
+    align-items: center; 
+}
+
+.logoFooter{
+    width: 140px; 
+    height: auto;
+}
+
+.divfooterDos p{
+    font-size: 23px; 
+}
+
+.imgFooter{
+    width: 30px; 
+    height: 30px; 
+}
+
+}
+
+@media(max-width: 510px){
+
+/*PÁGINA HOME*/
+
+/*modificaciones título*/
+
+.h1Argentina{
+    font-family: "Paytone One";
+    color: #ffffff;
+    font-size: 65px;
+    text-shadow: 2px 2px 3px black;
+}
+
+/*fondo*/
+.headerHome{
+    background-image: url(../assets/img/fondos/imgfondohome-510px.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    height: 550px;
+    width: 100%;
+}
+
+/*modificaciones presentación grid 3 img*/
+
+.presentacionGrid{
+    height: 980px; 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55px 55px 55px 230px;
+    grid-template-rows: 750px 75px 75px 75px 200px;
+    margin-bottom: 50px;
+}
+
+.presentacionGrid img{
+    height: 400px;
+    width: 270px; 
+}
+
+.imgAzul{
+    border: 3px solid orangered;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.imgUnoPresentacion{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.imgDosPresentacion{
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 436px){
 
 /*BARRA DE NAVEGACIÓN MODIFICACIONES*/
 
@@ -1599,6 +1832,7 @@ grid-row-end: 7;
     height: auto;
     margin-left: 0px;
     text-align: center;
+    margin-top: 0;
 }
 
 .divfooterDos{
@@ -1764,6 +1998,7 @@ grid-row-end: 7;
     text-align: right;
     width: 60%;
 }
+
 
 /*PÁGINA DESTINOS*/
 
