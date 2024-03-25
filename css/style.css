@@ -1703,30 +1703,6 @@ grid-row-end: 7;
 }
 
 
-@media(max-width: 565px){
-
-/*FOOTER*/
-
-.footer{
-    align-items: center; 
-}
-
-.logoFooter{
-    width: 140px; 
-    height: auto;
-}
-
-.divfooterDos p{
-    font-size: 23px; 
-}
-
-.imgFooter{
-    width: 30px; 
-    height: 30px; 
-}
-
-}
-
 
 @media (max-width: 600px){
 
@@ -1875,6 +1851,30 @@ grid-row-end: 7;
     grid-row-start: 8;
     grid-row-end: 9;
 }
+}
+
+@media(max-width: 565px){
+
+    /*FOOTER*/
+    
+    .footer{
+        align-items: center; 
+    }
+    
+    .logoFooter{
+        width: 140px; 
+        height: auto;
+    }
+    
+    .divfooterDos p{
+        font-size: 23px; 
+    }
+    
+    .imgFooter{
+        width: 30px; 
+        height: 30px; 
+    }
+    
 }
 
 @media(max-width: 510px){
