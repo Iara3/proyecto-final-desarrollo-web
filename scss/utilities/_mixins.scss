@@ -22,8 +22,3 @@
     border-radius: $br;
 }
 
-@mixin font ($family, $color, $size){
-    font-family: $family;
-    color: $color;
-    font-size: $size;
-}

@@ -1,0 +1,2078 @@
+@import "./base/reset";
+
+@import "./base/fonts";
+
+@import "./utilities/maps";
+
+@import "./utilities/mixins";
+
+@import "./utilities/variables";
+
+@import "./utilities/funciones";
+
+@import "./base/body-color";
+
+/*BARRA DE NAVEGACIÓN*/
+@import "./components/navbar/navbar";
+
+/*FOOTER*/
+
+.footer{
+    background-color: #0F1035;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 80px 5px #a5a6d1;
+}
+
+.divfooterUno{
+    justify-self: left;
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+}
+
+.logoFooter{
+    width: 180px;
+    height: auto;
+}
+
+.divfooterDos{
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.divfooterDos p{
+    color: white;
+    font-family: "Pavanam";
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contenedorRedesFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.imgFooter{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    height: auto;
+}
+
+.divfooterTres{
+    width: 100%;
+    height: auto;
+    justify-self: right;
+    align-self: center;
+    margin-right: 15px;
+}
+
+.listaFooter{
+    color: white;
+    list-style: none;
+    text-align: right;
+}
+
+.listaFooter a{
+    color: white;
+    text-decoration: none;
+}
+
+/*modificación de las sombras del footer de la página contacto*/
+
+.footerContacto{
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*PÁGINA HOME*/
+
+/*fondo*/
+.headerHome{
+    background-image: url(../assets/img/fondos/imgfondohome.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+}
+
+/*modificaciones (título principal, botón)*/
+.contenedorh1Argentina{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 20px;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1Argentina{
+    font-family: "Paytone One";
+    color: #ffffff;
+    font-size: 100px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.contenedorBotonexplorar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.contenedorBotonexplorar a{
+    font-family: "Pavanam";
+    color: #ffffff;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px 23px 5px 23px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+/*aca empiezan las modificaciones de la sección 2*/
+
+.secciónDosPáginaHome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/*redes sociales*/
+
+.redesHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.redesHome img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
+.presentacionGrid{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75px 75px 260px 400px;
+    grid-template-rows: 75px 75px 75px 1px;
+    justify-content: center;
+    align-content: center;
+}
+
+.presentacionGrid img{
+    height: 360px;
+    width: 230px;
+}
+
+.imgAzul{
+    border: 3px solid orangered;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.imgUnoPresentacion{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.imgDosPresentacion{
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.articlePresentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.articlePresentacion h2{
+    font-family: "Paytone One";
+    color: #ffffff;
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+.articlePresentacion p{
+    font-family: "Pavanam";
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: lighter;
+    margin-top: 15px;
+}
+
+.articlePresentacion a{
+    text-decoration: none;
+    background-color: orangered;
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 23px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 4px;
+    align-self: center;
+    margin-top: 15px;
+}
+
+/*modificaciones sección 3*/
+
+/*modificaciones título Destinos Populares*/
+
+.secciónTresPáginaHome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.h3DestinosPopulares{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 35px;
+    text-align: left;
+    width: 95%;;
+}
+
+.contenedorDestinos{
+    width: 97%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contenedorImgDestinos{
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+.contenedorImgDestinos img{
+    height: 200px;
+    width: 200px;
+}
+
+.ulDestinos{
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    list-style: none;
+}
+
+.liUno{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.liDos{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.verMasLink{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.verMasLink:hover{
+    color: orange;
+}
+
+/*modificaciones título Actividades*/
+.h3Actividades{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 35px;
+}
+
+/*modificaciones título Hoteles*/
+.h3Hoteles{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 35px;
+    text-align: right;
+    width: 95%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*PÁGINA DESTINOS*/
+
+/*fondo*/
+.headerDestinos{
+    background-image: url(../assets/img/fondos/fondo-destinos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/*modificaciones título principal y redes sociales*/
+.seccionHeaderDestinos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 85%;
+}
+
+.redesDestinos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 15px;
+}
+
+.redesDestinos img{
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.h1Destinos{
+    font-family: "Paytone one";
+    color: #ffffff;
+    text-align: left;
+    font-size: 70px;
+    text-shadow: 2px 2px 3px black;
+    margin-left: 15px;
+}
+
+/*aca empiezan las modificaciones para las cards*/
+.seccionDestinos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/*aca se encuentran las modificaciones para la card de tres imágenes*/
+.fondoContenedor{
+    background-image: url(../assets/img/fondos/fondo-seccion-destinos.png);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenedorImagenesPrincipal{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contenedorImagenes{
+    background-color: #0F1035;
+    width: 265px;
+    height: 300px;
+    border-color:#ffffff;
+    border-width: 7px 0px 0px 7px;
+    border-style: groove;
+}
+
+.contenedorTexto p{
+    border-top: 3px;
+    border-right: 3px;
+    border-bottom: 3px;
+    border-left: 0px;
+    border-color: orangered;
+    border-style: solid;
+    padding: 2px;
+    font-family: "Pavanam";
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.contenedorArticulo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 23%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccionDestinos h2{
+    color: white;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    text-align: center;
+    
+}
+
+.seccionDestinos h3{
+    font-family: "Pavanam";
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+.imgDestinos{
+    height: 100%;
+    width: 100%;
+}
+
+/*aca está la card de dos imágenes*/
+.contenedorarticuloDos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 23%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedortextoDos{
+    border-top: 3px;
+    border-right: 0px;
+    border-bottom: 3px;
+    border-left: 3px;
+    border-color: orangered;
+    border-style: solid;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Pavanam";
+    color: #ffffff;
+    padding: 2px;
+    font-weight: lighter;
+}
+
+.contenedorimagenesDos{
+    background-color: #0F1035;
+    width: 265px;
+    height: 300px;
+    border-color: #ffffff;
+    border-width: 7px 7px 0px 0px;
+    border-style: groove;
+}
+
+/*aca se encuentra la opción actividades/hoteles del final de la página destinos*/
+.opcionesGrid{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 310px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    grid-template-rows: 30px 240px 30px;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+.opcion1H3{
+    font-family: "Pavanam";
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 25px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.opcion1Act{
+    height: 240px;
+    width: 240px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+}
+
+.opcion2Act{
+    height: 240px;
+    width: 240px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+}
+
+.linkVerMas{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.opcion2H3{
+    font-family: "Pavanam";
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 25px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.opcion1Hoteles{
+    height: 240px;
+    width: 240px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+}
+
+.opcion2Hoteles{
+    height: 240px;
+    width: 240px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+}
+
+.linkVerMas2{
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 20px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.linkVerMas:hover{
+    color: orange;
+}
+
+.linkVerMas2:hover{
+    color:orange;
+}
+
+.imgOpciones{
+    width: 100%;
+    height: 100%;
+}
+
+.ulOpciones{
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    margin: 6px;
+}
+
+.li1{
+    font-family: "pavanam";
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.li2{
+    font-family: "Pavanam";
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+/*PÁGINA ACTIVIDADES*/
+
+/*fondo*/
+.headerActividades{
+    background-image: url(../assets/img/fondos/fondo-actividades.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 100vh;
+    width: 100%;
+}
+
+/*modificaciones título y redes sociales*/
+.seccionHeaderActividades{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 85%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redesActividades{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.redesActividades img{
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.h1Actividades{
+    font-family: "Paytone one";
+    color: #ffffff;
+    text-align: right;
+    font-size: 70px;
+    margin-right: 15px;
+    text-shadow: 2px 2px 3px black;
+}
+
+/*aca comienzan las modificaciones del main*/
+.contenedorPrincipal{
+    display: grid;
+    grid-template-columns: 570px 570px;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+.contenedorSecundario{
+    width: 550px;
+    height: 525px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 2px;
+    border-color: orangered;
+    border-style: solid;
+}
+
+.contenedorSecundario {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-weight: lighter;
+}
+
+.legendAct{
+    font-size: 30px;
+    background-color: #0F1035;
+}
+
+.contenedorUno{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.contenedorDos{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+}
+
+.botonExcursion{
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 4px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+}
+
+
+
+
+
+
+
+
+
+
+/*PÁGINA HOTELES*/
+
+/*fondo*/
+.headerHoteles{
+    background-image: url(../assets/img/fondos/fondo-hoteles.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+/*modificaciones titulo y redes sociales*/
+.seccionHeaderHoteles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.redesHoteles{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.redesHoteles img{
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.h1Hoteles{
+    font-family: "Paytone one";
+    color: #ffffff;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 2px 2px 3px black;
+    height: 320px;
+    margin-top: 80px;
+}
+
+/*aca comienzan las modificaciones del main*/
+.seccionPrincipalHoteles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: 950px;
+}
+
+.contenedorHoteles{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    border-color: orangered;
+    border-style: solid;
+    width: 1000px;
+    height: 390px;
+}
+
+.articleHoteles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    background-color: #D9D9D9;
+    height: 365px;
+    width: 310px;
+}
+
+.estrellasHoteles{
+    align-self: center;
+}
+
+.imgHoteles{
+    background-color: #365486;
+    width: 290px;
+    height: 200px;
+    align-self: center;
+} 
+
+.articleHoteles ul{
+    list-style: none;
+    color: #000000;
+    font-family: "Pavanam";
+    margin-left: 8px;
+}
+
+.botonReservarHotel{
+    align-self: center;
+    text-decoration: none;
+    padding: 0px 5px 0px 5px;
+    color: #000000;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    border: 1px;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+/*PÁGINA CONTACTO*/
+
+/*fondo*/
+.headerContacto{
+    background-image: url(../assets/img/fondos/fondocontactanos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 100vh;
+    width: 100%;
+}
+
+/*modificaciones título*/
+.h1Contacto{
+    font-family: "Paytone One";
+    color: #ffffff;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 3px black;
+}
+
+/*aca se encuentra el form de la página contacto*/
+.formularioContacto{
+    width: 100%;
+    height: 410px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid{
+    list-style: none;
+    width: 1060px;
+    height: 420px;
+    border-top: 2px;
+    border-right: 2px;
+    border-bottom: 2px;
+    border-left: 2px;
+    border-style: solid;
+    border-color: orangered;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+    grid-template-columns: 400px repeat(2, 300px);
+    grid-template-rows: 70px 70px 70px 70px 50px;
+    grid-template-areas: 
+    "areaUno areaDos areaTres"
+    "areaUno areaCuatro areaCuatro"
+    "areaUno areaCinco areaCinco"
+    "areaUno areaCinco areaCinco"
+    ". areaSeis areaSeis"
+    ;
+}
+
+.areaUno{
+    grid-area: areaUno;
+}
+
+.areaUno img{
+    width: 100%;
+    height: 325px;
+}
+
+.areaDos{
+    grid-area: areaDos;
+}
+
+.areaDos input{
+    width: 100%;
+    height: 100%;
+}
+
+.areaTres{
+    grid-area: areaTres;
+}
+
+.areaTres input{
+    height: 100%;
+    width: 100%;
+}
+
+.areaCuatro{
+    grid-area: areaCuatro;
+}
+
+.areaCuatro input{
+    width: 100%;
+    height: 100%;
+}
+
+.areaCinco{
+    grid-area: areaCinco;
+}
+
+.areaCinco textarea{
+    height: 100%;
+    width: 100%;
+}
+
+.areaSeis{
+    grid-area: areaSeis;
+    justify-self: center;
+}
+
+.areaSeis input{
+    width: 150px;
+    height: 50px;
+    background-color: orangered;
+    color: #ffffff;
+    font-family: "Pavanam";
+    font-size: 19px;
+    border-radius: 3px;
+    border: none;
+}
+
+.grid li input::placeholder{
+    font-family: "Pavanam";
+    font-size: 20px;
+}
+
+.grid li textarea::placeholder{
+    font-family: "Pavanam";
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1300px){
+
+/*PÁGINA HOME*/
+
+/*modificaciones tamaño título*/
+.contenedorh1Argentina{
+    height: 340px;
+}
+
+/*aca empiezan las modificaciones de la sección 2*/
+
+/*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
+
+.presentacionGrid{
+    grid-template-columns: 75px 75px 260px 300px;
+}
+
+.articlePresentacion h2{
+    font-size: 30px; 
+}
+
+/*modificaciones sección 3*/
+
+.secciónTresPáginaHome{
+    height: 610px;
+}
+
+.contenedorDestinos{
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+/*modificación width destinos populares*/
+
+.h3DestinosPopulares{
+    width: 75%;
+}
+
+/*modificación width hoteles*/
+.h3Hoteles{
+    width: 75%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1210px){
+
+/*PÁGINA DESTINOS*/
+
+/*modificaciones título principal*/
+
+.seccionHeaderDestinos{
+    height: 80%; 
+}
+
+.h1Destinos{
+    font-size: 55px; 
+}
+
+/*aca empiezan las modificaciones para las cards*/
+
+/*medidas de height de las 3 diferentes secciones*/
+
+.seccionDestinos, .heightMediaQuery{
+    width: 100%;
+    height: 1450px;
+}
+
+.heightMediaQuery2{
+    width: 100%;
+    height: 900px;
+}
+
+.heightMediaQuery3{
+    width: 100%;
+    height: 530px;
+}
+
+/*aca se encuentran las modificaciones para la card de tres imágenes*/
+
+.fondoContenedor{
+    height: 1000px; 
+    width: 1100px; 
+    flex-direction: column-reverse; 
+    gap: 0px;
+}
+
+.noReverseMediaQuery{
+    flex-direction: column; 
+}
+
+.contenedorImagenesPrincipal{
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 280px; 
+}
+
+.contenedorImagenes{
+    width: 225px; 
+    height: 260px; 
+}
+
+
+.contenedorTexto p{
+    border-top: 3px;
+    border-right: 3px; 
+    border-bottom: 0px; 
+    border-left: 3px; 
+    border-color: orangered;
+    border-style: solid;
+}
+
+.contenedorArticulo{
+    width: 60%; 
+    height: 130px;
+}
+
+.fondoElBolsón .contenedorarticuloDos{
+    width: 40%;
+    height: 160px;
+}
+
+/*aca está la card de dos imágenes*/
+
+.contenedorarticuloDos{
+    width: 60%; 
+    height: 130px; 
+}
+
+.widthMediaQuery{
+    width: 60%;
+}
+
+.contenedortextoDos{
+    border-top: 3px;
+    border-right: 3px; 
+    border-bottom: 0px; 
+    border-left: 3px; 
+    border-color: orangered;
+    border-style: solid;
+}
+
+.contenedorimagenesDos{
+    width: 225px; 
+    height: 260px; 
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+
+/*PÁGINA DESTINOS*/
+
+/*contenedor de imágenes*/
+
+.fondoContenedor{
+    height: 1000px; 
+    width: 100%; 
+    flex-direction: column-reverse; 
+    gap: 0px;
+}
+
+.noReverseMediaQuery{
+    flex-direction: column; 
+}
+
+.contenedorImagenesPrincipal{
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 280px; 
+}
+
+/*aca se encuentra la opción actividades/hoteles del final de la página destinos*/
+
+.opcionesGrid{
+height: 720px;
+grid-template-columns: repeat(2, 260px); 
+grid-template-rows: 30px 240px 50px 30px 240px 30px;
+}
+
+.opcion1H3{
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.opcion1Act{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 2;
+grid-row-end: 3;
+}
+
+.opcion2Act{
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 3;
+}
+
+.linkVerMas{
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 3;
+grid-row-end: 4;
+}
+
+.opcion2H3{
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 4;
+grid-row-end: 5;
+}
+
+.opcion1Hoteles{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 5;
+grid-row-end: 6;
+}
+
+.opcion2Hoteles{
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 5;
+grid-row-end: 6;
+}
+
+.linkVerMas2{
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 6;
+grid-row-end: 7;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px){
+
+/*MENÚ HAMBURGUESA*/
+
+.liLogo{
+    display: none;
+}/*para quitar el logo principal del ul*/
+
+.logoNav2{
+    display: inline-block;
+} /*para agregar el logo principal por fuera del ul*/
+
+.contenedorNav{
+    width: 100%;
+    height: 0;
+    margin-left: 0px;
+    overflow: hidden;
+    margin-top: 75px;
+}
+
+.contenedorLinksNav{
+    width: 170px;
+    height: 270px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #0f1035d7;
+}
+
+.nav label{
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.nav #toggle:checked ~ .contenedorNav{
+    height: 270px;
+}
+
+/*ACA TERMINA EL MENÚ HAMBURGUESA*/
+
+/*PÁGINA HOME*/
+
+/*fondo*/
+
+.headerHome{
+    height: 600px;
+}
+
+/*aca empiezan las modificaciones de la sección 2*/
+
+.secciónDosPáginaHome{
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 700px;
+}
+
+/*redes sociales*/
+
+.redesHome{
+    flex-direction: row;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+/*PÁGINA DESTINOS*/
+
+/*modificaciones título principal*/
+
+.seccionHeaderDestinos{
+    height: 80%; 
+}
+
+.h1Destinos{
+    font-size: 55px; 
+}
+
+/*aca empiezan las modificaciones para las cards*/
+
+/*medidas de height de las 3 diferentes secciones*/
+
+.seccionDestinos, .heightMediaQuery{
+    width: 100%;
+    height: 1450px;
+}
+
+.heightMediaQuery2{
+    width: 100%;
+    height: 900px;
+}
+
+.heightMediaQuery3{
+    width: 100%;
+    height: 530px;
+}
+
+/*aca se encuentran las modificaciones para la card de tres imágenes*/
+
+.contenedorImagenes{
+    width: 225px; 
+    height: 260px; 
+}
+
+.contenedorTexto p{
+    border-top: 3px;
+    border-right: 3px; 
+    border-bottom: 0px; 
+    border-left: 3px; 
+    border-color: orangered;
+    border-style: solid;
+}
+
+.contenedorArticulo{
+    width: 75%; 
+    height: 130px;
+}
+
+/*aca está la card de dos imágenes*/
+
+.contenedorarticuloDos{
+    width: 60%; 
+    height: 130px; 
+}
+
+.widthMediaQuery{
+    width: 75%;
+}
+
+.contenedortextoDos{
+    border-top: 3px;
+    border-right: 3px; 
+    border-bottom: 0px; 
+    border-left: 3px; 
+    border-color: orangered;
+    border-style: solid;
+}
+
+.contenedorimagenesDos{
+    width: 225px; 
+    height: 260px; 
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 720px){
+
+/*PÁGINA HOME*/
+
+.headerHome{
+    height: 600px;
+}
+
+/*modificaciones tamaño título*/
+
+.contenedorh1Argentina{
+    font-size: 20px; 
+    height: 300px; 
+}
+
+.contenedorh1Argentina p{
+    text-shadow: 2px 2px 3px black; 
+    width: 70%; 
+    text-align: center;
+}
+
+.h1Argentina{
+    font-size: 80px; 
+}
+
+/*aca empiezan las modificaciones de la sección 2*/
+
+.secciónDosPáginaHome{
+    width: 100%;
+    height: 1000px; 
+    margin-bottom: 50px;
+}
+
+/*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
+
+.presentacionGrid{
+    height: 950px; 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55px 55px 55px 350px;
+    grid-template-rows: 700px 75px 75px 75px 200px;
+    margin-bottom: 50px;
+}
+
+.presentacionGrid img{
+    height: 400px;
+    width: 270px; 
+}
+
+.imgAzul{
+    border: 3px solid orangered;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.imgUnoPresentacion{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.imgDosPresentacion{
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.articlePresentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.articlePresentacion h2{
+    font-size: 25px;
+}
+
+.articlePresentacion p{
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+/*modificaciones sección 3*/
+
+/*modificaciones título Destinos Populares*/
+
+.secciónTresPáginaHome{
+    width: 100%;
+    height: 700px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.h3DestinosPopulares{
+    font-size: 35px;
+    text-align: left;
+    width: 60%;
+}
+
+.contenedorDestinos{
+    width: 97%;
+    height: auto;
+    gap: 23px;
+}
+
+/*modificaciones título Hoteles*/
+
+.h3Hoteles{
+    font-size: 35px;
+    text-align: right;
+    width: 60%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 665px){
+
+/*PÁGINA HOME*/
+
+/*secciones*/
+
+.secciónTresPáginaHome{
+    height: 950px; 
+}
+
+}
+
+
+
+@media (max-width: 600px){
+
+/*PÁGINA DESTINOS*/
+
+/*modificaciones título principal*/
+.h1Destinos{
+    font-size: 40px; 
+}
+
+.redesDestinos img{
+    height: 33px;
+    width: 33px;
+}
+
+/*aca empiezan las modificaciones para las cards*/
+.seccionDestinos{
+    gap: 30px; 
+}
+
+/*medidas de height de las 3 diferentes secciones*/
+
+.seccionDestinos, .heightMediaQuery{
+    height: 3150px; 
+}
+
+.heightMediaQuery2{
+    height: 2300px;
+}
+
+.heightMediaQuery3{
+    height: 1150px; 
+}
+
+/*aca se encuentran las modificaciones para la card de tres imágenes*/
+
+.fondoContenedor:not(.fondoElBolsón, .noReverseMediaQuery){
+    height: 1100px; 
+    background-image: none;
+}
+
+.fondoElBolsón{
+    background-image: none;
+    height: auto;
+    width: 100%;
+}
+
+.noReverseMediaQuery{
+    background-image: none;
+    width: 100%;
+    height: 1100px;
+}
+
+.contenedorImagenesPrincipal:not(.contenedorImgBolsón){
+    flex-direction: column; 
+    height: 2000px;
+}
+
+.contenedorImgBolsón{
+    flex-direction: column;
+    width: 100%;
+    height: 560px;
+}
+
+.contenedorArticulo{
+    width: 45%; 
+    height: 365px; 
+}
+
+/*aca está la card de dos imágenes*/
+
+.contenedorarticuloDos:not(.contenedorArticuloBsAs){
+    width: 45%;
+    height: 290px;
+}
+
+.contenedorArticuloBsAs{
+    width: 65%;
+    height: 390px;
+}
+
+.widthMediaQuery{
+    width: 50%;
+} /*ancho del artículo de bs as y misiones*/
+
+/*aca se encuentra la opción actividades/hoteles del final de la página destinos*/
+
+.opcionesGrid{
+    height: 1250px;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 30px 240px 240px 30px 30px 240px 240px 30px;
+}
+
+.opcion1H3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.opcion1Act{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.opcion2Act{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.linkVerMas{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.opcion2H3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.opcion1Hoteles{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.opcion2Hoteles{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.linkVerMas2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+}
+
+@media(max-width: 565px){
+
+    /*FOOTER*/
+    
+    .footer{
+        align-items: center; 
+    }
+    
+    .logoFooter{
+        width: 140px; 
+        height: auto;
+    }
+    
+    .divfooterDos p{
+        font-size: 23px; 
+    }
+    
+    .imgFooter{
+        width: 30px; 
+        height: 30px; 
+    }
+    
+}
+
+@media(max-width: 510px){
+
+/*PÁGINA HOME*/
+
+/*modificaciones título*/
+
+.h1Argentina{
+    font-family: "Paytone One";
+    color: #ffffff;
+    font-size: 65px;
+    text-shadow: 2px 2px 3px black;
+}
+
+/*fondo*/
+.headerHome{
+    background-image: url(../assets/img/fondos/imgfondohome-510px.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    height: 550px;
+    width: 100%;
+}
+
+/*modificaciones presentación grid 3 img*/
+
+.presentacionGrid{
+    height: 980px; 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55px 55px 55px 230px;
+    grid-template-rows: 750px 75px 75px 75px 200px;
+    margin-bottom: 50px;
+}
+
+.presentacionGrid img{
+    height: 400px;
+    width: 270px; 
+}
+
+.imgAzul{
+    border: 3px solid orangered;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.imgUnoPresentacion{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.imgDosPresentacion{
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 436px){
+
+/*BARRA DE NAVEGACIÓN MODIFICACIONES*/
+
+.logoNav2{
+    display: none;
+}
+
+.aLogoNav3{
+    display: inline-block;
+}
+
+.iconoMenu{
+    font-size: 55px; 
+    margin-left: 0px; 
+    padding-top: 7px; 
+}
+
+.logoCuenta{
+    height: 45px; 
+}
+
+/*FOOTER MODIFICACIONES*/
+
+.footer{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.divfooterUno{
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.divfooterDos{
+    width: 100%;
+    height: auto;
+}
+
+.divfooterDos p{
+    color: white;
+    font-family: "Pavanam";
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contenedorRedesFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.divfooterTres{
+    width: 100%;
+    height: auto;
+    justify-self: right;
+    align-self: center;
+    margin-right: 0px;
+}
+
+.listaFooter{
+    text-align: center;
+}
+
+/*PÁGINA HOME*/
+
+/*fondo*/
+
+.headerHome{
+    background-image: url(../assets/img/fondos/imgfondohome-320px.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%; 
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/*modificaciones tamaño título*/
+
+.contenedorh1Argentina{
+    font-size: 18px;
+    width: 100%;
+    height: 260px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorh1Argentina p{
+    text-shadow: 2px 2px 3px black; 
+    width: 70%; 
+    text-align: center; 
+}
+
+.h1Argentina{
+    font-size: 50px; 
+}
+
+/*aca empiezan las modificaciones de la sección 2*/
+
+.secciónDosPáginaHome{
+    width: 100%;
+    height: 1150px; 
+}
+
+/*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
+
+.presentacionGrid{
+    height: 1180px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 50px 170px 1px;
+    grid-template-rows: 800px 75px 75px 75px 200px;
+    margin-bottom: 50px;
+}
+
+.presentacionGrid img{
+    height: 300px;
+    width: 170px;
+}
+
+.imgAzul{
+    border: 3px solid orangered;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.imgUnoPresentacion{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.imgDosPresentacion{
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+.articlePresentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.articlePresentacion h2{
+    font-size: 25px;
+}
+
+.articlePresentacion p{
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+/*modificaciones sección 3*/
+
+/*modificaciones título Destinos Populares*/
+
+.secciónTresPáginaHome{
+    width: 100%;
+    height: 1500px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.h3DestinosPopulares{
+    font-size: 35px;
+    text-align: left;
+    width: 60%;
+}
+
+.contenedorDestinos{
+    width: 97%;
+    height: auto;
+    gap: 23px;
+}
+
+/*modificaciones título Hoteles*/
+
+.h3Hoteles{
+    font-size: 35px;
+    text-align: right;
+    width: 60%;
+}
+
+
+/*PÁGINA DESTINOS*/
+
+/*modificaciones título principal*/
+.h1Destinos{
+    font-size: 30px; 
+}
+
+.redesDestinos img{
+    height: 28px;
+    width: 28px;
+}
+
+.contenedorArticulo{
+    width: 69%; 
+    height: 365px; 
+}
+
+/*aca está la card de dos imágenes*/
+
+.contenedorarticuloDos:not(.contenedorArticuloBsAs){
+    width: 69%;
+    height: 290px;
+}
+
+.contenedorArticuloBsAs{
+    width: 70%;
+    height: 390px;
+}
+
+.widthMediaQuery{
+    width: 69%;
+} /*ancho del artículo de bs as y misiones*/
+
+}
