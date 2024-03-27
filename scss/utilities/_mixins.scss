@@ -1,0 +1,23 @@
+@mixin flex ($direction, $justify, $align, $gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin padding-tb ($pt, $pb){
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+
+@mixin padding-se ($ps, $pe){
+    padding-left: $ps;
+    padding-right: $pe;
+}
+
+@mixin button ($bg, $b, $br){
+    background-color: $bg;
+    border: $b;
+    border-radius: $br;
+}
