@@ -1,0 +1,90 @@
+.nav{
+    width: 100%;
+    height: 75px;
+    background-color: map-get($colores, navbar);
+    @include flex (row, center);
+    position: relative; /*position relative para que el 2do logo pueda posicionarse en el centro*/
+
+    .nav #toggle, .nav label{
+        display: none;
+    } /*menú hamburguesa para luego activarlo en media query*/
+    
+    .iconoMenu{
+        font-size: 70px;
+        color: #ffffff7a;
+        text-align: center;
+        margin-left: 15px;
+        user-select: none;
+    }
+
+    .logoNav2{
+        width: 200px;
+        height: auto;
+        background-color: #0F1035;
+        border-radius: 35px 35px 100px 100px;
+        display: none;
+    } /*2do logo para que aparezca en media query*/
+    
+    .aLogoNav2{
+        position: absolute;
+        justify-self: center;
+        align-self: center;
+    }
+
+    /*logo para media query 320px*/
+
+.aLogoNav3{
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    display: none;
+}
+
+.aLogoNav3 img{
+    height: 70px;
+    width: auto;
+}
+
+    .contenedorNav{
+        width: 100%;
+        height: auto;
+        margin-left: 15px;
+
+        .contenedorLinksNav{
+            width: 100%;
+            height: 75px;
+            list-style: none;
+            @include flex (row, center, center, 40px);
+
+            .linksNav{
+                @include font (map-get($font-family, "Pavanam"), map-get($colores, font-color), map-get($font-size, link-navbar));
+                letter-spacing: 1px;
+                text-decoration: none;
+
+                &:hover{
+                    color: map-get($colores, hover);
+                }
+            }
+
+            .logoNav{
+                width: 200px;
+                height: auto;
+                background-color: #0F1035;
+                border-radius: 35px 35px 100px 100px;
+            }
+        }
+    }
+
+    .divnavCuenta{
+        width: 60px;
+        height: auto;
+        align-self: center;
+        margin-right: 15px;
+
+        .logoCuenta{
+            height: 55px;
+            width: auto;
+            cursor: pointer;
+        }
+    }
+}
