@@ -1,0 +1,39 @@
+/*PÁGINA INDEX*/
+@media(max-width: 1300px){
+
+    //modificación tamaño del contenedor del título 
+    .contenedorh1Argentina{
+        height: 340px;
+    }
+    
+    //aca empiezan las modificaciones de la sección 2
+    //aca se encuentran las modificaciones de la presentación con grid (3 img)
+    .presentacionGrid{
+        grid-template-columns: 75px 75px 260px 300px;
+    }
+    
+    .articlePresentacion h2{
+        font-size: 30px; 
+    }
+
+    //modificaciones sección 3
+    .secciónTresPáginaHome{
+        height: 610px;
+    }
+    
+    .contenedorDestinos{
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    //modificación width destinos populares
+    .h3DestinosPopulares{
+        width: 75%;
+    }
+    
+    //modificación width hoteles
+    .h3Hoteles{
+        width: 75%;
+    }
+    
+    }

@@ -1,0 +1,35 @@
+.headerHome{
+    background-image: url(../assets/img/fondos/imgfondohome.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    //modificaciones título principal
+    .contenedorh1Argentina{
+        width: 100%;
+        height: 380px;
+        @include flex (column, center, center, 0px);
+        p{
+            color: map-get($colores, font-color);
+            font-family: map-get($font-family, secundaria);
+            font-weight: lighter;
+            font-size: 20px;
+        }
+        //modificación H1 
+        .h1Argentina{
+            font-family: map-get($font-family, principal);
+            color: map-get($colores, font-color);
+            font-size: 100px;
+            text-shadow: 2px 2px 3px black;
+        }
+    }
+    //botón "explorar"
+    .contenedorBotonexplorar{
+        @include flex (row, center, center, 0rem);
+        height: 70px;
+        a {
+            @extend .buttonOutlined;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.footer{
+    background-color: map-get($colores, footer);
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 80px 5px #a5a6d1;
+    .divfooterUno{
+        justify-self: left;
+        width: 100%;
+        height: auto;
+        margin-left: 15px;
+        .logoFooter{
+            width: 180px;
+            height: auto;
+        }
+    }
+    .divfooterDos{
+        width: 100%;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+        p{
+            color: map-get($colores, font-color);
+            font-family: map-get($font-family, secundaria);
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .contenedorRedesFooter{
+            @include flex (row, center, center, 10px);
+            .imgFooter{
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                height: auto;
+            }
+        }
+    }
+    .divfooterTres{
+        width: 100%;
+        height: auto;
+        justify-self: right;
+        align-self: center;
+        margin-right: 15px;
+        .listaFooter{
+            color: map-get($colores, font-color);
+            list-style: none;
+            text-align: right;
+            li{
+                a{
+                    font-family: map-get($font-family, secundaria);
+                    color: map-get($colores, font-color);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/*modificación de las sombras del footer de la página contacto*/
+.footerContacto{
+    box-shadow: none;
+}

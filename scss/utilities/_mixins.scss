@@ -16,6 +16,7 @@
     padding-right: $pe;
 }
 
+//mixin a prueba
 @mixin button ($bg, $b, $br){
     background-color: $bg;
     border: $b;

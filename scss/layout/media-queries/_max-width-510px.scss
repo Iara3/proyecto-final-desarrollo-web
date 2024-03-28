@@ -1,0 +1,56 @@
+@media(max-width: 510px){
+
+    /*PÁGINA HOME*/
+    
+    /*modificaciones título*/
+    
+    .h1Argentina{
+        font-family: "Paytone One";
+        color: #ffffff;
+        font-size: 65px;
+        text-shadow: 2px 2px 3px black;
+    }
+    
+    /*fondo*/
+    .headerHome{
+        background-image: url(../assets/img/fondos/imgfondohome-510px.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: 100% 100%;
+        height: 550px;
+        width: 100%;
+    }
+    
+    /*modificaciones presentación grid 3 img*/
+    
+    .presentacionGrid{
+        height: 980px; 
+        width: 100%;
+        display: grid;
+        grid-template-columns: 55px 55px 55px 230px;
+        grid-template-rows: 750px 75px 75px 75px 200px;
+        margin-bottom: 50px;
+    }
+    
+    .presentacionGrid img{
+        height: 400px;
+        width: 270px; 
+    }
+    
+    .imgAzul{
+        border: 3px solid orangered;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    
+    .imgUnoPresentacion{
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    
+    .imgDosPresentacion{
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    
+    }

@@ -1,0 +1,241 @@
+@media (max-width: 436px){
+
+    /*BARRA DE NAVEGACIÓN MODIFICACIONES*/
+    
+    .logoNav2{
+        display: none;
+    }
+    
+    .aLogoNav3{
+        display: inline-block;
+    }
+    
+    .iconoMenu{
+        font-size: 55px; 
+        margin-left: 0px; 
+        padding-top: 7px; 
+    }
+    
+    .logoCuenta{
+        height: 45px; 
+    }
+    
+    /*FOOTER MODIFICACIONES*/
+    
+    .footer{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .divfooterUno{
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .divfooterDos{
+        width: 100%;
+        height: auto;
+    }
+    
+    .divfooterDos p{
+        color: white;
+        font-family: "Pavanam";
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .contenedorRedesFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+    }
+    
+    .divfooterTres{
+        width: 100%;
+        height: auto;
+        justify-self: right;
+        align-self: center;
+        margin-right: 0px;
+    }
+    
+    .listaFooter{
+        text-align: center;
+    }
+    
+    /*PÁGINA HOME*/
+    
+    /*fondo*/
+    
+    .headerHome{
+        background-image: url(../assets/img/fondos/imgfondohome-320px.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: 100% 100%; 
+        height: 100vh;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    /*modificaciones tamaño título*/
+    
+    .contenedorh1Argentina{
+        font-size: 18px;
+        width: 100%;
+        height: 260px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contenedorh1Argentina p{
+        text-shadow: 2px 2px 3px black; 
+        width: 70%; 
+        text-align: center; 
+    }
+    
+    .h1Argentina{
+        font-size: 50px; 
+    }
+    
+    /*aca empiezan las modificaciones de la sección 2*/
+    
+    .secciónDosPáginaHome{
+        width: 100%;
+        height: 1150px; 
+    }
+    
+    /*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
+    
+    .presentacionGrid{
+        height: 1180px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50px 50px 170px 1px;
+        grid-template-rows: 800px 75px 75px 75px 200px;
+        margin-bottom: 50px;
+    }
+    
+    .presentacionGrid img{
+        height: 300px;
+        width: 170px;
+    }
+    
+    .imgAzul{
+        border: 3px solid orangered;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    
+    .imgUnoPresentacion{
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    
+    .imgDosPresentacion{
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    
+    .articlePresentacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    
+    .articlePresentacion h2{
+        font-size: 25px;
+    }
+    
+    .articlePresentacion p{
+        font-size: 23px;
+        margin-top: 15px;
+    }
+    
+    /*modificaciones sección 3*/
+    
+    /*modificaciones título Destinos Populares*/
+    
+    .secciónTresPáginaHome{
+        width: 100%;
+        height: 1500px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .h3DestinosPopulares{
+        font-size: 35px;
+        text-align: left;
+        width: 60%;
+    }
+    
+    .contenedorDestinos{
+        width: 97%;
+        height: auto;
+        gap: 23px;
+    }
+    
+    /*modificaciones título Hoteles*/
+    
+    .h3Hoteles{
+        font-size: 35px;
+        text-align: right;
+        width: 60%;
+    }
+    
+    
+    /*PÁGINA DESTINOS*/
+    
+    /*modificaciones título principal*/
+    .h1Destinos{
+        font-size: 30px; 
+    }
+    
+    .redesDestinos img{
+        height: 28px;
+        width: 28px;
+    }
+    
+    .contenedorArticulo{
+        width: 69%; 
+        height: 365px; 
+    }
+    
+    /*aca está la card de dos imágenes*/
+    
+    .contenedorarticuloDos:not(.contenedorArticuloBsAs){
+        width: 69%;
+        height: 290px;
+    }
+    
+    .contenedorArticuloBsAs{
+        width: 70%;
+        height: 390px;
+    }
+    
+    .widthMediaQuery{
+        width: 69%;
+    } /*ancho del artículo de bs as y misiones*/
+    
+    }
