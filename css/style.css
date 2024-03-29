@@ -1450,15 +1450,15 @@ body {
 
 @media (max-width: 436px) {
   /*BARRA DE NAVEGACIÓN MODIFICACIONES*/
-  .logoNav2 {
-    display: none; }
-  .aLogoNav3 {
-    display: inline-block; }
-  .iconoMenu {
+  .nav label .iconoMenu {
     font-size: 55px;
     margin-left: 0px;
     padding-top: 7px; }
-  .logoCuenta {
+  .nav .aLogoNav2 .logoNav2 {
+    display: none; }
+  .nav .aLogoNav3 {
+    display: inline-block; }
+  .nav .divnavCuenta .logoCuenta {
     height: 45px; }
   /*FOOTER MODIFICACIONES*/
   .footer {

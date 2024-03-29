@@ -1,24 +1,29 @@
 @media (max-width: 436px){
 
-    /*BARRA DE NAVEGACIÓN MODIFICACIONES*/
-    
-    .logoNav2{
-        display: none;
+/*BARRA DE NAVEGACIÓN MODIFICACIONES*/
+
+.nav{
+    label{ 
+        .iconoMenu{
+            font-size: 55px; 
+            margin-left: 0px; 
+            padding-top: 7px; 
+        }
     }
-    
-    .aLogoNav3{
-        display: inline-block;
+    .aLogoNav2{
+        .logoNav2{
+            display: none;
+        } 
     }
-    
-    .iconoMenu{
-        font-size: 55px; 
-        margin-left: 0px; 
-        padding-top: 7px; 
+    .aLogoNav3{ //logo para media query 4360px
+        display: inline-block; 
     }
-    
-    .logoCuenta{
-        height: 45px; 
+    .divnavCuenta{
+        .logoCuenta{
+            height: 45px; 
+        }
     }
+}
     
     /*FOOTER MODIFICACIONES*/
     
