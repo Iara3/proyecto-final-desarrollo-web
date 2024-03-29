@@ -1,26 +1,22 @@
 @media(max-width: 720px){
 
-    /*PÁGINA HOME*/
-    
+    /*PÁGINA INDEX MODIFICACIONES*/
+
+    //header modificaciones
     .headerHome{
-        height: 600px;
-    }
-    
-    /*modificaciones tamaño título*/
-    
-    .contenedorh1Argentina{
-        font-size: 20px; 
-        height: 300px; 
-    }
-    
-    .contenedorh1Argentina p{
-        text-shadow: 2px 2px 3px black; 
-        width: 70%; 
-        text-align: center;
-    }
-    
-    .h1Argentina{
-        font-size: 80px; 
+        height: 600px; 
+        //modificaciones título principal
+        .contenedorh1Argentina{
+            height: 300px; 
+            p{
+                width: 70%; 
+                text-align: center; 
+            }
+            //modificación H1 
+            .h1Argentina{
+                font-size: 80px; 
+            }
+        }
     }
     
     /*aca empiezan las modificaciones de la sección 2*/
