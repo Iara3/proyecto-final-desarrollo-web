@@ -1,9 +1,7 @@
+/*PÁGINA DESTINOS*/
 @media(max-width: 1210px){
 
-    /*PÁGINA DESTINOS*/
-    
-    /*modificaciones título principal*/
-    
+    //modificaciones header
     .seccionHeaderDestinos{
         height: 80%; 
     }
@@ -12,9 +10,9 @@
         font-size: 55px; 
     }
     
-    /*aca empiezan las modificaciones para las cards*/
+    //aca empiezan las modificaciones para las cards
     
-    /*medidas de height de las 3 diferentes secciones*/
+    //medidas de height de las 3 diferentes secciones
     
     .seccionDestinos, .heightMediaQuery{
         width: 100%;
@@ -31,7 +29,7 @@
         height: 530px;
     }
     
-    /*aca se encuentran las modificaciones para la card de tres imágenes*/
+    //aca se encuentran las modificaciones para la card de tres imágenes
     
     .fondoContenedor{
         height: 1000px; 
@@ -76,7 +74,7 @@
         height: 160px;
     }
     
-    /*aca está la card de dos imágenes*/
+    //aca está la card de dos imágenes
     
     .contenedorarticuloDos{
         width: 60%; 
@@ -101,4 +99,4 @@
         height: 260px; 
     }
     
-    }
+}

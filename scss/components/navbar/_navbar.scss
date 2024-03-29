@@ -21,7 +21,7 @@
         .logoNav2{
             width: 200px;
             height: auto;
-            background-color: #0F1035;
+            background-color: map-get($colores, fondo-logo);
             border-radius: 35px 35px 100px 100px;
             display: none;
         } //2do logo para que aparezca en media query
@@ -57,7 +57,7 @@
             .logoNav{
                 width: 200px;
                 height: auto;
-                background-color: #0F1035;
+                background-color: map-get($colores, fondo-logo);
                 border-radius: 35px 35px 100px 100px;
             }
         }

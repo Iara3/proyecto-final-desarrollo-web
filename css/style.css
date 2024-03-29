@@ -8,6 +8,109 @@
 body {
   background-color: #0F1035; }
 
+/*COMPONENTS/BUTTONS*/
+.buttonOutlined, .headerHome .contenedorBotonexplorar a {
+  font-family: "Pavanam";
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 5px 23px 5px 23px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 3px; }
+
+/*HEADER INDEX*/
+.headerHome {
+  background-image: url(../assets/img/fondos/imgfondohome.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%; }
+  .headerHome .contenedorh1Argentina {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px; }
+    .headerHome .contenedorh1Argentina p {
+      color: white;
+      font-family: "Pavanam";
+      font-weight: lighter;
+      font-size: 20px; }
+    .headerHome .contenedorh1Argentina .h1Argentina {
+      font-family: "Paytone One";
+      color: white;
+      font-size: 100px;
+      text-shadow: 2px 2px 3px black; }
+  .headerHome .contenedorBotonexplorar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    height: 70px; }
+
+/*FOOTER*/
+.footer {
+  background-color: #0F1035;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 80px 5px #a5a6d1; }
+  .footer .divfooterUno {
+    justify-self: left;
+    width: 100%;
+    height: auto;
+    margin-left: 15px; }
+    .footer .divfooterUno .logoFooter {
+      width: 180px;
+      height: auto; }
+  .footer .divfooterDos {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    align-self: center; }
+    .footer .divfooterDos p {
+      color: white;
+      font-family: "Pavanam";
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 10px; }
+    .footer .divfooterDos .contenedorRedesFooter {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+      .footer .divfooterDos .contenedorRedesFooter .imgFooter {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        height: auto; }
+  .footer .divfooterTres {
+    width: 100%;
+    height: auto;
+    justify-self: right;
+    align-self: center;
+    margin-right: 15px; }
+    .footer .divfooterTres .listaFooter {
+      color: white;
+      list-style: none;
+      text-align: right; }
+      .footer .divfooterTres .listaFooter li a {
+        font-family: "Pavanam";
+        color: white;
+        text-decoration: none; }
+
+/*modificación de las sombras del footer de la página contacto*/
+.footerContacto {
+  box-shadow: none; }
+
 /*BARRA DE NAVEGACIÓN*/
 .nav {
   width: 100%;
@@ -27,24 +130,24 @@ body {
     text-align: center;
     margin-left: 15px;
     user-select: none; }
-  .nav .logoNav2 {
-    width: 200px;
-    height: auto;
-    background-color: #0F1035;
-    border-radius: 35px 35px 100px 100px;
-    display: none; }
   .nav .aLogoNav2 {
     position: absolute;
     justify-self: center;
     align-self: center; }
+    .nav .aLogoNav2 .logoNav2 {
+      width: 200px;
+      height: auto;
+      background-color: #0F1035;
+      border-radius: 35px 35px 100px 100px;
+      display: none; }
   .nav .aLogoNav3 {
     position: absolute;
     justify-self: center;
     align-self: center;
     display: none; }
-  .nav .aLogoNav3 img {
-    height: 70px;
-    width: auto; }
+    .nav .aLogoNav3 img {
+      height: 70px;
+      width: auto; }
   .nav .contenedorNav {
     width: 100%;
     height: auto;
@@ -79,118 +182,6 @@ body {
       height: 55px;
       width: auto;
       cursor: pointer; }
-
-/*FOOTER*/
-.footer {
-  background-color: #0F1035;
-  width: 100%;
-  height: 130px;
-  display: flex;
-  flex-direction: row;
-  box-shadow: 0px 0px 80px 5px #a5a6d1; }
-
-.divfooterUno {
-  justify-self: left;
-  width: 100%;
-  height: auto;
-  margin-left: 15px; }
-
-.logoFooter {
-  width: 180px;
-  height: auto; }
-
-.divfooterDos {
-  width: 100%;
-  height: auto;
-  justify-self: center;
-  align-self: center; }
-
-.divfooterDos p {
-  color: white;
-  font-family: "Pavanam";
-  font-size: 25px;
-  text-align: center;
-  margin-bottom: 10px; }
-
-.contenedorRedesFooter {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  gap: 10px; }
-
-.imgFooter {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  height: auto; }
-
-.divfooterTres {
-  width: 100%;
-  height: auto;
-  justify-self: right;
-  align-self: center;
-  margin-right: 15px; }
-
-.listaFooter {
-  color: white;
-  list-style: none;
-  text-align: right; }
-
-.listaFooter a {
-  color: white;
-  text-decoration: none; }
-
-/*modificación de las sombras del footer de la página contacto*/
-.footerContacto {
-  box-shadow: none; }
-
-/*PÁGINA HOME*/
-/*fondo*/
-.headerHome {
-  background-image: url(../assets/img/fondos/imgfondohome.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: 100% 100%;
-  height: 100vh;
-  width: 100%; }
-
-/*modificaciones (título principal, botón)*/
-.contenedorh1Argentina {
-  color: #ffffff;
-  font-family: "Pavanam";
-  font-weight: lighter;
-  font-size: 20px;
-  width: 100%;
-  height: 380px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.h1Argentina {
-  font-family: "Paytone One";
-  color: #ffffff;
-  font-size: 100px;
-  text-shadow: 2px 2px 3px black; }
-
-.contenedorBotonexplorar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 70px; }
-
-.contenedorBotonexplorar a {
-  font-family: "Pavanam";
-  color: #ffffff;
-  font-weight: lighter;
-  text-decoration: none;
-  font-size: 25px;
-  padding: 5px 23px 5px 23px;
-  border: 1px;
-  border-style: solid;
-  border-radius: 3px; }
 
 /*aca empiezan las modificaciones de la sección 2*/
 .secciónDosPáginaHome {
@@ -850,11 +841,7 @@ body {
   gap: 15px;
   grid-template-columns: 400px repeat(2, 300px);
   grid-template-rows: 70px 70px 70px 70px 50px;
-  grid-template-areas: "areaUno areaDos areaTres"
- "areaUno areaCuatro areaCuatro"
- "areaUno areaCinco areaCinco"
- "areaUno areaCinco areaCinco"
- ". areaSeis areaSeis"; }
+  grid-template-areas: "areaUno areaDos areaTres" "areaUno areaCuatro areaCuatro" "areaUno areaCinco areaCinco" "areaUno areaCinco areaCinco" ". areaSeis areaSeis"; }
 
 .areaUno {
   grid-area: areaUno; }
@@ -913,39 +900,31 @@ body {
   font-family: "Pavanam";
   font-size: 20px; }
 
+/*MEDIAS QUERIES*/
+/*PÁGINA INDEX*/
 @media (max-width: 1300px) {
-  /*PÁGINA HOME*/
-  /*modificaciones tamaño título*/
   .contenedorh1Argentina {
     height: 340px; }
-  /*aca empiezan las modificaciones de la sección 2*/
-  /*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
   .presentacionGrid {
     grid-template-columns: 75px 75px 260px 300px; }
   .articlePresentacion h2 {
     font-size: 30px; }
-  /*modificaciones sección 3*/
   .secciónTresPáginaHome {
     height: 610px; }
   .contenedorDestinos {
     flex-wrap: wrap;
     justify-content: center; }
-  /*modificación width destinos populares*/
   .h3DestinosPopulares {
     width: 75%; }
-  /*modificación width hoteles*/
   .h3Hoteles {
     width: 75%; } }
 
+/*PÁGINA DESTINOS*/
 @media (max-width: 1210px) {
-  /*PÁGINA DESTINOS*/
-  /*modificaciones título principal*/
   .seccionHeaderDestinos {
     height: 80%; }
   .h1Destinos {
     font-size: 55px; }
-  /*aca empiezan las modificaciones para las cards*/
-  /*medidas de height de las 3 diferentes secciones*/
   .seccionDestinos, .heightMediaQuery {
     width: 100%;
     height: 1450px; }
@@ -955,7 +934,6 @@ body {
   .heightMediaQuery3 {
     width: 100%;
     height: 530px; }
-  /*aca se encuentran las modificaciones para la card de tres imágenes*/
   .fondoContenedor {
     height: 1000px;
     width: 1100px;
@@ -984,7 +962,6 @@ body {
   .fondoElBolsón .contenedorarticuloDos {
     width: 40%;
     height: 160px; }
-  /*aca está la card de dos imágenes*/
   .contenedorarticuloDos {
     width: 60%;
     height: 130px; }
@@ -1001,9 +978,8 @@ body {
     width: 225px;
     height: 260px; } }
 
+/*PÁGINA DESTINOS*/
 @media (max-width: 1100px) {
-  /*PÁGINA DESTINOS*/
-  /*contenedor de imágenes*/
   .fondoContenedor {
     height: 1000px;
     width: 100%;
@@ -1016,7 +992,6 @@ body {
     align-items: center;
     width: 100%;
     height: 280px; }
-  /*aca se encuentra la opción actividades/hoteles del final de la página destinos*/
   .opcionesGrid {
     height: 720px;
     grid-template-columns: repeat(2, 260px);
@@ -1063,36 +1038,35 @@ body {
     grid-row-end: 7; } }
 
 @media (max-width: 900px) {
-  /*MENÚ HAMBURGUESA*/
-  .liLogo {
-    display: none; }
-  /*para quitar el logo principal del ul*/
-  .logoNav2 {
+  /*BARRA DE NAVEGACIÓN*/
+  .nav #toggle:checked ~ .contenedorNav {
+    height: 270px; }
+  .nav label {
+    display: inline-flex;
+    cursor: pointer; }
+  .nav .aLogoNav2 .logoNav2 {
     display: inline-block; }
-  /*para agregar el logo principal por fuera del ul*/
-  .contenedorNav {
+  .nav .contenedorNav {
     width: 100%;
     height: 0;
     margin-left: 0px;
     overflow: hidden;
     margin-top: 75px; }
-  .contenedorLinksNav {
-    width: 170px;
-    height: 270px;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #0f1035d7; }
-  .nav label {
-    display: inline-flex;
-    cursor: pointer; }
-  .nav #toggle:checked ~ .contenedorNav {
-    height: 270px; }
-  /*ACA TERMINA EL MENÚ HAMBURGUESA*/
+    .nav .contenedorNav .contenedorLinksNav {
+      width: 170px;
+      height: 270px;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      background-color: #0f1035d7; }
+      .nav .contenedorNav .contenedorLinksNav .liLogo {
+        display: none; }
   /*PÁGINA HOME*/
-  /*fondo*/
   .headerHome {
     height: 600px; }
-  /*aca empiezan las modificaciones de la sección 2*/
   .secciónDosPáginaHome {
     flex-direction: column;
     justify-content: center;
@@ -1151,6 +1125,96 @@ body {
     width: 225px;
     height: 260px; } }
 
+/* BARRA DE NAVEGACIÓN
+.nav{
+    width: 100%;
+    height: 75px;
+    background-color: map-get($colores, navbar);
+    @include flex (row, center, none, 0px);
+    position: relative; //position relative para que el 2do logo pueda posicionarse en el centro
+    #toggle:checked ~ .contenedorNav{ //900
+        height: 270px; 
+    }
+    label{ //900
+        display: inline-flex;
+        cursor: pointer; 
+        .iconoMenu{
+            font-size: 70px;
+            color: #ffffff7a;
+            text-align: center;
+            margin-left: 15px;
+            user-select: none;
+        }
+    }
+    .aLogoNav2{
+        position: absolute;
+        justify-self: center;
+        align-self: center;
+        .logoNav2{
+            width: 200px;
+            height: auto;
+            background-color: #0F1035;
+            border-radius: 35px 35px 100px 100px;
+            display: inline-block; //900
+        } //2do logo para que aparezca en media query
+    }
+    .aLogoNav3{ //logo para media query 320px
+        position: absolute;
+        justify-self: center;
+        align-self: center;
+        display: none;
+        img{
+            height: 70px;
+            width: auto;
+        }
+    }
+    .contenedorNav{
+        width: 100%;
+        height: 0; //900
+        margin-left: 0px; //900
+        overflow: hidden; //900
+        margin-top: 75px; //900
+        .contenedorLinksNav{
+            width: 170px; //900
+            height: 270px; //900
+            list-style: none;
+            @include flex (column, center, flex-start, 40px);
+            background-color: map-get($colores, navbar); //900
+            .linksNav{
+                font-family: map-get($font-family, secundaria);
+                color: map-get($colores, font-color);
+                font-size: map-get($font-size, link-navbar);
+                text-decoration: none;
+                &:hover{
+                    color: map-get($colores, hover);
+                }
+            }
+            .liLogo{
+                display: none;
+            }//para quitar el logo principal del ul //900px
+            .logoNav{
+                width: 200px;
+                height: auto;
+                background-color: #0F1035;
+                border-radius: 35px 35px 100px 100px;
+            }
+        }
+    }
+    .divnavCuenta{
+        width: 60px;
+        height: auto;
+        align-self: center;
+        margin-right: 15px;
+        .logoCuenta{
+            height: 55px;
+            width: auto;
+            cursor: pointer;
+        }
+    }
+}
+
+
+    */
 @media (max-width: 720px) {
   /*PÁGINA HOME*/
   .headerHome {
@@ -1256,7 +1320,7 @@ body {
   .heightMediaQuery3 {
     height: 1150px; }
   /*aca se encuentran las modificaciones para la card de tres imágenes*/
-  .fondoContenedor:not(.fondoElBolsón, .noReverseMediaQuery) {
+  .fondoContenedor:not(.fondoElBolsón):not(.noReverseMediaQuery) {
     height: 1100px;
     background-image: none; }
   .fondoElBolsón {
