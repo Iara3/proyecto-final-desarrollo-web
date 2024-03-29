@@ -1,23 +1,22 @@
 @media(max-width: 565px){
 
-    /*FOOTER*/
-    
     .footer{
         align-items: center; 
+        .divfooterUno{
+            .logoFooter{
+                width: 140px; 
+            }
+        }
+        .divfooterDos{
+            p{
+                font-size: 23px; 
+            }
+            .contenedorRedesFooter{
+                .imgFooter{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
     }
-    
-    .logoFooter{
-        width: 140px; 
-        height: auto;
-    }
-    
-    .divfooterDos p{
-        font-size: 23px; 
-    }
-    
-    .imgFooter{
-        width: 30px; 
-        height: 30px; 
-    }
-    
 }

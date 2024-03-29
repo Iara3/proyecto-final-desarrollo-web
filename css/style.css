@@ -1396,17 +1396,15 @@ body {
     grid-row-end: 9; } }
 
 @media (max-width: 565px) {
-  /*FOOTER*/
   .footer {
     align-items: center; }
-  .logoFooter {
-    width: 140px;
-    height: auto; }
-  .divfooterDos p {
-    font-size: 23px; }
-  .imgFooter {
-    width: 30px;
-    height: 30px; } }
+    .footer .divfooterUno .logoFooter {
+      width: 140px; }
+    .footer .divfooterDos p {
+      font-size: 23px; }
+    .footer .divfooterDos .contenedorRedesFooter .imgFooter {
+      width: 30px;
+      height: 30px; } }
 
 @media (max-width: 510px) {
   /*PÁGINA INDEX MODIFICACIONES*/
@@ -1451,42 +1449,22 @@ body {
     height: 45px; }
   /*FOOTER MODIFICACIONES*/
   .footer {
-    width: 100%;
     height: 350px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: 20px; }
-  .divfooterUno {
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    text-align: center;
-    margin-top: 0; }
-  .divfooterDos {
-    width: 100%;
-    height: auto; }
-  .divfooterDos p {
-    color: white;
-    font-family: "Pavanam";
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 10px; }
-  .contenedorRedesFooter {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    gap: 10px; }
-  .divfooterTres {
-    width: 100%;
-    height: auto;
-    justify-self: right;
-    align-self: center;
-    margin-right: 0px; }
-  .listaFooter {
-    text-align: center; }
+    .footer .divfooterUno {
+      text-align: center;
+      margin-left: 0px;
+      margin-top: 0px; }
+    .footer .divfooterDos p {
+      font-size: 20px; }
+    .footer .divfooterTres {
+      margin-right: 0px; }
+      .footer .divfooterTres .listaFooter {
+        text-align: center; }
   /*PÁGINA INDEX MODIFICACIONES*/
   .headerHome {
     background-image: url(../assets/img/fondos/imgfondohome-320px.png);
