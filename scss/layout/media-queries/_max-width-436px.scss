@@ -64,69 +64,35 @@
             }
         }
     }
-
     
-    /*aca empiezan las modificaciones de la sección 2*/
-    
+//modificaciones sección-1 index
     .secciónDosPáginaHome{
-        width: 100%;
         height: 1150px; 
+        .presentacionGrid{
+            height: 1180px; 
+            grid-template-columns: 1px 50px 50px 170px; 
+            grid-template-rows: 800px 75px 75px 75px; 
+            margin-bottom: 150px;
+            .articlePresentacion{
+                margin-bottom: 130px;
+                h2{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 23px;
+                    margin-top: 15px;
+                }
+            }
+            img{
+                height: 300px;
+                width: 170px;
+            }
+        }
     }
-    
-    /*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
-    
-    .presentacionGrid{
-        height: 1180px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 50px 50px 170px 1px;
-        grid-template-rows: 800px 75px 75px 75px 200px;
-        margin-bottom: 50px;
-    }
-    
-    .presentacionGrid img{
-        height: 300px;
-        width: 170px;
-    }
-    
-    .imgAzul{
-        border: 3px solid orangered;
-        grid-column-start: 2;
-        grid-row-start: 3;
-    }
-    
-    .imgUnoPresentacion{
-        grid-column-start: 3;
-        grid-row-start: 2;
-    }
-    
-    .imgDosPresentacion{
-        grid-column-start: 1;
-        grid-row-start: 4;
-    }
-    
-    .articlePresentacion{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: center;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        width: 100%;
-        margin-bottom: 60px;
-    }
-    
-    .articlePresentacion h2{
-        font-size: 25px;
-    }
-    
-    .articlePresentacion p{
-        font-size: 23px;
-        margin-top: 15px;
-    }
-    
+
+
+
+
     /*modificaciones sección 3*/
     
     /*modificaciones título Destinos Populares*/

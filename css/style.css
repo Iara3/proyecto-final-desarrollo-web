@@ -11,7 +11,7 @@ body {
 /*COMPONENTS/BUTTONS*/
 .buttonOutlined, .headerHome .contenedorBotonexplorar a {
   font-family: "Pavanam";
-  color: #ffffff;
+  color: white;
   font-weight: lighter;
   font-size: 25px;
   text-decoration: none;
@@ -184,89 +184,76 @@ body {
       width: auto;
       cursor: pointer; }
 
-/*aca empiezan las modificaciones de la sección 2*/
+/*SECCIÓN-1 INDEX*/
 .secciónDosPáginaHome {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: row; }
-
-/*redes sociales*/
-.redesHome {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  margin-left: 15px; }
-
-.redesHome img {
-  height: 40px;
-  width: 40px;
-  cursor: pointer; }
-
-/*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
-.presentacionGrid {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 75px 75px 260px 400px;
-  grid-template-rows: 75px 75px 75px 1px;
-  justify-content: center;
-  align-content: center; }
-
-.presentacionGrid img {
-  height: 360px;
-  width: 230px; }
-
-.imgAzul {
-  border: 3px solid orangered;
-  grid-column-start: 2;
-  grid-row-start: 2; }
-
-.imgUnoPresentacion {
-  grid-column-start: 3;
-  grid-row-start: 1; }
-
-.imgDosPresentacion {
-  grid-column-start: 1;
-  grid-row-start: 3; }
-
-.articlePresentacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  grid-column-start: 4;
-  grid-row-start: 1;
-  grid-row-end: 5; }
-
-.articlePresentacion h2 {
-  font-family: "Paytone One";
-  color: #ffffff;
-  font-size: 35px;
-  letter-spacing: 3px;
-  font-weight: lighter; }
-
-.articlePresentacion p {
-  font-family: "Pavanam";
-  color: #ffffff;
-  font-size: 23px;
-  font-weight: lighter;
-  margin-top: 15px; }
-
-.articlePresentacion a {
-  text-decoration: none;
-  background-color: orangered;
-  color: #ffffff;
-  font-family: "Pavanam";
-  font-weight: lighter;
-  font-size: 23px;
-  padding: 5px 20px 5px 20px;
-  border-radius: 4px;
-  align-self: center;
-  margin-top: 15px; }
+  .secciónDosPáginaHome .redesHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 15px; }
+    .secciónDosPáginaHome .redesHome img {
+      height: 40px;
+      width: 40px;
+      cursor: pointer; }
+  .secciónDosPáginaHome .presentacionGrid {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75px 75px 260px 400px;
+    grid-template-rows: 75px 75px 75px 1px;
+    justify-content: center;
+    align-content: center; }
+    .secciónDosPáginaHome .presentacionGrid img {
+      height: 360px;
+      width: 230px; }
+    .secciónDosPáginaHome .presentacionGrid .imgAzul {
+      border: 3px solid orangered;
+      grid-column-start: 2;
+      grid-row-start: 2; }
+    .secciónDosPáginaHome .presentacionGrid .imgUnoPresentacion {
+      grid-column-start: 3;
+      grid-row-start: 1; }
+    .secciónDosPáginaHome .presentacionGrid .imgDosPresentacion {
+      grid-column-start: 1;
+      grid-row-start: 3; }
+    .secciónDosPáginaHome .presentacionGrid .articlePresentacion {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      grid-column-start: 4;
+      grid-row-start: 1;
+      grid-row-end: 5; }
+      .secciónDosPáginaHome .presentacionGrid .articlePresentacion h2 {
+        font-family: "Paytone One";
+        color: white;
+        font-size: 35px;
+        letter-spacing: 3px;
+        font-weight: lighter; }
+      .secciónDosPáginaHome .presentacionGrid .articlePresentacion p {
+        font-family: "Pavanam";
+        color: white;
+        font-size: 23px;
+        font-weight: lighter;
+        margin-top: 15px; }
+      .secciónDosPáginaHome .presentacionGrid .articlePresentacion a {
+        text-decoration: none;
+        background-color: orangered;
+        color: white;
+        font-family: "Pavanam";
+        font-weight: lighter;
+        font-size: 23px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 4px;
+        align-self: center;
+        margin-top: 15px; }
 
 /*modificaciones sección 3*/
 /*modificaciones título Destinos Populares*/
@@ -906,10 +893,10 @@ body {
 @media (max-width: 1300px) {
   .contenedorh1Argentina {
     height: 340px; }
-  .presentacionGrid {
+  .secciónDosPáginaHome .presentacionGrid {
     grid-template-columns: 75px 75px 260px 300px; }
-  .articlePresentacion h2 {
-    font-size: 30px; }
+    .secciónDosPáginaHome .presentacionGrid .articlePresentacion h2 {
+      font-size: 30px; }
   .secciónTresPáginaHome {
     height: 610px; }
   .contenedorDestinos {
@@ -1069,15 +1056,17 @@ body {
   .headerHome {
     height: 600px; }
   .secciónDosPáginaHome {
+    height: 700px;
+    display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 700px; }
-  /*redes sociales*/
-  .redesHome {
-    flex-direction: row;
-    margin-left: 0px;
-    margin-top: 20px; }
+    gap: 0px; }
+    .secciónDosPáginaHome .redesHome {
+      flex-direction: row;
+      margin-left: 0px;
+      margin-top: 20px; }
   /*PÁGINA DESTINOS*/
   /*modificaciones título principal*/
   .seccionHeaderDestinos {
@@ -1227,48 +1216,43 @@ body {
         text-align: center; }
       .headerHome .contenedorh1Argentina .h1Argentina {
         font-size: 80px; }
-  /*aca empiezan las modificaciones de la sección 2*/
   .secciónDosPáginaHome {
     width: 100%;
     height: 1000px;
     margin-bottom: 50px; }
-  /*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
-  .presentacionGrid {
-    height: 950px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 55px 55px 55px 350px;
-    grid-template-rows: 700px 75px 75px 75px 200px;
-    margin-bottom: 50px; }
-  .presentacionGrid img {
-    height: 400px;
-    width: 270px; }
-  .imgAzul {
-    border: 3px solid orangered;
-    grid-column-start: 3;
-    grid-row-start: 3; }
-  .imgUnoPresentacion {
-    grid-column-start: 4;
-    grid-row-start: 2; }
-  .imgDosPresentacion {
-    grid-column-start: 2;
-    grid-row-start: 4; }
-  .articlePresentacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: 100%;
-    margin-bottom: 60px; }
-  .articlePresentacion h2 {
-    font-size: 25px; }
-  .articlePresentacion p {
-    font-size: 23px;
-    margin-top: 15px; }
+    .secciónDosPáginaHome .presentacionGrid {
+      height: 850px;
+      width: 100%;
+      flex-direction: column;
+      display: grid;
+      grid-template-columns: 55px 55px 55px 350px;
+      grid-template-rows: 500px 75px 75px 75px; }
+      .secciónDosPáginaHome .presentacionGrid .articlePresentacion {
+        display: flex;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+        margin-bottom: 190px; }
+        .secciónDosPáginaHome .presentacionGrid .articlePresentacion h2 {
+          font-size: 25px; }
+        .secciónDosPáginaHome .presentacionGrid .articlePresentacion p {
+          font-size: 23px;
+          margin-top: 15px; }
+      .secciónDosPáginaHome .presentacionGrid img {
+        height: 400px;
+        width: 270px; }
+      .secciónDosPáginaHome .presentacionGrid .imgAzul {
+        grid-column-start: 3;
+        grid-row-start: 3; }
+      .secciónDosPáginaHome .presentacionGrid .imgUnoPresentacion {
+        grid-column-start: 4;
+        grid-row-start: 2; }
+      .secciónDosPáginaHome .presentacionGrid .imgDosPresentacion {
+        grid-column-start: 2;
+        grid-row-start: 4; }
   /*modificaciones sección 3*/
   /*modificaciones título Destinos Populares*/
   .secciónTresPáginaHome {
@@ -1413,27 +1397,14 @@ body {
     height: 550px; }
     .headerHome .contenedorh1Argentina .h1Argentina {
       font-size: 65px; }
-  /*modificaciones presentación grid 3 img*/
-  .presentacionGrid {
-    height: 980px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 55px 55px 55px 230px;
-    grid-template-rows: 750px 75px 75px 75px 200px;
-    margin-bottom: 50px; }
-  .presentacionGrid img {
-    height: 400px;
-    width: 270px; }
-  .imgAzul {
-    border: 3px solid orangered;
-    grid-column-start: 2;
-    grid-row-start: 3; }
-  .imgUnoPresentacion {
-    grid-column-start: 3;
-    grid-row-start: 2; }
-  .imgDosPresentacion {
-    grid-column-start: 1;
-    grid-row-start: 4; } }
+  .secciónDosPáginaHome {
+    height: 1100px; }
+    .secciónDosPáginaHome .presentacionGrid {
+      height: 980px;
+      grid-template-columns: 1px 55px 55px 250px;
+      grid-template-rows: 700px 75px 75px 75px;
+      margin-bottom: 50px;
+      text-align: center; } }
 
 @media (max-width: 436px) {
   /*BARRA DE NAVEGACIÓN MODIFICACIONES*/
@@ -1477,47 +1448,23 @@ body {
         width: 70%; }
       .headerHome .contenedorh1Argentina .h1Argentina {
         font-size: 50px; }
-  /*aca empiezan las modificaciones de la sección 2*/
   .secciónDosPáginaHome {
-    width: 100%;
     height: 1150px; }
-  /*aca se encuentran las modificaciones de la presentación (3 img) con grid*/
-  .presentacionGrid {
-    height: 1180px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50px 50px 170px 1px;
-    grid-template-rows: 800px 75px 75px 75px 200px;
-    margin-bottom: 50px; }
-  .presentacionGrid img {
-    height: 300px;
-    width: 170px; }
-  .imgAzul {
-    border: 3px solid orangered;
-    grid-column-start: 2;
-    grid-row-start: 3; }
-  .imgUnoPresentacion {
-    grid-column-start: 3;
-    grid-row-start: 2; }
-  .imgDosPresentacion {
-    grid-column-start: 1;
-    grid-row-start: 4; }
-  .articlePresentacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: 100%;
-    margin-bottom: 60px; }
-  .articlePresentacion h2 {
-    font-size: 25px; }
-  .articlePresentacion p {
-    font-size: 23px;
-    margin-top: 15px; }
+    .secciónDosPáginaHome .presentacionGrid {
+      height: 1180px;
+      grid-template-columns: 1px 50px 50px 170px;
+      grid-template-rows: 800px 75px 75px 75px;
+      margin-bottom: 150px; }
+      .secciónDosPáginaHome .presentacionGrid .articlePresentacion {
+        margin-bottom: 130px; }
+        .secciónDosPáginaHome .presentacionGrid .articlePresentacion h2 {
+          font-size: 25px; }
+        .secciónDosPáginaHome .presentacionGrid .articlePresentacion p {
+          font-size: 23px;
+          margin-top: 15px; }
+      .secciónDosPáginaHome .presentacionGrid img {
+        height: 300px;
+        width: 170px; }
   /*modificaciones sección 3*/
   /*modificaciones título Destinos Populares*/
   .secciónTresPáginaHome {

@@ -41,23 +41,18 @@
         height: 600px;
     }
     
-    //aca empiezan las modificaciones de la sección 2
-    
-    .secciónDosPáginaHome{
-        flex-direction: column; 
-        justify-content: center; 
-        align-items: center; 
-        height: 700px;
-    }
-    
-    /*redes sociales*/
-    
-    .redesHome{
+//aca empiezan las modificaciones de la sección-1 index
+.secciónDosPáginaHome{
+    height: 700px;
+    display: flex;
+    @include flex (column, center, center, 0px);
+    .redesHome{ //redes sociales
         flex-direction: row;
         margin-left: 0px;
         margin-top: 20px;
     }
-    
+}
+
     /*PÁGINA DESTINOS*/
     
     /*modificaciones título principal*/

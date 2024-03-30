@@ -14,39 +14,17 @@
             }
 
         }
-    
-    
 
-    /*modificaciones presentación grid 3 img*/
-    
-    .presentacionGrid{
-        height: 980px; 
-        width: 100%;
-        display: grid;
-        grid-template-columns: 55px 55px 55px 230px;
-        grid-template-rows: 750px 75px 75px 75px 200px;
-        margin-bottom: 50px;
+//modificaciones sección-1 página index
+
+    .secciónDosPáginaHome{
+        height: 1100px; 
+        .presentacionGrid{
+            height: 980px; 
+            grid-template-columns: 1px 55px 55px 250px; 
+            grid-template-rows: 700px 75px 75px 75px; 
+            margin-bottom: 50px; 
+            text-align: center;
+        }
     }
-    
-    .presentacionGrid img{
-        height: 400px;
-        width: 270px; 
-    }
-    
-    .imgAzul{
-        border: 3px solid orangered;
-        grid-column-start: 2;
-        grid-row-start: 3;
-    }
-    
-    .imgUnoPresentacion{
-        grid-column-start: 3;
-        grid-row-start: 2;
-    }
-    
-    .imgDosPresentacion{
-        grid-column-start: 1;
-        grid-row-start: 4;
-    }
-    
-    }
+}

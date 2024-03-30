@@ -7,16 +7,18 @@
         height: 340px;
     }
     
-    //aca empiezan las modificaciones de la sección 2
+    //aca empiezan las modificaciones de la sección-1 index
     //aca se encuentran las modificaciones de la presentación con grid (3 img)
-    .presentacionGrid{
-        grid-template-columns: 75px 75px 260px 300px;
+    .secciónDosPáginaHome{
+        .presentacionGrid{
+            grid-template-columns: 75px 75px 260px 300px; //modificación tamaño última columna
+            .articlePresentacion{
+                h2{
+                    font-size: 30px; 
+                }
+            }
+        }
     }
-    
-    .articlePresentacion h2{
-        font-size: 30px; 
-    }
-
     //modificaciones sección 3
     .secciónTresPáginaHome{
         height: 610px;
@@ -36,5 +38,4 @@
     .h3Hoteles{
         width: 75%;
     }
-    
 }
