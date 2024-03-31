@@ -891,9 +891,7 @@ body {
       flex-wrap: wrap;
       justify-content: center; }
     .secciónTresPáginaHome .h3Hoteles {
-      width: 75%; }
-  .h3DestinosPopulares {
-    width: 75%; } }
+      width: 75%; } }
 
 /*PÁGINA DESTINOS*/
 @media (max-width: 1210px) {
@@ -1241,29 +1239,18 @@ body {
       .secciónDosPáginaHome .presentacionGrid .imgDosPresentacion {
         grid-column-start: 2;
         grid-row-start: 4; }
-  /*modificaciones sección 3*/
-  /*modificaciones título Destinos Populares*/
   .secciónTresPáginaHome {
-    width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px; }
-  .h3DestinosPopulares {
-    font-size: 35px;
-    text-align: left;
-    width: 60%; }
-  .contenedorDestinos {
-    width: 97%;
-    height: auto;
-    gap: 23px; }
-  /*modificaciones título Hoteles*/
-  .h3Hoteles {
-    font-size: 35px;
-    text-align: right;
-    width: 60%; } }
+    height: 700px; }
+    .secciónTresPáginaHome .h3DestinosPopulares {
+      width: 60%;
+      font-size: 35px; }
+    .secciónTresPáginaHome .contenedorDestinos {
+      width: 97%;
+      height: auto;
+      gap: 23px; }
+    .secciónTresPáginaHome .h3Hoteles {
+      width: 60%;
+      font-size: 35px; } }
 
 @media (max-width: 665px) {
   /*PÁGINA HOME*/
