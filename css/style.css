@@ -255,8 +255,7 @@ body {
         align-self: center;
         margin-top: 15px; }
 
-/*modificaciones sección 3*/
-/*modificaciones título Destinos Populares*/
+/*SECCIÓN-2 INDEX*/
 .secciónTresPáginaHome {
   width: 100%;
   height: 100vh;
@@ -265,80 +264,67 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px; }
-
-.h3DestinosPopulares {
-  color: #ffffff;
-  font-family: "Pavanam";
-  font-weight: lighter;
-  font-size: 35px;
-  text-align: left;
-  width: 95%; }
-
-.contenedorDestinos {
-  width: 97%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px; }
-
-.contenedorImgDestinos {
-  position: relative;
-  height: 200px;
-  width: 200px; }
-
-.contenedorImgDestinos img {
-  height: 200px;
-  width: 200px; }
-
-.ulDestinos {
-  position: absolute;
-  bottom: 0;
-  margin: 10px;
-  list-style: none; }
-
-.liUno {
-  color: #ffffff;
-  font-family: "Pavanam";
-  font-weight: bold;
-  font-size: 20px;
-  cursor: pointer; }
-
-.liDos {
-  color: #ffffff;
-  font-family: "Pavanam";
-  font-weight: lighter;
-  font-size: 20px;
-  cursor: pointer; }
-
-.verMasLink {
-  color: #ffffff;
-  font-family: "Pavanam";
-  font-weight: lighter;
-  font-size: 20px;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  margin-top: 10px; }
-
-.verMasLink:hover {
-  color: orange; }
-
-/*modificaciones título Actividades*/
-.h3Actividades {
-  color: #ffffff;
-  font-family: "Pavanam";
-  font-weight: lighter;
-  font-size: 35px; }
-
-/*modificaciones título Hoteles*/
-.h3Hoteles {
-  color: #ffffff;
-  font-family: "Pavanam";
-  font-weight: lighter;
-  font-size: 35px;
-  text-align: right;
-  width: 95%; }
+  .secciónTresPáginaHome .h3DestinosPopulares {
+    color: white;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 35px;
+    text-align: left;
+    width: 95%; }
+  .secciónTresPáginaHome .contenedorDestinos {
+    width: 97%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px; }
+    .secciónTresPáginaHome .contenedorDestinos .contenedorImgDestinos {
+      position: relative;
+      height: 200px;
+      width: 200px; }
+      .secciónTresPáginaHome .contenedorDestinos .contenedorImgDestinos img {
+        height: 200px;
+        width: 200px; }
+      .secciónTresPáginaHome .contenedorDestinos .contenedorImgDestinos .ulDestinos {
+        position: absolute;
+        bottom: 0;
+        margin: 10px;
+        list-style: none; }
+        .secciónTresPáginaHome .contenedorDestinos .contenedorImgDestinos .ulDestinos .liUno {
+          color: white;
+          font-family: "Pavanam";
+          font-weight: bold;
+          font-size: 20px;
+          cursor: pointer; }
+        .secciónTresPáginaHome .contenedorDestinos .contenedorImgDestinos .ulDestinos .liDos {
+          color: white;
+          font-family: "Pavanam";
+          font-weight: lighter;
+          font-size: 20px;
+          cursor: pointer; }
+  .secciónTresPáginaHome .verMasLink {
+    color: white;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px; }
+    .secciónTresPáginaHome .verMasLink:hover {
+      color: orange; }
+  .secciónTresPáginaHome .h3Actividades {
+    color: white;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 35px; }
+  .secciónTresPáginaHome .h3Hoteles {
+    color: white;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    font-size: 35px;
+    text-align: right;
+    width: 95%; }
 
 /*PÁGINA DESTINOS*/
 /*fondo*/
