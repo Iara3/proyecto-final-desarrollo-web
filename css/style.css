@@ -885,12 +885,14 @@ body {
       font-size: 30px; }
   .secciónTresPáginaHome {
     height: 610px; }
-  .contenedorDestinos {
-    flex-wrap: wrap;
-    justify-content: center; }
+    .secciónTresPáginaHome .h3DestinosPopulares {
+      width: 75%; }
+    .secciónTresPáginaHome .contenedorDestinos {
+      flex-wrap: wrap;
+      justify-content: center; }
+    .secciónTresPáginaHome .h3Hoteles {
+      width: 75%; }
   .h3DestinosPopulares {
-    width: 75%; }
-  .h3Hoteles {
     width: 75%; } }
 
 /*PÁGINA DESTINOS*/

@@ -19,23 +19,23 @@
             }
         }
     }
-    //modificaciones sección 3
+    //
     .secciónTresPáginaHome{
-        height: 610px;
-    }
-    
-    .contenedorDestinos{
-        flex-wrap: wrap; 
-        justify-content: center; 
+        height: 610px;//
+        .h3DestinosPopulares{
+            width: 75%;
+        }
+        .contenedorDestinos{ //
+            flex-wrap: wrap; 
+            justify-content: center; 
+        }
+        .h3Hoteles{ //modificación título hoteles
+            width: 75%;
+        }
     }
 
     //modificación width h3 destinos populares
     .h3DestinosPopulares{
-        width: 75%;
-    }
-    
-    //modificación width h3 hoteles
-    .h3Hoteles{
         width: 75%;
     }
 }
