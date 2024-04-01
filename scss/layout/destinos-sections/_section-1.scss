@@ -1,0 +1,105 @@
+//cards página destinos
+.seccionDestinos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    h2{
+        color: map-get($colores, font-color);
+        font-family: map-get($font-family, secundaria);
+        font-weight: lighter;
+        text-align: center;
+        
+    }
+    .fondoContenedor{ //aca se encuentran las modificaciones para la card de tres imágenes
+        background-image: url(../assets/img/fondos/fondo-seccion-destinos.png);
+        background-repeat: no-repeat;
+        height: 350px;
+        width: 1200px;
+        @include flex (row, center, center, 20px);
+        .contenedorImagenesPrincipal{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            .contenedorImagenes{
+                background-color: #0F1035;
+                width: 265px;
+                height: 300px;
+                border-color:#ffffff;
+                border-width: 7px 0px 0px 7px;
+                border-style: groove;
+                .imgDestinos{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .contenedorimagenesDos{ 
+                background-color: #0F1035;
+                width: 265px;
+                height: 300px;
+                border-color: #ffffff;
+                border-width: 7px 7px 0px 0px;
+                border-style: groove;
+                .imgDestinos{
+                    height: 100%;
+                    width: 100%;
+                }
+                }
+            }
+        }
+        .contenedorArticulo{
+            @include flex (column, center, center, 10px);
+            width: 23%;
+            height: 300px;
+            h3{
+                font-family: map-get($font-family, secundaria);
+                color: map-get($colores, font-color);
+                font-weight: lighter;
+            }
+            .contenedorTexto{
+                border-top: 3px;
+                border-right: 3px;
+                border-bottom: 3px;
+                border-left: 0px;
+                border-color: map-get($colores, border-orangered);
+                border-style: solid;
+                padding: 2px;
+                p{
+                    font-family: map-get($font-family, secundaria);
+                    color: map-get($colores, font-color);
+                    font-size: 18px;
+                    font-weight: lighter;
+                    text-align: center;
+                }
+            }
+        }
+        .contenedorarticuloDos{
+            @include flex (column, center, center, 10px);
+            width: 23%;
+            height: 300px;
+            h3{
+                font-family: map-get($font-family, secundaria);
+                color: map-get($colores, font-color);
+                font-weight: lighter;
+            }
+            .contenedortextoDos{
+                border-top: 3px;
+                border-right: 0px;
+                border-bottom: 3px;
+                border-left: 3px;
+                border-color: map-get($colores, border-orangered);
+                border-style: solid;
+                padding: 2px;
+                p{
+                    font-family: map-get($font-family, secundaria);
+                    color: map-get($colores, font-color);
+                    font-size: 18px;
+                    font-weight: lighter;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
