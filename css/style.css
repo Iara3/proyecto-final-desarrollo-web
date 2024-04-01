@@ -359,109 +359,104 @@ body {
         width: 45px;
         cursor: pointer; }
 
-/*aca empiezan las modificaciones para las cards*/
-.seccionDestinos {
+.seccionDestinos, .heightMediaQuery1, .heightMediaQuery2, .heightMediaQuery3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
   margin-bottom: 40px;
   width: 100%; }
-
-/*aca se encuentran las modificaciones para la card de tres imágenes*/
-.fondoContenedor {
-  background-image: url(../assets/img/fondos/fondo-seccion-destinos.png);
-  background-repeat: no-repeat;
-  height: 350px;
-  width: 1200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; }
-
-.contenedorImagenesPrincipal {
-  display: flex;
-  flex-direction: row;
-  gap: 20px; }
-
-.contenedorImagenes {
-  background-color: #0F1035;
-  width: 265px;
-  height: 300px;
-  border-color: #ffffff;
-  border-width: 7px 0px 0px 7px;
-  border-style: groove; }
-
-.contenedorTexto p {
-  border-top: 3px;
-  border-right: 3px;
-  border-bottom: 3px;
-  border-left: 0px;
-  border-color: orangered;
-  border-style: solid;
-  padding: 2px;
-  font-family: "Pavanam";
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: lighter;
-  text-align: center; }
-
-.contenedorArticulo {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 23%;
-  height: 300px;
-  align-items: center;
-  justify-content: center; }
-
-.seccionDestinos h2 {
-  color: white;
-  font-family: "Pavanam";
-  font-weight: lighter;
-  text-align: center; }
-
-.seccionDestinos h3 {
-  font-family: "Pavanam";
-  color: #ffffff;
-  font-weight: lighter; }
-
-.imgDestinos {
-  height: 100%;
-  width: 100%; }
-
-/*aca está la card de dos imágenes*/
-.contenedorarticuloDos {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 23%;
-  height: 300px;
-  align-items: center;
-  justify-content: center; }
-
-.contenedortextoDos {
-  border-top: 3px;
-  border-right: 0px;
-  border-bottom: 3px;
-  border-left: 3px;
-  border-color: orangered;
-  border-style: solid;
-  text-align: center;
-  font-size: 18px;
-  font-family: "Pavanam";
-  color: #ffffff;
-  padding: 2px;
-  font-weight: lighter; }
-
-.contenedorimagenesDos {
-  background-color: #0F1035;
-  width: 265px;
-  height: 300px;
-  border-color: #ffffff;
-  border-width: 7px 7px 0px 0px;
-  border-style: groove; }
+  .seccionDestinos h2, .heightMediaQuery1 h2, .heightMediaQuery2 h2, .heightMediaQuery3 h2 {
+    color: white;
+    font-family: "Pavanam";
+    font-weight: lighter;
+    text-align: center; }
+  .seccionDestinos .fondoContenedor, .seccionDestinos .noReverseMediaQuery, .seccionDestinos .fondoElBolsón, .heightMediaQuery1 .fondoContenedor, .heightMediaQuery1 .noReverseMediaQuery, .heightMediaQuery1 .fondoElBolsón, .heightMediaQuery2 .fondoContenedor, .heightMediaQuery2 .noReverseMediaQuery, .heightMediaQuery2 .fondoElBolsón, .heightMediaQuery3 .fondoContenedor, .heightMediaQuery3 .noReverseMediaQuery, .heightMediaQuery3 .fondoElBolsón {
+    background-image: url(../assets/img/fondos/fondo-seccion-destinos.png);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+    .seccionDestinos .fondoContenedor .contenedorImagenesPrincipal, .seccionDestinos .fondoContenedor .contenedorImgBolsón, .seccionDestinos .noReverseMediaQuery .contenedorImagenesPrincipal, .seccionDestinos .noReverseMediaQuery .contenedorImgBolsón, .seccionDestinos .fondoElBolsón .contenedorImagenesPrincipal, .seccionDestinos .fondoElBolsón .contenedorImgBolsón, .heightMediaQuery1 .fondoContenedor .contenedorImagenesPrincipal, .heightMediaQuery1 .fondoContenedor .contenedorImgBolsón, .heightMediaQuery1 .noReverseMediaQuery .contenedorImagenesPrincipal, .heightMediaQuery1 .noReverseMediaQuery .contenedorImgBolsón, .heightMediaQuery1 .fondoElBolsón .contenedorImagenesPrincipal, .heightMediaQuery1 .fondoElBolsón .contenedorImgBolsón, .heightMediaQuery2 .fondoContenedor .contenedorImagenesPrincipal, .heightMediaQuery2 .fondoContenedor .contenedorImgBolsón, .heightMediaQuery2 .noReverseMediaQuery .contenedorImagenesPrincipal, .heightMediaQuery2 .noReverseMediaQuery .contenedorImgBolsón, .heightMediaQuery2 .fondoElBolsón .contenedorImagenesPrincipal, .heightMediaQuery2 .fondoElBolsón .contenedorImgBolsón, .heightMediaQuery3 .fondoContenedor .contenedorImagenesPrincipal, .heightMediaQuery3 .fondoContenedor .contenedorImgBolsón, .heightMediaQuery3 .noReverseMediaQuery .contenedorImagenesPrincipal, .heightMediaQuery3 .noReverseMediaQuery .contenedorImgBolsón, .heightMediaQuery3 .fondoElBolsón .contenedorImagenesPrincipal, .heightMediaQuery3 .fondoElBolsón .contenedorImgBolsón {
+      display: flex;
+      flex-direction: row;
+      gap: 20px; }
+      .seccionDestinos .fondoContenedor .contenedorImagenesPrincipal .contenedorImagenes, .seccionDestinos .fondoContenedor .contenedorImgBolsón .contenedorImagenes, .seccionDestinos .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorImagenes, .seccionDestinos .noReverseMediaQuery .contenedorImgBolsón .contenedorImagenes, .seccionDestinos .fondoElBolsón .contenedorImagenesPrincipal .contenedorImagenes, .seccionDestinos .fondoElBolsón .contenedorImgBolsón .contenedorImagenes, .heightMediaQuery1 .fondoContenedor .contenedorImagenesPrincipal .contenedorImagenes, .heightMediaQuery1 .fondoContenedor .contenedorImgBolsón .contenedorImagenes, .heightMediaQuery1 .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorImagenes, .heightMediaQuery1 .noReverseMediaQuery .contenedorImgBolsón .contenedorImagenes, .heightMediaQuery1 .fondoElBolsón .contenedorImagenesPrincipal .contenedorImagenes, .heightMediaQuery1 .fondoElBolsón .contenedorImgBolsón .contenedorImagenes, .heightMediaQuery2 .fondoContenedor .contenedorImagenesPrincipal .contenedorImagenes, .heightMediaQuery2 .fondoContenedor .contenedorImgBolsón .contenedorImagenes, .heightMediaQuery2 .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorImagenes, .heightMediaQuery2 .noReverseMediaQuery .contenedorImgBolsón .contenedorImagenes, .heightMediaQuery2 .fondoElBolsón .contenedorImagenesPrincipal .contenedorImagenes, .heightMediaQuery2 .fondoElBolsón .contenedorImgBolsón .contenedorImagenes, .heightMediaQuery3 .fondoContenedor .contenedorImagenesPrincipal .contenedorImagenes, .heightMediaQuery3 .fondoContenedor .contenedorImgBolsón .contenedorImagenes, .heightMediaQuery3 .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorImagenes, .heightMediaQuery3 .noReverseMediaQuery .contenedorImgBolsón .contenedorImagenes, .heightMediaQuery3 .fondoElBolsón .contenedorImagenesPrincipal .contenedorImagenes, .heightMediaQuery3 .fondoElBolsón .contenedorImgBolsón .contenedorImagenes {
+        background-color: #0F1035;
+        width: 265px;
+        height: 300px;
+        border-color: #ffffff;
+        border-width: 7px 0px 0px 7px;
+        border-style: groove; }
+        .seccionDestinos .fondoContenedor .contenedorImagenesPrincipal .contenedorImagenes .imgDestinos, .seccionDestinos .fondoContenedor .contenedorImgBolsón .contenedorImagenes .imgDestinos, .seccionDestinos .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorImagenes .imgDestinos, .seccionDestinos .noReverseMediaQuery .contenedorImgBolsón .contenedorImagenes .imgDestinos, .seccionDestinos .fondoElBolsón .contenedorImagenesPrincipal .contenedorImagenes .imgDestinos, .seccionDestinos .fondoElBolsón .contenedorImgBolsón .contenedorImagenes .imgDestinos, .heightMediaQuery1 .fondoContenedor .contenedorImagenesPrincipal .contenedorImagenes .imgDestinos, .heightMediaQuery1 .fondoContenedor .contenedorImgBolsón .contenedorImagenes .imgDestinos, .heightMediaQuery1 .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorImagenes .imgDestinos, .heightMediaQuery1 .noReverseMediaQuery .contenedorImgBolsón .contenedorImagenes .imgDestinos, .heightMediaQuery1 .fondoElBolsón .contenedorImagenesPrincipal .contenedorImagenes .imgDestinos, .heightMediaQuery1 .fondoElBolsón .contenedorImgBolsón .contenedorImagenes .imgDestinos, .heightMediaQuery2 .fondoContenedor .contenedorImagenesPrincipal .contenedorImagenes .imgDestinos, .heightMediaQuery2 .fondoContenedor .contenedorImgBolsón .contenedorImagenes .imgDestinos, .heightMediaQuery2 .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorImagenes .imgDestinos, .heightMediaQuery2 .noReverseMediaQuery .contenedorImgBolsón .contenedorImagenes .imgDestinos, .heightMediaQuery2 .fondoElBolsón .contenedorImagenesPrincipal .contenedorImagenes .imgDestinos, .heightMediaQuery2 .fondoElBolsón .contenedorImgBolsón .contenedorImagenes .imgDestinos, .heightMediaQuery3 .fondoContenedor .contenedorImagenesPrincipal .contenedorImagenes .imgDestinos, .heightMediaQuery3 .fondoContenedor .contenedorImgBolsón .contenedorImagenes .imgDestinos, .heightMediaQuery3 .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorImagenes .imgDestinos, .heightMediaQuery3 .noReverseMediaQuery .contenedorImgBolsón .contenedorImagenes .imgDestinos, .heightMediaQuery3 .fondoElBolsón .contenedorImagenesPrincipal .contenedorImagenes .imgDestinos, .heightMediaQuery3 .fondoElBolsón .contenedorImgBolsón .contenedorImagenes .imgDestinos {
+          height: 100%;
+          width: 100%; }
+      .seccionDestinos .fondoContenedor .contenedorImagenesPrincipal .contenedorimagenesDos, .seccionDestinos .fondoContenedor .contenedorImgBolsón .contenedorimagenesDos, .seccionDestinos .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorimagenesDos, .seccionDestinos .noReverseMediaQuery .contenedorImgBolsón .contenedorimagenesDos, .seccionDestinos .fondoElBolsón .contenedorImagenesPrincipal .contenedorimagenesDos, .seccionDestinos .fondoElBolsón .contenedorImgBolsón .contenedorimagenesDos, .heightMediaQuery1 .fondoContenedor .contenedorImagenesPrincipal .contenedorimagenesDos, .heightMediaQuery1 .fondoContenedor .contenedorImgBolsón .contenedorimagenesDos, .heightMediaQuery1 .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorimagenesDos, .heightMediaQuery1 .noReverseMediaQuery .contenedorImgBolsón .contenedorimagenesDos, .heightMediaQuery1 .fondoElBolsón .contenedorImagenesPrincipal .contenedorimagenesDos, .heightMediaQuery1 .fondoElBolsón .contenedorImgBolsón .contenedorimagenesDos, .heightMediaQuery2 .fondoContenedor .contenedorImagenesPrincipal .contenedorimagenesDos, .heightMediaQuery2 .fondoContenedor .contenedorImgBolsón .contenedorimagenesDos, .heightMediaQuery2 .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorimagenesDos, .heightMediaQuery2 .noReverseMediaQuery .contenedorImgBolsón .contenedorimagenesDos, .heightMediaQuery2 .fondoElBolsón .contenedorImagenesPrincipal .contenedorimagenesDos, .heightMediaQuery2 .fondoElBolsón .contenedorImgBolsón .contenedorimagenesDos, .heightMediaQuery3 .fondoContenedor .contenedorImagenesPrincipal .contenedorimagenesDos, .heightMediaQuery3 .fondoContenedor .contenedorImgBolsón .contenedorimagenesDos, .heightMediaQuery3 .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorimagenesDos, .heightMediaQuery3 .noReverseMediaQuery .contenedorImgBolsón .contenedorimagenesDos, .heightMediaQuery3 .fondoElBolsón .contenedorImagenesPrincipal .contenedorimagenesDos, .heightMediaQuery3 .fondoElBolsón .contenedorImgBolsón .contenedorimagenesDos {
+        background-color: #0F1035;
+        width: 265px;
+        height: 300px;
+        border-color: #ffffff;
+        border-width: 7px 7px 0px 0px;
+        border-style: groove; }
+        .seccionDestinos .fondoContenedor .contenedorImagenesPrincipal .contenedorimagenesDos .imgDestinos, .seccionDestinos .fondoContenedor .contenedorImgBolsón .contenedorimagenesDos .imgDestinos, .seccionDestinos .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorimagenesDos .imgDestinos, .seccionDestinos .noReverseMediaQuery .contenedorImgBolsón .contenedorimagenesDos .imgDestinos, .seccionDestinos .fondoElBolsón .contenedorImagenesPrincipal .contenedorimagenesDos .imgDestinos, .seccionDestinos .fondoElBolsón .contenedorImgBolsón .contenedorimagenesDos .imgDestinos, .heightMediaQuery1 .fondoContenedor .contenedorImagenesPrincipal .contenedorimagenesDos .imgDestinos, .heightMediaQuery1 .fondoContenedor .contenedorImgBolsón .contenedorimagenesDos .imgDestinos, .heightMediaQuery1 .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorimagenesDos .imgDestinos, .heightMediaQuery1 .noReverseMediaQuery .contenedorImgBolsón .contenedorimagenesDos .imgDestinos, .heightMediaQuery1 .fondoElBolsón .contenedorImagenesPrincipal .contenedorimagenesDos .imgDestinos, .heightMediaQuery1 .fondoElBolsón .contenedorImgBolsón .contenedorimagenesDos .imgDestinos, .heightMediaQuery2 .fondoContenedor .contenedorImagenesPrincipal .contenedorimagenesDos .imgDestinos, .heightMediaQuery2 .fondoContenedor .contenedorImgBolsón .contenedorimagenesDos .imgDestinos, .heightMediaQuery2 .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorimagenesDos .imgDestinos, .heightMediaQuery2 .noReverseMediaQuery .contenedorImgBolsón .contenedorimagenesDos .imgDestinos, .heightMediaQuery2 .fondoElBolsón .contenedorImagenesPrincipal .contenedorimagenesDos .imgDestinos, .heightMediaQuery2 .fondoElBolsón .contenedorImgBolsón .contenedorimagenesDos .imgDestinos, .heightMediaQuery3 .fondoContenedor .contenedorImagenesPrincipal .contenedorimagenesDos .imgDestinos, .heightMediaQuery3 .fondoContenedor .contenedorImgBolsón .contenedorimagenesDos .imgDestinos, .heightMediaQuery3 .noReverseMediaQuery .contenedorImagenesPrincipal .contenedorimagenesDos .imgDestinos, .heightMediaQuery3 .noReverseMediaQuery .contenedorImgBolsón .contenedorimagenesDos .imgDestinos, .heightMediaQuery3 .fondoElBolsón .contenedorImagenesPrincipal .contenedorimagenesDos .imgDestinos, .heightMediaQuery3 .fondoElBolsón .contenedorImgBolsón .contenedorimagenesDos .imgDestinos {
+          height: 100%;
+          width: 100%; }
+  .seccionDestinos .contenedorArticulo, .heightMediaQuery1 .contenedorArticulo, .heightMediaQuery2 .contenedorArticulo, .heightMediaQuery3 .contenedorArticulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 23%;
+    height: 300px; }
+    .seccionDestinos .contenedorArticulo h3, .heightMediaQuery1 .contenedorArticulo h3, .heightMediaQuery2 .contenedorArticulo h3, .heightMediaQuery3 .contenedorArticulo h3 {
+      font-family: "Pavanam";
+      color: white;
+      font-weight: lighter; }
+    .seccionDestinos .contenedorArticulo .contenedorTexto, .heightMediaQuery1 .contenedorArticulo .contenedorTexto, .heightMediaQuery2 .contenedorArticulo .contenedorTexto, .heightMediaQuery3 .contenedorArticulo .contenedorTexto {
+      border-top: 3px;
+      border-right: 3px;
+      border-bottom: 3px;
+      border-left: 0px;
+      border-color: orangered;
+      border-style: solid;
+      padding: 2px; }
+      .seccionDestinos .contenedorArticulo .contenedorTexto p, .heightMediaQuery1 .contenedorArticulo .contenedorTexto p, .heightMediaQuery2 .contenedorArticulo .contenedorTexto p, .heightMediaQuery3 .contenedorArticulo .contenedorTexto p {
+        font-family: "Pavanam";
+        color: white;
+        font-size: 18px;
+        font-weight: lighter;
+        text-align: center; }
+  .seccionDestinos .contenedorarticuloDos, .seccionDestinos .widthMediaQuery, .seccionDestinos .contenedorArticuloBsAs, .heightMediaQuery1 .contenedorarticuloDos, .heightMediaQuery1 .widthMediaQuery, .heightMediaQuery1 .contenedorArticuloBsAs, .heightMediaQuery2 .contenedorarticuloDos, .heightMediaQuery2 .widthMediaQuery, .heightMediaQuery2 .contenedorArticuloBsAs, .heightMediaQuery3 .contenedorarticuloDos, .heightMediaQuery3 .widthMediaQuery, .heightMediaQuery3 .contenedorArticuloBsAs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 23%;
+    height: 300px; }
+    .seccionDestinos .contenedorarticuloDos h3, .seccionDestinos .widthMediaQuery h3, .seccionDestinos .contenedorArticuloBsAs h3, .heightMediaQuery1 .contenedorarticuloDos h3, .heightMediaQuery1 .widthMediaQuery h3, .heightMediaQuery1 .contenedorArticuloBsAs h3, .heightMediaQuery2 .contenedorarticuloDos h3, .heightMediaQuery2 .widthMediaQuery h3, .heightMediaQuery2 .contenedorArticuloBsAs h3, .heightMediaQuery3 .contenedorarticuloDos h3, .heightMediaQuery3 .widthMediaQuery h3, .heightMediaQuery3 .contenedorArticuloBsAs h3 {
+      font-family: "Pavanam";
+      color: white;
+      font-weight: lighter; }
+    .seccionDestinos .contenedorarticuloDos .contenedortextoDos, .seccionDestinos .widthMediaQuery .contenedortextoDos, .seccionDestinos .contenedorArticuloBsAs .contenedortextoDos, .heightMediaQuery1 .contenedorarticuloDos .contenedortextoDos, .heightMediaQuery1 .widthMediaQuery .contenedortextoDos, .heightMediaQuery1 .contenedorArticuloBsAs .contenedortextoDos, .heightMediaQuery2 .contenedorarticuloDos .contenedortextoDos, .heightMediaQuery2 .widthMediaQuery .contenedortextoDos, .heightMediaQuery2 .contenedorArticuloBsAs .contenedortextoDos, .heightMediaQuery3 .contenedorarticuloDos .contenedortextoDos, .heightMediaQuery3 .widthMediaQuery .contenedortextoDos, .heightMediaQuery3 .contenedorArticuloBsAs .contenedortextoDos {
+      border-top: 3px;
+      border-right: 0px;
+      border-bottom: 3px;
+      border-left: 3px;
+      border-color: orangered;
+      border-style: solid;
+      padding: 2px; }
+      .seccionDestinos .contenedorarticuloDos .contenedortextoDos p, .seccionDestinos .widthMediaQuery .contenedortextoDos p, .seccionDestinos .contenedorArticuloBsAs .contenedortextoDos p, .heightMediaQuery1 .contenedorarticuloDos .contenedortextoDos p, .heightMediaQuery1 .widthMediaQuery .contenedortextoDos p, .heightMediaQuery1 .contenedorArticuloBsAs .contenedortextoDos p, .heightMediaQuery2 .contenedorarticuloDos .contenedortextoDos p, .heightMediaQuery2 .widthMediaQuery .contenedortextoDos p, .heightMediaQuery2 .contenedorArticuloBsAs .contenedortextoDos p, .heightMediaQuery3 .contenedorarticuloDos .contenedortextoDos p, .heightMediaQuery3 .widthMediaQuery .contenedortextoDos p, .heightMediaQuery3 .contenedorArticuloBsAs .contenedortextoDos p {
+        font-family: "Pavanam";
+        color: white;
+        font-size: 18px;
+        font-weight: lighter;
+        text-align: center; }
 
 /*aca se encuentra la opción actividades/hoteles del final de la página destinos*/
 .opcionesGrid {
@@ -894,7 +889,7 @@ body {
     height: 80%; }
     .headerDestinos .seccionHeaderDestinos .h1Destinos {
       font-size: 55px; }
-  .seccionDestinos, .heightMediaQuery {
+  .heightMediaQuery1 {
     width: 100%;
     height: 1450px; }
   .heightMediaQuery2 {
@@ -903,49 +898,49 @@ body {
   .heightMediaQuery3 {
     width: 100%;
     height: 530px; }
-  .fondoContenedor {
+  .seccionDestinos .fondoContenedor {
     height: 1000px;
     width: 1100px;
     flex-direction: column-reverse;
     gap: 0px; }
-  .noReverseMediaQuery {
-    flex-direction: column; }
-  .contenedorImagenesPrincipal {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 280px; }
-  .contenedorImagenes {
-    width: 225px;
-    height: 260px; }
-  .contenedorTexto p {
-    border-top: 3px;
-    border-right: 3px;
-    border-bottom: 0px;
-    border-left: 3px;
-    border-color: orangered;
-    border-style: solid; }
-  .contenedorArticulo {
-    width: 60%;
-    height: 130px; }
-  .fondoElBolsón .contenedorarticuloDos {
+    .seccionDestinos .fondoContenedor .contenedorImagenesPrincipal {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 280px; }
+      .seccionDestinos .fondoContenedor .contenedorImagenesPrincipal .contenedorImagenes {
+        width: 225px;
+        height: 260px; }
+      .seccionDestinos .fondoContenedor .contenedorImagenesPrincipal .contenedorimagenesDos {
+        width: 225px;
+        height: 260px; }
+    .seccionDestinos .fondoContenedor .contenedorArticulo {
+      width: 60%;
+      height: 130px; }
+      .seccionDestinos .fondoContenedor .contenedorArticulo .contenedorTexto {
+        border-top: 3px;
+        border-right: 3px;
+        border-bottom: 0px;
+        border-left: 3px;
+        border-color: orangered;
+        border-style: solid; }
+    .seccionDestinos .fondoContenedor .contenedorarticuloDos {
+      width: 60%;
+      height: 130px; }
+      .seccionDestinos .fondoContenedor .contenedorarticuloDos .contenedortextoDos {
+        border-top: 3px;
+        border-right: 3px;
+        border-bottom: 0px;
+        border-left: 3px;
+        border-color: orangered;
+        border-style: solid; }
+    .seccionDestinos .fondoContenedor .widthMediaQuery {
+      width: 60%; }
+  .seccionDestinos .fondoElBolsón .contenedorarticuloDos {
     width: 40%;
     height: 160px; }
-  .contenedorarticuloDos {
-    width: 60%;
-    height: 130px; }
-  .widthMediaQuery {
-    width: 60%; }
-  .contenedortextoDos {
-    border-top: 3px;
-    border-right: 3px;
-    border-bottom: 0px;
-    border-left: 3px;
-    border-color: orangered;
-    border-style: solid; }
-  .contenedorimagenesDos {
-    width: 225px;
-    height: 260px; } }
+  .seccionDestinos .noReverseMediaQuery {
+    flex-direction: column; } }
 
 /*PÁGINA DESTINOS*/
 @media (max-width: 1100px) {
