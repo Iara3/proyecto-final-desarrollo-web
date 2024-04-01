@@ -108,13 +108,18 @@
     /*PÁGINA DESTINOS*/
     
     /*modificaciones título principal*/
-    .h1Destinos{
-        font-size: 30px; 
-    }
-    
-    .redesDestinos img{
-        height: 28px;
-        width: 28px;
+    .headerDestinos{
+        .seccionHeaderDestinos{
+            .h1Destinos{
+                font-size: 30px; 
+            }
+            .redesDestinos{
+                img{
+                    height: 28px;
+                    width: 28px;
+                }
+            }
+        }
     }
     
     .contenedorArticulo{

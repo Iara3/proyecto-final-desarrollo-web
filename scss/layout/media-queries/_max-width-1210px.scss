@@ -2,12 +2,13 @@
 @media(max-width: 1210px){
 
     //modificaciones header
-    .seccionHeaderDestinos{
-        height: 80%; 
-    }
-    
-    .h1Destinos{
-        font-size: 55px; 
+    .headerDestinos{
+        .seccionHeaderDestinos{
+            height: 80%; 
+            .h1Destinos{
+                font-size: 55px; 
+            }
+        }
     }
     
     //aca empiezan las modificaciones para las cards

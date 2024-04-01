@@ -2,16 +2,21 @@
 
     /*PÁGINA DESTINOS*/
     
-    /*modificaciones título principal*/
-    .h1Destinos{
-        font-size: 40px; 
+    //modificaciones título principal
+    .headerDestinos{
+        .seccionHeaderDestinos{
+            .h1Destinos{
+                font-size: 40px; 
+            }
+            .redesDestinos{
+                img{
+                    height: 33px;
+                    width: 33px;
+                }
+            }
+        }
     }
-    
-    .redesDestinos img{
-        height: 33px;
-        width: 33px;
-    }
-    
+
     /*aca empiezan las modificaciones para las cards*/
     .seccionDestinos{
         gap: 30px; 

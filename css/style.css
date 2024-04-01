@@ -327,7 +327,6 @@ body {
     width: 95%; }
 
 /*PÁGINA DESTINOS*/
-/*fondo*/
 .headerDestinos {
   background-image: url(../assets/img/fondos/fondo-destinos.png);
   background-repeat: no-repeat;
@@ -336,33 +335,29 @@ body {
   height: 100vh;
   width: 100%;
   margin-bottom: 40px; }
-
-/*modificaciones título principal y redes sociales*/
-.seccionHeaderDestinos {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  height: 85%; }
-
-.redesDestinos {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-right: 15px; }
-
-.redesDestinos img {
-  height: 45px;
-  width: 45px;
-  cursor: pointer; }
-
-.h1Destinos {
-  font-family: "Paytone one";
-  color: #ffffff;
-  text-align: left;
-  font-size: 70px;
-  text-shadow: 2px 2px 3px black;
-  margin-left: 15px; }
+  .headerDestinos .seccionHeaderDestinos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    height: 85%; }
+    .headerDestinos .seccionHeaderDestinos .h1Destinos {
+      font-family: "Paytone One";
+      color: white;
+      text-align: left;
+      font-size: 70px;
+      text-shadow: 2px 2px 3px black;
+      margin-left: 15px; }
+    .headerDestinos .seccionHeaderDestinos .redesDestinos {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-right: 15px; }
+      .headerDestinos .seccionHeaderDestinos .redesDestinos img {
+        height: 45px;
+        width: 45px;
+        cursor: pointer; }
 
 /*aca empiezan las modificaciones para las cards*/
 .seccionDestinos {
@@ -895,10 +890,10 @@ body {
 
 /*PÁGINA DESTINOS*/
 @media (max-width: 1210px) {
-  .seccionHeaderDestinos {
+  .headerDestinos .seccionHeaderDestinos {
     height: 80%; }
-  .h1Destinos {
-    font-size: 55px; }
+    .headerDestinos .seccionHeaderDestinos .h1Destinos {
+      font-size: 55px; }
   .seccionDestinos, .heightMediaQuery {
     width: 100%;
     height: 1450px; }
@@ -1054,11 +1049,6 @@ body {
       margin-left: 0px;
       margin-top: 20px; }
   /*PÁGINA DESTINOS*/
-  /*modificaciones título principal*/
-  .seccionHeaderDestinos {
-    height: 80%; }
-  .h1Destinos {
-    font-size: 55px; }
   /*aca empiezan las modificaciones para las cards*/
   /*medidas de height de las 3 diferentes secciones*/
   .seccionDestinos, .heightMediaQuery {
@@ -1260,10 +1250,9 @@ body {
 
 @media (max-width: 600px) {
   /*PÁGINA DESTINOS*/
-  /*modificaciones título principal*/
-  .h1Destinos {
+  .headerDestinos .seccionHeaderDestinos .h1Destinos {
     font-size: 40px; }
-  .redesDestinos img {
+  .headerDestinos .seccionHeaderDestinos .redesDestinos img {
     height: 33px;
     width: 33px; }
   /*aca empiezan las modificaciones para las cards*/
@@ -1452,9 +1441,9 @@ body {
       text-align: center; }
   /*PÁGINA DESTINOS*/
   /*modificaciones título principal*/
-  .h1Destinos {
+  .headerDestinos .seccionHeaderDestinos .h1Destinos {
     font-size: 30px; }
-  .redesDestinos img {
+  .headerDestinos .seccionHeaderDestinos .redesDestinos img {
     height: 28px;
     width: 28px; }
   .contenedorArticulo {

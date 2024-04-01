@@ -30,59 +30,7 @@
 
 @import "./layout/index-sections/section-2";
 
-
-
-
-
-
-
-
-
-
-
-/*PÁGINA DESTINOS*/
-
-/*fondo*/
-.headerDestinos{
-    background-image: url(../assets/img/fondos/fondo-destinos.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 100vh;
-    width: 100%;
-    margin-bottom: 40px;
-}
-
-/*modificaciones título principal y redes sociales*/
-.seccionHeaderDestinos{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 85%;
-}
-
-.redesDestinos{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-right: 15px;
-}
-
-.redesDestinos img{
-    height: 45px;
-    width: 45px;
-    cursor: pointer;
-}
-
-.h1Destinos{
-    font-family: "Paytone one";
-    color: #ffffff;
-    text-align: left;
-    font-size: 70px;
-    text-shadow: 2px 2px 3px black;
-    margin-left: 15px;
-}
+@import "./layout/header/header-destinos";
 
 /*aca empiezan las modificaciones para las cards*/
 .seccionDestinos{

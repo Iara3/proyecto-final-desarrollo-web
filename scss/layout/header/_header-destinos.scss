@@ -1,0 +1,34 @@
+/*PÁGINA DESTINOS*/
+
+.headerDestinos{ //fondo
+    background-image: url(../assets/img/fondos/fondo-destinos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 40px;
+    .seccionHeaderDestinos{ //modificaciones título principal y redes sociales
+        @include flex (row, space-between, center, 0px);
+        height: 85%;
+        .h1Destinos{
+            font-family: map-get($font-family, principal);
+            color: map-get($colores, font-color);
+            text-align: left;
+            font-size: 70px;
+            text-shadow: 2px 2px 3px black;
+            margin-left: 15px;
+        }
+        .redesDestinos{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 15px;
+            img{
+                height: 45px;
+                width: 45px;
+                cursor: pointer;
+            }
+        }
+    }
+}
