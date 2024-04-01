@@ -82,4 +82,38 @@
                 font-size: 35px;
             }
         }
-    }
+
+        /*PÁGINA DESTINOS*/
+        .seccionDestinos{
+            .fondoContenedor{
+                .contenedorImagenesPrincipal{
+                    .contenedorImagenes{
+                        width: 215px; 
+                        height: 250px; 
+                    }
+                    .contenedorimagenesDos{
+                        width: 215px; 
+                        height: 250px; 
+                    }
+                }
+                .contenedorArticulo{
+                    width: 75%; 
+                    height: 130px;
+                }
+                .contenedorarticuloDos{
+                    width: 75%; 
+                    height: 130px; 
+                }
+                .widthMediaQuery{
+                    width: 75%;
+                }
+            }
+            .fondoElBolsón{
+                .contenedorarticuloDos{
+                    width: 50%;
+                    height: 160px;
+                }
+            }
+        }
+    
+}

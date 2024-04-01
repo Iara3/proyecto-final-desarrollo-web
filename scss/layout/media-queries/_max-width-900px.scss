@@ -54,11 +54,10 @@
 }
 
     /*PÁGINA DESTINOS*/
-    /*aca empiezan las modificaciones para las cards*/
     
-    /*medidas de height de las 3 diferentes secciones*/
+    //medidas height de las 3 diferentes secciones diferentes
     
-    .seccionDestinos, .heightMediaQuery{
+    .heightMediaQuery1{
         width: 100%;
         height: 1450px;
     }
@@ -73,141 +72,19 @@
         height: 530px;
     }
     
-    /*aca se encuentran las modificaciones para la card de tres imágenes*/
-    
-    .contenedorImagenes{
-        width: 225px; 
-        height: 260px; 
-    }
-    
-    .contenedorTexto p{
-        border-top: 3px;
-        border-right: 3px; 
-        border-bottom: 0px; 
-        border-left: 3px; 
-        border-color: orangered;
-        border-style: solid;
-    }
-    
-    .contenedorArticulo{
-        width: 75%; 
-        height: 130px;
-    }
-    
-    /*aca está la card de dos imágenes*/
-    
-    .contenedorarticuloDos{
-        width: 60%; 
-        height: 130px; 
-    }
-    
-    .widthMediaQuery{
-        width: 75%;
-    }
-    
-    .contenedortextoDos{
-        border-top: 3px;
-        border-right: 3px; 
-        border-bottom: 0px; 
-        border-left: 3px; 
-        border-color: orangered;
-        border-style: solid;
-    }
-    
-    .contenedorimagenesDos{
-        width: 225px; 
-        height: 260px; 
-    }
-    
+    //aca empiezan las modificaciones para las cards
+
+    .seccionDestinos{
+        .fondoContenedor{
+            .contenedorArticulo{
+                width: 75%; 
+                height: 130px;
+            }
+            .widthMediaQuery{
+                width: 75%;
+            }
+        }
     }
 
-/* BARRA DE NAVEGACIÓN
-.nav{
-    width: 100%;
-    height: 75px;
-    background-color: map-get($colores, navbar);
-    @include flex (row, center, none, 0px);
-    position: relative; //position relative para que el 2do logo pueda posicionarse en el centro
-    #toggle:checked ~ .contenedorNav{ //900
-        height: 270px; 
-    }
-    label{ //900
-        display: inline-flex;
-        cursor: pointer; 
-        .iconoMenu{
-            font-size: 70px;
-            color: #ffffff7a;
-            text-align: center;
-            margin-left: 15px;
-            user-select: none;
-        }
-    }
-    .aLogoNav2{
-        position: absolute;
-        justify-self: center;
-        align-self: center;
-        .logoNav2{
-            width: 200px;
-            height: auto;
-            background-color: #0F1035;
-            border-radius: 35px 35px 100px 100px;
-            display: inline-block; //900
-        } //2do logo para que aparezca en media query
-    }
-    .aLogoNav3{ //logo para media query 320px
-        position: absolute;
-        justify-self: center;
-        align-self: center;
-        display: none;
-        img{
-            height: 70px;
-            width: auto;
-        }
-    }
-    .contenedorNav{
-        width: 100%;
-        height: 0; //900
-        margin-left: 0px; //900
-        overflow: hidden; //900
-        margin-top: 75px; //900
-        .contenedorLinksNav{
-            width: 170px; //900
-            height: 270px; //900
-            list-style: none;
-            @include flex (column, center, flex-start, 40px);
-            background-color: map-get($colores, navbar); //900
-            .linksNav{
-                font-family: map-get($font-family, secundaria);
-                color: map-get($colores, font-color);
-                font-size: map-get($font-size, link-navbar);
-                text-decoration: none;
-                &:hover{
-                    color: map-get($colores, hover);
-                }
-            }
-            .liLogo{
-                display: none;
-            }//para quitar el logo principal del ul //900px
-            .logoNav{
-                width: 200px;
-                height: auto;
-                background-color: #0F1035;
-                border-radius: 35px 35px 100px 100px;
-            }
-        }
-    }
-    .divnavCuenta{
-        width: 60px;
-        height: auto;
-        align-self: center;
-        margin-right: 15px;
-        .logoCuenta{
-            height: 55px;
-            width: auto;
-            cursor: pointer;
-        }
-    }
 }
 
-
-    */

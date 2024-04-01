@@ -7,5 +7,22 @@
     .secciónTresPáginaHome{
         height: 950px; 
     }
+
+        /*PÁGINA DESTINOS*/
     
+    //modificaciones título principal
+    .headerDestinos{
+        .seccionHeaderDestinos{
+            .h1Destinos{
+                font-size: 40px; 
+            }
+            .redesDestinos{
+                img{
+                    height: 33px;
+                    width: 33px;
+                }
+            }
+        }
     }
+    
+}
