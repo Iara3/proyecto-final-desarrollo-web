@@ -43,125 +43,12 @@
 
 @import "./layout/header/header-actividades";
 
+@import "./layout/actividades-sections/section-1";
 
+//PÁGINA HOTELES
 
+@import "./layout/header/header-hoteles";
 
-/*aca comienzan las modificaciones del main*/
-.contenedorPrincipal{
-    display: grid;
-    grid-template-columns: 570px 570px;
-    justify-content: center;
-    margin-top: 100px;
-    gap: 30px;
-}
-
-.contenedorSecundario{
-    width: 550px;
-    height: 525px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    border: 2px;
-    border-color: orangered;
-    border-style: solid;
-}
-
-.contenedorSecundario {
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-    font-family: "Pavanam";
-    font-weight: lighter;
-}
-
-.legendAct{
-    font-size: 30px;
-    background-color: #0F1035;
-}
-
-.contenedorUno{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.contenedorDos{
-    height: 250px;
-    width: 250px;
-    background-color: rgb(255, 255, 255);
-}
-
-.botonExcursion{
-    font-size: 18px;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 4px;
-    margin-bottom: 20px;
-    border-radius: 3px;
-    border: 1px;
-    border-color: #ffffff;
-    border-style: solid;
-}
-
-.imgDestinos {
-    height: 100%;
-    width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-/*PÁGINA HOTELES*/
-
-/*fondo*/
-.headerHoteles{
-    background-image: url(../assets/img/fondos/fondo-hoteles.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 100vh;
-    width: 100%;
-    margin-bottom: 100px;
-}
-
-/*modificaciones titulo y redes sociales*/
-.seccionHeaderHoteles{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-}
-
-.redesHoteles{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.redesHoteles img{
-    height: 45px;
-    width: 45px;
-    cursor: pointer;
-}
-
-.h1Hoteles{
-    font-family: "Paytone one";
-    color: #ffffff;
-    text-align: center;
-    font-size: 70px;
-    text-shadow: 2px 2px 3px black;
-    height: 320px;
-    margin-top: 80px;
-}
 
 /*aca comienzan las modificaciones del main*/
 .seccionPrincipalHoteles{

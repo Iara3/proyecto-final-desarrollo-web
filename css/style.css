@@ -596,64 +596,58 @@ body {
       margin-right: 15px;
       text-shadow: 2px 2px 3px black; }
 
-/*aca comienzan las modificaciones del main*/
 .contenedorPrincipal {
   display: grid;
   grid-template-columns: 570px 570px;
   justify-content: center;
   margin-top: 100px;
   gap: 30px; }
+  .contenedorPrincipal .contenedorSecundario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 550px;
+    height: 525px;
+    border: 2px;
+    border-color: orangered;
+    border-style: solid; }
+    .contenedorPrincipal .contenedorSecundario .legendAct {
+      font-family: "Pavanam";
+      color: white;
+      background-color: #0F1035;
+      font-size: 30px;
+      text-align: center; }
+    .contenedorPrincipal .contenedorSecundario p {
+      font-family: "Pavanam";
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      font-weight: lighter; }
+    .contenedorPrincipal .contenedorSecundario .contenedorUno {
+      display: flex;
+      flex-direction: row;
+      gap: 15px; }
+      .contenedorPrincipal .contenedorSecundario .contenedorUno .contenedorDos {
+        height: 250px;
+        width: 250px;
+        background-color: white; }
+        .contenedorPrincipal .contenedorSecundario .contenedorUno .contenedorDos .imgDestinos {
+          height: 100%;
+          width: 100%; }
+    .contenedorPrincipal .contenedorSecundario .botonExcursion {
+      font-family: "Pavanam";
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 4px;
+      margin-bottom: 20px;
+      border-radius: 3px;
+      border: 1px;
+      border-color: #ffffff;
+      border-style: solid; }
 
-.contenedorSecundario {
-  width: 550px;
-  height: 525px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  border: 2px;
-  border-color: orangered;
-  border-style: solid; }
-
-.contenedorSecundario {
-  font-size: 20px;
-  text-align: center;
-  color: #ffffff;
-  font-family: "Pavanam";
-  font-weight: lighter; }
-
-.legendAct {
-  font-size: 30px;
-  background-color: #0F1035; }
-
-.contenedorUno {
-  display: flex;
-  flex-direction: row;
-  gap: 15px; }
-
-.contenedorDos {
-  height: 250px;
-  width: 250px;
-  background-color: white; }
-
-.botonExcursion {
-  font-size: 18px;
-  text-decoration: none;
-  color: #ffffff;
-  padding: 4px;
-  margin-bottom: 20px;
-  border-radius: 3px;
-  border: 1px;
-  border-color: #ffffff;
-  border-style: solid; }
-
-.imgDestinos {
-  height: 100%;
-  width: 100%; }
-
-/*PÁGINA HOTELES*/
-/*fondo*/
 .headerHoteles {
   background-image: url(../assets/img/fondos/fondo-hoteles.png);
   background-repeat: no-repeat;
@@ -662,33 +656,28 @@ body {
   height: 100vh;
   width: 100%;
   margin-bottom: 100px; }
-
-/*modificaciones titulo y redes sociales*/
-.seccionHeaderHoteles {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px; }
-
-.redesHoteles {
-  display: flex;
-  flex-direction: row;
-  gap: 10px; }
-
-.redesHoteles img {
-  height: 45px;
-  width: 45px;
-  cursor: pointer; }
-
-.h1Hoteles {
-  font-family: "Paytone one";
-  color: #ffffff;
-  text-align: center;
-  font-size: 70px;
-  text-shadow: 2px 2px 3px black;
-  height: 320px;
-  margin-top: 80px; }
+  .headerHoteles .seccionHeaderHoteles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px; }
+    .headerHoteles .seccionHeaderHoteles .h1Hoteles {
+      font-family: "Paytone One";
+      color: white;
+      text-align: center;
+      font-size: 70px;
+      text-shadow: 2px 2px 3px black;
+      height: 320px;
+      margin-top: 80px; }
+    .headerHoteles .seccionHeaderHoteles .redesHoteles {
+      display: flex;
+      flex-direction: row;
+      gap: 10px; }
+      .headerHoteles .seccionHeaderHoteles .redesHoteles img {
+        height: 45px;
+        width: 45px;
+        cursor: pointer; }
 
 /*aca comienzan las modificaciones del main*/
 .seccionPrincipalHoteles {

@@ -1,0 +1,55 @@
+.contenedorPrincipal{
+    display: grid;
+    grid-template-columns: 570px 570px;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 30px;
+    .contenedorSecundario{
+        @include flex (column, center, center, 15px);
+        width: 550px;
+        height: 525px;
+        border: 2px;
+        border-color: map-get($colores, border-orangered);
+        border-style: solid;
+        .legendAct{
+            font-family: map-get($font-family, secundaria);
+            color: map-get($colores, font-color);
+            background-color: map-get($colores, body-color);
+            font-size: 30px;
+            text-align: center;
+        }
+        p{
+            font-family: map-get($font-family, secundaria);
+            color: map-get($colores, font-color);
+            font-size: 20px;
+            text-align: center;
+            font-weight: lighter;
+        }
+        .contenedorUno{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            .contenedorDos{
+                height: 250px;
+                width: 250px;
+                background-color: rgb(255, 255, 255); //fondo aleatorio para ver el tamaño del contenedor
+                .imgDestinos {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        .botonExcursion{ //probar con ./components./buttonOutlined
+            font-family: map-get($font-family, secundaria);
+            color: map-get($colores, font-color);
+            font-size: 18px;
+            text-decoration: none;
+            padding: 4px;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            border: 1px;
+            border-color: #ffffff;
+            border-style: solid;
+        }
+    }
+}
