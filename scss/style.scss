@@ -33,61 +33,18 @@
 
 @import "./layout/index-sections/section-2";
 
+//PÁGINA DESTINOS
+
 @import "./layout/header/header-destinos";
 
 @import "./layout/destinos-sections/section-1";
 
+//PÁGINA ACTIVIDADES
+
+@import "./layout/header/header-actividades";
 
 
 
-
-
-
-
-
-/*PÁGINA ACTIVIDADES*/
-
-/*fondo*/
-.headerActividades{
-    background-image: url(../assets/img/fondos/fondo-actividades.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 100vh;
-    width: 100%;
-}
-
-/*modificaciones título y redes sociales*/
-.seccionHeaderActividades{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 85%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.redesActividades{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 15px;
-}
-
-.redesActividades img{
-    height: 45px;
-    width: 45px;
-    cursor: pointer;
-}
-
-.h1Actividades{
-    font-family: "Paytone one";
-    color: #ffffff;
-    text-align: right;
-    font-size: 70px;
-    margin-right: 15px;
-    text-shadow: 2px 2px 3px black;
-}
 
 /*aca comienzan las modificaciones del main*/
 .contenedorPrincipal{
@@ -146,6 +103,11 @@
     border: 1px;
     border-color: #ffffff;
     border-style: solid;
+}
+
+.imgDestinos {
+    height: 100%;
+    width: 100%;
 }
 
 

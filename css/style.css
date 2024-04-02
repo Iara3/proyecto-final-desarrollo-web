@@ -564,8 +564,6 @@ body {
         font-weight: lighter;
         text-align: center; }
 
-/*PÁGINA ACTIVIDADES*/
-/*fondo*/
 .headerActividades {
   background-image: url(../assets/img/fondos/fondo-actividades.png);
   background-repeat: no-repeat;
@@ -573,34 +571,30 @@ body {
   background-position: 100% 100%;
   height: 100vh;
   width: 100%; }
-
-/*modificaciones título y redes sociales*/
-.seccionHeaderActividades {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 85%;
-  justify-content: space-between;
-  align-items: center; }
-
-.redesActividades {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-left: 15px; }
-
-.redesActividades img {
-  height: 45px;
-  width: 45px;
-  cursor: pointer; }
-
-.h1Actividades {
-  font-family: "Paytone one";
-  color: #ffffff;
-  text-align: right;
-  font-size: 70px;
-  margin-right: 15px;
-  text-shadow: 2px 2px 3px black; }
+  .headerActividades .seccionHeaderActividades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+    height: 85%; }
+    .headerActividades .seccionHeaderActividades .redesActividades {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-left: 15px; }
+      .headerActividades .seccionHeaderActividades .redesActividades img {
+        height: 45px;
+        width: 45px;
+        cursor: pointer; }
+    .headerActividades .seccionHeaderActividades .h1Actividades {
+      font-family: "Paytone One";
+      color: white;
+      text-align: right;
+      font-size: 70px;
+      margin-right: 15px;
+      text-shadow: 2px 2px 3px black; }
 
 /*aca comienzan las modificaciones del main*/
 .contenedorPrincipal {
@@ -653,6 +647,10 @@ body {
   border: 1px;
   border-color: #ffffff;
   border-style: solid; }
+
+.imgDestinos {
+  height: 100%;
+  width: 100%; }
 
 /*PÁGINA HOTELES*/
 /*fondo*/
