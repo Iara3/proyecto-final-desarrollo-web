@@ -14,20 +14,10 @@
 
 @import "./base/body-color";
 
-//COMPONENTS
-@import "./components/buttons/buttons";
-
-//grids que se presenta al final de cada página (excepto index)
-@import "./components/grids/grids";
-
-/*HEADER INDEX*/
+//HEADER INDEX
 @import "./layout/header/header-index";
 
-/*FOOTER*/
-@import "./layout/footer/footer";
-
-/*BARRA DE NAVEGACIÓN*/
-@import "./components/navbar/navbar";
+//secciones index
 
 @import "./layout/index-sections/section-1";
 
@@ -55,7 +45,21 @@
 
 @import "./layout/header/header-contacto";
 
-/*MEDIAS QUERIES*/
+//FOOTER
+@import "./layout/footer/footer";
+
+//COMPONENTS
+
+//navbar
+@import "./components/navbar/navbar";
+
+//buttons
+@import "./components/buttons/buttons";
+
+//grids que se presenta al final de cada página (excepto index)
+@import "./components/grids/grids";
+
+//MEDIAS QUERIES
 @import "./layout/media-queries/max-width-1300px";
 
 @import "./layout/media-queries/max-width-1210px";

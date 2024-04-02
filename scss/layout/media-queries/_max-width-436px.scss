@@ -1,6 +1,6 @@
 @media (max-width: 436px){
 
-/*BARRA DE NAVEGACIÓN MODIFICACIONES*/
+//BARRA DE NAVEGACIÓN MODIFICACIONES
 .nav{
     label{ 
         .iconoMenu{
@@ -24,7 +24,7 @@
     }
 }
 
-/*FOOTER MODIFICACIONES*/
+//FOOTER MODIFICACIONES
     .footer{
         height: 350px; 
         @include flex (column-reverse, center, center, 20px);
@@ -47,7 +47,7 @@
     }
 
 
-/*PÁGINA INDEX MODIFICACIONES*/
+//PÁGINA INDEX MODIFICACIONES
     .headerHome{
         background-image: url(../assets/img/fondos/imgfondohome-320px.png);
         height: 100vh;
@@ -105,9 +105,8 @@
         }
 
 
-    /*PÁGINA DESTINOS*/
-    
-    /*modificaciones título principal*/
+    //PÁGINA DESTINOS
+
     .headerDestinos{
         .seccionHeaderDestinos{
             .h1Destinos{
@@ -127,8 +126,6 @@
         height: 365px; 
     }
     
-    /*aca está la card de dos imágenes*/
-    
     .contenedorarticuloDos:not(.contenedorArticuloBsAs){
         width: 69%;
         height: 290px;
@@ -141,6 +138,6 @@
     
     .widthMediaQuery{
         width: 69%;
-    } /*ancho del artículo de bs as y misiones*/
+    } 
     
 }
