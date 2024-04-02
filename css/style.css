@@ -20,6 +20,112 @@ body {
   border-style: solid;
   border-radius: 3px; }
 
+.opcionesGrid {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 310px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  grid-template-rows: 30px 240px 30px;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px; }
+  .opcionesGrid .opcion1H3 {
+    font-family: "Pavanam";
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .opcionesGrid .opcion1Act {
+    height: 240px;
+    width: 240px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative; }
+  .opcionesGrid .opcion2Act {
+    height: 240px;
+    width: 240px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative; }
+  .opcionesGrid .linkVerMas {
+    font-family: "Pavanam";
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4; }
+    .opcionesGrid .linkVerMas:hover {
+      color: orange; }
+  .opcionesGrid .opcion2H3 {
+    font-family: "Pavanam";
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .opcionesGrid .opcion1Hoteles {
+    height: 240px;
+    width: 240px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative; }
+  .opcionesGrid .opcion2Hoteles {
+    height: 240px;
+    width: 240px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative; }
+  .opcionesGrid .linkVerMas2 {
+    font-family: "Pavanam";
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 20px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4; }
+    .opcionesGrid .linkVerMas2:hover {
+      color: orange; }
+
+.imgOpciones {
+  width: 100%;
+  height: 100%; }
+
+.ulOpciones {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  margin: 6px; }
+
+.li1 {
+  font-family: "Pavanam";
+  color: white;
+  font-weight: bolder; }
+
+.li2 {
+  font-family: "Pavanam";
+  color: white;
+  font-weight: lighter; }
+
 /*HEADER INDEX*/
 .headerHome {
   background-image: url(../assets/img/fondos/imgfondohome.png);
@@ -458,123 +564,6 @@ body {
         font-weight: lighter;
         text-align: center; }
 
-/*aca se encuentra la opción actividades/hoteles del final de la página destinos*/
-.opcionesGrid {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  height: 310px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 260px);
-  grid-template-rows: 30px 240px 30px;
-  justify-content: center;
-  justify-items: center;
-  gap: 20px; }
-
-.opcion1H3 {
-  font-family: "Pavanam";
-  color: #ffffff;
-  font-weight: lighter;
-  font-size: 25px;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2; }
-
-.opcion1Act {
-  height: 240px;
-  width: 240px;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  position: relative; }
-
-.opcion2Act {
-  height: 240px;
-  width: 240px;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  position: relative; }
-
-.linkVerMas {
-  color: #ffffff;
-  font-family: "Pavanam";
-  font-weight: lighter;
-  text-decoration: none;
-  font-size: 20px;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4; }
-
-.opcion2H3 {
-  font-family: "Pavanam";
-  color: #ffffff;
-  font-weight: lighter;
-  font-size: 25px;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2; }
-
-.opcion1Hoteles {
-  height: 240px;
-  width: 240px;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  position: relative; }
-
-.opcion2Hoteles {
-  height: 240px;
-  width: 240px;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  position: relative; }
-
-.linkVerMas2 {
-  color: #ffffff;
-  font-family: "Pavanam";
-  font-weight: lighter;
-  text-decoration: none;
-  font-size: 20px;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 4; }
-
-.linkVerMas:hover {
-  color: orange; }
-
-.linkVerMas2:hover {
-  color: orange; }
-
-.imgOpciones {
-  width: 100%;
-  height: 100%; }
-
-.ulOpciones {
-  list-style: none;
-  position: absolute;
-  bottom: 0;
-  margin: 6px; }
-
-.li1 {
-  font-family: "pavanam";
-  color: #ffffff;
-  font-weight: bolder; }
-
-.li2 {
-  font-family: "Pavanam";
-  color: #ffffff;
-  font-weight: lighter; }
-
 /*PÁGINA ACTIVIDADES*/
 /*fondo*/
 .headerActividades {
@@ -953,46 +942,46 @@ body {
     height: 720px;
     grid-template-columns: repeat(2, 260px);
     grid-template-rows: 30px 240px 50px 30px 240px 30px; }
-  .opcion1H3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .opcion1Act {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3; }
-  .opcion2Act {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3; }
-  .linkVerMas {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4; }
-  .opcion2H3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5; }
-  .opcion1Hoteles {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6; }
-  .opcion2Hoteles {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6; }
-  .linkVerMas2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 6;
-    grid-row-end: 7; } }
+    .opcionesGrid .opcion1H3 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .opcionesGrid .opcion1Act {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    .opcionesGrid .opcion2Act {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    .opcionesGrid .linkVerMas {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4; }
+    .opcionesGrid .opcion2H3 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5; }
+    .opcionesGrid .opcion1Hoteles {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 6; }
+    .opcionesGrid .opcion2Hoteles {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 6; }
+    .opcionesGrid .linkVerMas2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 6;
+      grid-row-end: 7; } }
 
 @media (max-width: 900px) {
   /*BARRA DE NAVEGACIÓN*/
@@ -1184,46 +1173,46 @@ body {
     height: 1250px;
     grid-template-columns: 1fr;
     grid-template-rows: 30px 240px 240px 30px 30px 240px 240px 30px; }
-  .opcion1H3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .opcion1Act {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3; }
-  .opcion2Act {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4; }
-  .linkVerMas {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5; }
-  .opcion2H3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6; }
-  .opcion1Hoteles {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 7; }
-  .opcion2Hoteles {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 7;
-    grid-row-end: 8; }
-  .linkVerMas2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 8;
-    grid-row-end: 9; } }
+    .opcionesGrid .opcion1H3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .opcionesGrid .opcion1Act {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    .opcionesGrid .opcion2Act {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4; }
+    .opcionesGrid .linkVerMas {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5; }
+    .opcionesGrid .opcion2H3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 6; }
+    .opcionesGrid .opcion1Hoteles {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 6;
+      grid-row-end: 7; }
+    .opcionesGrid .opcion2Hoteles {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 7;
+      grid-row-end: 8; }
+    .opcionesGrid .linkVerMas2 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 8;
+      grid-row-end: 9; } }
 
 @media (max-width: 665px) {
   /*PÁGINA HOME*/

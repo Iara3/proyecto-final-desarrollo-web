@@ -17,6 +17,9 @@
 //COMPONENTS
 @import "./components/buttons/buttons";
 
+//grids que se presenta al final de cada página (excepto index)
+@import "./components/grids/grids";
+
 /*HEADER INDEX*/
 @import "./layout/header/header-index";
 
@@ -33,145 +36,6 @@
 @import "./layout/header/header-destinos";
 
 @import "./layout/destinos-sections/section-1";
-
-//@import "./layout/destinos-sections/section-patagonia";
-
-//@import "./layout/destinos-sections/section-norte-grande";
-
-//@import "./layout/destinos-sections/section-bsas";
-
-/*aca se encuentra la opción actividades/hoteles del final de la página destinos*/
-.opcionesGrid{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    height: 310px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 260px);
-    grid-template-rows: 30px 240px 30px;
-    justify-content: center;
-    justify-items: center;
-    gap: 20px;
-}
-
-.opcion1H3{
-    font-family: "Pavanam";
-    color: #ffffff;
-    font-weight: lighter;
-    font-size: 25px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.opcion1Act{
-    height: 240px;
-    width: 240px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    position: relative;
-}
-
-.opcion2Act{
-    height: 240px;
-    width: 240px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    position: relative;
-}
-
-.linkVerMas{
-    color: #ffffff;
-    font-family: "Pavanam";
-    font-weight: lighter;
-    text-decoration: none;
-    font-size: 20px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-.opcion2H3{
-    font-family: "Pavanam";
-    color: #ffffff;
-    font-weight: lighter;
-    font-size: 25px;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.opcion1Hoteles{
-    height: 240px;
-    width: 240px;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    position: relative;
-}
-
-.opcion2Hoteles{
-    height: 240px;
-    width: 240px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    position: relative;
-}
-
-.linkVerMas2{
-    color: #ffffff;
-    font-family: "Pavanam";
-    font-weight: lighter;
-    text-decoration: none;
-    font-size: 20px;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-.linkVerMas:hover{
-    color: orange;
-}
-
-.linkVerMas2:hover{
-    color:orange;
-}
-
-.imgOpciones{
-    width: 100%;
-    height: 100%;
-}
-
-.ulOpciones{
-    list-style: none;
-    position: absolute;
-    bottom: 0;
-    margin: 6px;
-}
-
-.li1{
-    font-family: "pavanam";
-    color: #ffffff;
-    font-weight: bolder;
-}
-
-.li2{
-    font-family: "Pavanam";
-    color: #ffffff;
-    font-weight: lighter;
-}
-
 
 
 
