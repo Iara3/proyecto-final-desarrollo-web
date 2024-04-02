@@ -730,8 +730,6 @@ body {
         border-style: solid;
         border-radius: 2px; }
 
-/*PÁGINA CONTACTO*/
-/*fondo*/
 .headerContacto {
   background-image: url(../assets/img/fondos/fondocontactanos.jpg);
   background-repeat: no-repeat;
@@ -739,91 +737,78 @@ body {
   background-position: 100% 100%;
   height: 100vh;
   width: 100%; }
+  .headerContacto .h1Contacto {
+    font-family: "Paytone One";
+    color: #ffffff;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 3px black; }
+  .headerContacto .formularioContacto {
+    width: 100%;
+    height: 410px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px; }
+    .headerContacto .formularioContacto .grid {
+      list-style: none;
+      width: 1060px;
+      height: 420px;
+      border-top: 2px;
+      border-right: 2px;
+      border-bottom: 2px;
+      border-left: 2px;
+      border-style: solid;
+      border-color: orangered;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      gap: 15px;
+      grid-template-columns: 400px repeat(2, 300px);
+      grid-template-rows: 70px 70px 70px 70px 50px;
+      grid-template-areas: "areaUno areaDos areaTres" "areaUno areaCuatro areaCuatro" "areaUno areaCinco areaCinco" "areaUno areaCinco areaCinco" ". areaSeis areaSeis"; }
+      .headerContacto .formularioContacto .grid .areaUno {
+        grid-area: areaUno; }
+        .headerContacto .formularioContacto .grid .areaUno img {
+          width: 100%;
+          height: 325px; }
+      .headerContacto .formularioContacto .grid .areaDos {
+        grid-area: areaDos; }
+        .headerContacto .formularioContacto .grid .areaDos input {
+          width: 100%;
+          height: 100%; }
+      .headerContacto .formularioContacto .grid .areaTres {
+        grid-area: areaTres; }
+        .headerContacto .formularioContacto .grid .areaTres input {
+          height: 100%;
+          width: 100%; }
+      .headerContacto .formularioContacto .grid .areaCuatro {
+        grid-area: areaCuatro; }
+        .headerContacto .formularioContacto .grid .areaCuatro input {
+          width: 100%;
+          height: 100%; }
+      .headerContacto .formularioContacto .grid .areaCinco {
+        grid-area: areaCinco; }
+        .headerContacto .formularioContacto .grid .areaCinco textarea {
+          height: 100%;
+          width: 100%; }
+      .headerContacto .formularioContacto .grid .areaSeis {
+        grid-area: areaSeis;
+        justify-self: center; }
+        .headerContacto .formularioContacto .grid .areaSeis input {
+          width: 150px;
+          height: 50px;
+          background-color: orangered;
+          color: white;
+          font-family: "Pavanam";
+          font-size: 19px;
+          border-radius: 3px;
+          border: none; }
 
-/*modificaciones título*/
-.h1Contacto {
-  font-family: "Paytone One";
-  color: #ffffff;
-  text-align: center;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  text-shadow: 2px 2px 3px black; }
-
-/*aca se encuentra el form de la página contacto*/
-.formularioContacto {
-  width: 100%;
-  height: 410px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center; }
-
-.grid {
-  list-style: none;
-  width: 1060px;
-  height: 420px;
-  border-top: 2px;
-  border-right: 2px;
-  border-bottom: 2px;
-  border-left: 2px;
-  border-style: solid;
-  border-color: orangered;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  gap: 15px;
-  grid-template-columns: 400px repeat(2, 300px);
-  grid-template-rows: 70px 70px 70px 70px 50px;
-  grid-template-areas: "areaUno areaDos areaTres" "areaUno areaCuatro areaCuatro" "areaUno areaCinco areaCinco" "areaUno areaCinco areaCinco" ". areaSeis areaSeis"; }
-
-.areaUno {
-  grid-area: areaUno; }
-
-.areaUno img {
-  width: 100%;
-  height: 325px; }
-
-.areaDos {
-  grid-area: areaDos; }
-
-.areaDos input {
-  width: 100%;
-  height: 100%; }
-
-.areaTres {
-  grid-area: areaTres; }
-
-.areaTres input {
-  height: 100%;
-  width: 100%; }
-
-.areaCuatro {
-  grid-area: areaCuatro; }
-
-.areaCuatro input {
-  width: 100%;
-  height: 100%; }
-
-.areaCinco {
-  grid-area: areaCinco; }
-
-.areaCinco textarea {
-  height: 100%;
-  width: 100%; }
-
-.areaSeis {
-  grid-area: areaSeis;
-  justify-self: center; }
-
-.areaSeis input {
-  width: 150px;
-  height: 50px;
-  background-color: orangered;
-  color: #ffffff;
-  font-family: "Pavanam";
-  font-size: 19px;
-  border-radius: 3px;
-  border: none; }
+.inputForm {
+  font-size: 19px; }
 
 .grid li input::placeholder {
   font-family: "Pavanam";

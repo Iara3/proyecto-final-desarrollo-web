@@ -1,0 +1,108 @@
+.headerContacto{
+    background-image: url(../assets/img/fondos/fondocontactanos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    .h1Contacto{
+        font-family: map-get($font-family, principal);
+        color: #ffffff;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 3px black;
+    }
+    .formularioContacto{
+        width: 100%;
+        height: 410px;
+        @include flex (row, center, center, 0px);
+        .grid{
+            list-style: none;
+            width: 1060px;
+            height: 420px;
+            border-top: 2px;
+            border-right: 2px;
+            border-bottom: 2px;
+            border-left: 2px;
+            border-style: solid;
+            border-color: map-get($colores, border-orangered);
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            gap: 15px;
+            grid-template-columns: 400px repeat(2, 300px);
+            grid-template-rows: 70px 70px 70px 70px 50px;
+            grid-template-areas: 
+            "areaUno areaDos areaTres"
+            "areaUno areaCuatro areaCuatro"
+            "areaUno areaCinco areaCinco"
+            "areaUno areaCinco areaCinco"
+            ". areaSeis areaSeis"
+            ;
+            .areaUno{
+                grid-area: areaUno;
+                img{
+                    width: 100%;
+                    height: 325px;
+                }
+            }
+            .areaDos{
+                grid-area: areaDos;
+                input{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .areaTres{
+                grid-area: areaTres;
+                input{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .areaCuatro{
+                grid-area: areaCuatro;
+                input{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .areaCinco{
+                grid-area: areaCinco;
+                textarea{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .areaSeis{
+                grid-area: areaSeis;
+                justify-self: center;
+                input{
+                    width: 150px;
+                    height: 50px;
+                    background-color: map-get($colores, button-orange);
+                    color: map-get($colores, font-color);
+                    font-family: map-get($font-family, secundaria);
+                    font-size: 19px;
+                    border-radius: 3px;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.inputForm{
+    font-size: 19px;
+}
+
+.grid li input::placeholder{
+    font-family: "Pavanam";
+    font-size: 20px;
+}
+
+.grid li textarea::placeholder{
+    font-family: "Pavanam";
+    font-size: 20px;
+}
