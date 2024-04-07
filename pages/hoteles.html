@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turismo Argentina</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/img/icon.png" type="x/icon">
 </head>
@@ -14,11 +15,18 @@
 
         <nav class="nav"> 
 
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle"><i class="material-icons iconoMenu">menu</i></label> <!--esto es un menú hamburguesa para media query-->
+
+            <a href="../index.html" class="aLogoNav2"><img src="../assets/img/barra-de-nav/logo.png" class="logoNav2"></a> <!--logo para media query de 900px-->
+
+            <a href="../index.html" class="aLogoNav3"><img src="../assets/img/barra-de-nav/logo-nav-320px.png" alt=""></a> <!--logo para media query de 320px-->
+
             <div class="contenedorNav">
                 <ul class="listaNav contenedorLinksNav">
                     <li><a href="../pages/destinos.html" class="linksNav">Destinos</a></li>
                     <li><a href="../pages/actividades.html" class="linksNav">Actividades</a></li>
-                    <li><a href="../index.html"><img src="../assets/img/barra-de-nav/logo.png" class="logoNav"></a></li>
+                    <li class="liLogo"><a href="../index.html"><img src="../assets/img/barra-de-nav/logo.png" class="logoNav"></a></li>
                     <li><a href="#" class="linksNav">Hoteles</a></li>
                     <li><a href="../pages/contacto.html" class="linksNav">Contacto</a></li>
                 </ul>

@@ -8,125 +8,6 @@
 body {
   background-color: #0F1035; }
 
-/*COMPONENTS/BUTTONS*/
-.buttonOutlined, .headerHome .contenedorBotonexplorar a {
-  font-family: "Pavanam";
-  color: white;
-  font-weight: lighter;
-  font-size: 25px;
-  text-decoration: none;
-  padding: 5px 23px 5px 23px;
-  border: 1px;
-  border-style: solid;
-  border-radius: 3px; }
-
-.opcionesGrid {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  height: 310px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 260px);
-  grid-template-rows: 30px 240px 30px;
-  justify-content: center;
-  justify-items: center;
-  gap: 20px; }
-  .opcionesGrid .opcion1H3 {
-    font-family: "Pavanam";
-    color: white;
-    font-weight: lighter;
-    font-size: 25px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .opcionesGrid .opcion1Act {
-    height: 240px;
-    width: 240px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    position: relative; }
-  .opcionesGrid .opcion2Act {
-    height: 240px;
-    width: 240px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    position: relative; }
-  .opcionesGrid .linkVerMas {
-    font-family: "Pavanam";
-    color: white;
-    font-weight: lighter;
-    text-decoration: none;
-    font-size: 20px;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4; }
-    .opcionesGrid .linkVerMas:hover {
-      color: orange; }
-  .opcionesGrid .opcion2H3 {
-    font-family: "Pavanam";
-    color: white;
-    font-weight: lighter;
-    font-size: 25px;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .opcionesGrid .opcion1Hoteles {
-    height: 240px;
-    width: 240px;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    position: relative; }
-  .opcionesGrid .opcion2Hoteles {
-    height: 240px;
-    width: 240px;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    position: relative; }
-  .opcionesGrid .linkVerMas2 {
-    font-family: "Pavanam";
-    color: white;
-    font-weight: lighter;
-    text-decoration: none;
-    font-size: 20px;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4; }
-    .opcionesGrid .linkVerMas2:hover {
-      color: orange; }
-
-.imgOpciones {
-  width: 100%;
-  height: 100%; }
-
-.ulOpciones {
-  list-style: none;
-  position: absolute;
-  bottom: 0;
-  margin: 6px; }
-
-.li1 {
-  font-family: "Pavanam";
-  color: white;
-  font-weight: bolder; }
-
-.li2 {
-  font-family: "Pavanam";
-  color: white;
-  font-weight: lighter; }
-
-/*HEADER INDEX*/
 .headerHome {
   background-image: url(../assets/img/fondos/imgfondohome.png);
   background-repeat: no-repeat;
@@ -161,136 +42,6 @@ body {
     gap: 0rem;
     height: 70px; }
 
-/*FOOTER*/
-.footer {
-  background-color: #0F1035;
-  width: 100%;
-  height: 130px;
-  display: flex;
-  flex-direction: row;
-  box-shadow: 0px 0px 80px 5px #a5a6d1; }
-  .footer .divfooterUno {
-    justify-self: left;
-    width: 100%;
-    height: auto;
-    margin-left: 15px; }
-    .footer .divfooterUno .logoFooter {
-      width: 180px;
-      height: auto; }
-  .footer .divfooterDos {
-    width: 100%;
-    height: auto;
-    justify-self: center;
-    align-self: center; }
-    .footer .divfooterDos p {
-      color: white;
-      font-family: "Pavanam";
-      font-size: 25px;
-      text-align: center;
-      margin-bottom: 10px; }
-    .footer .divfooterDos .contenedorRedesFooter {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 10px; }
-      .footer .divfooterDos .contenedorRedesFooter .imgFooter {
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        height: auto; }
-  .footer .divfooterTres {
-    width: 100%;
-    height: auto;
-    justify-self: right;
-    align-self: center;
-    margin-right: 15px; }
-    .footer .divfooterTres .listaFooter {
-      color: white;
-      list-style: none;
-      text-align: right; }
-      .footer .divfooterTres .listaFooter li a {
-        font-family: "Pavanam";
-        color: white;
-        text-decoration: none; }
-
-/*modificación de las sombras del footer de la página contacto*/
-.footerContacto {
-  box-shadow: none; }
-
-/*BARRA DE NAVEGACIÓN*/
-.nav {
-  width: 100%;
-  height: 75px;
-  background-color: #0f1035d7;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: none;
-  gap: 0px;
-  position: relative; }
-  .nav input, .nav label {
-    display: none; }
-  .nav .iconoMenu {
-    font-size: 70px;
-    color: #ffffff7a;
-    text-align: center;
-    margin-left: 15px;
-    user-select: none; }
-  .nav .aLogoNav2 {
-    position: absolute;
-    justify-self: center;
-    align-self: center; }
-    .nav .aLogoNav2 .logoNav2 {
-      width: 200px;
-      height: auto;
-      background-color: #0F1035;
-      border-radius: 35px 35px 100px 100px;
-      display: none; }
-  .nav .aLogoNav3 {
-    position: absolute;
-    justify-self: center;
-    align-self: center;
-    display: none; }
-    .nav .aLogoNav3 img {
-      height: 70px;
-      width: auto; }
-  .nav .contenedorNav {
-    width: 100%;
-    height: auto;
-    margin-left: 15px; }
-    .nav .contenedorNav .contenedorLinksNav {
-      width: 100%;
-      height: 75px;
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 40px; }
-      .nav .contenedorNav .contenedorLinksNav .linksNav {
-        font-family: "Pavanam";
-        color: white;
-        font-size: 1.5625rem;
-        text-decoration: none; }
-        .nav .contenedorNav .contenedorLinksNav .linksNav:hover {
-          color: orange; }
-      .nav .contenedorNav .contenedorLinksNav .logoNav {
-        width: 200px;
-        height: auto;
-        background-color: #0F1035;
-        border-radius: 35px 35px 100px 100px; }
-  .nav .divnavCuenta {
-    width: 60px;
-    height: auto;
-    align-self: center;
-    margin-right: 15px; }
-    .nav .divnavCuenta .logoCuenta {
-      height: 55px;
-      width: auto;
-      cursor: pointer; }
-
-/*SECCIÓN-1 INDEX*/
 .secciónDosPáginaHome {
   width: 100%;
   height: 100vh;
@@ -361,7 +112,6 @@ body {
         align-self: center;
         margin-top: 15px; }
 
-/*SECCIÓN-2 INDEX*/
 .secciónTresPáginaHome {
   width: 100%;
   height: 100vh;
@@ -432,7 +182,6 @@ body {
     text-align: right;
     width: 95%; }
 
-/*PÁGINA DESTINOS*/
 .headerDestinos {
   background-image: url(../assets/img/fondos/fondo-destinos.png);
   background-repeat: no-repeat;
@@ -686,18 +435,16 @@ body {
   align-items: center;
   gap: 100px;
   width: 100%;
-  height: 950px; }
+  height: auto; }
   .seccionPrincipalHoteles .contenedorHoteles {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    border: 2px;
-    border-color: orangered;
-    border-style: solid;
-    width: 1000px;
-    height: 390px; }
+    flex-wrap: wrap;
+    width: 95%;
+    height: auto; }
     .seccionPrincipalHoteles .contenedorHoteles .articleHoteles {
       display: flex;
       flex-direction: column;
@@ -705,7 +452,12 @@ body {
       gap: 3px;
       background-color: #D9D9D9;
       height: 365px;
-      width: 310px; }
+      width: 310px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 4px;
+      border-color: orangered;
+      border-style: solid; }
       .seccionPrincipalHoteles .contenedorHoteles .articleHoteles .imgHoteles {
         background-color: #365486;
         width: 290px;
@@ -818,8 +570,250 @@ body {
   font-family: "Pavanam";
   font-size: 20px; }
 
-/*MEDIAS QUERIES*/
-/*PÁGINA INDEX*/
+.footer {
+  background-color: #0F1035;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 80px 5px #a5a6d1; }
+  .footer .divfooterUno {
+    justify-self: left;
+    width: 100%;
+    height: auto;
+    margin-left: 15px; }
+    .footer .divfooterUno .logoFooter {
+      width: 180px;
+      height: auto; }
+  .footer .divfooterDos {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    align-self: center; }
+    .footer .divfooterDos p {
+      color: white;
+      font-family: "Pavanam";
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 10px; }
+    .footer .divfooterDos .contenedorRedesFooter {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+      .footer .divfooterDos .contenedorRedesFooter .imgFooter {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        height: auto; }
+  .footer .divfooterTres {
+    width: 100%;
+    height: auto;
+    justify-self: right;
+    align-self: center;
+    margin-right: 15px; }
+    .footer .divfooterTres .listaFooter {
+      color: white;
+      list-style: none;
+      text-align: right; }
+      .footer .divfooterTres .listaFooter li a {
+        font-family: "Pavanam";
+        color: white;
+        text-decoration: none; }
+
+.footerContacto {
+  box-shadow: none; }
+
+.nav {
+  width: 100%;
+  height: 75px;
+  background-color: #0f1035d7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 0px;
+  position: relative; }
+  .nav input, .nav label {
+    display: none; }
+  .nav .iconoMenu {
+    font-size: 70px;
+    color: #ffffff7a;
+    text-align: center;
+    margin-left: 15px;
+    user-select: none; }
+  .nav .aLogoNav2 {
+    position: absolute;
+    justify-self: center;
+    align-self: center; }
+    .nav .aLogoNav2 .logoNav2 {
+      width: 200px;
+      height: auto;
+      background-color: #0F1035;
+      border-radius: 35px 35px 100px 100px;
+      display: none; }
+  .nav .aLogoNav3 {
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    display: none; }
+    .nav .aLogoNav3 img {
+      height: 70px;
+      width: auto; }
+  .nav .contenedorNav {
+    width: 100%;
+    height: auto;
+    margin-left: 15px; }
+    .nav .contenedorNav .contenedorLinksNav {
+      width: 100%;
+      height: 75px;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 40px; }
+      .nav .contenedorNav .contenedorLinksNav .linksNav {
+        font-family: "Pavanam";
+        color: white;
+        font-size: 1.5625rem;
+        text-decoration: none; }
+        .nav .contenedorNav .contenedorLinksNav .linksNav:hover {
+          color: orange; }
+      .nav .contenedorNav .contenedorLinksNav .logoNav {
+        width: 200px;
+        height: auto;
+        background-color: #0F1035;
+        border-radius: 35px 35px 100px 100px; }
+  .nav .divnavCuenta {
+    width: 60px;
+    height: auto;
+    align-self: center;
+    margin-right: 15px; }
+    .nav .divnavCuenta .logoCuenta {
+      height: 55px;
+      width: auto;
+      cursor: pointer; }
+
+/*COMPONENTS/BUTTONS*/
+.buttonOutlined, .headerHome .contenedorBotonexplorar a {
+  font-family: "Pavanam";
+  color: white;
+  font-weight: lighter;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 5px 23px 5px 23px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 3px; }
+
+.opcionesGrid {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 310px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  grid-template-rows: 30px 240px 30px;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px; }
+  .opcionesGrid .opcion1H3 {
+    font-family: "Pavanam";
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .opcionesGrid .opcion1Act {
+    height: 240px;
+    width: 240px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative; }
+  .opcionesGrid .opcion2Act {
+    height: 240px;
+    width: 240px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative; }
+  .opcionesGrid .linkVerMas {
+    font-family: "Pavanam";
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4; }
+    .opcionesGrid .linkVerMas:hover {
+      color: orange; }
+  .opcionesGrid .opcion2H3 {
+    font-family: "Pavanam";
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .opcionesGrid .opcion1Hoteles {
+    height: 240px;
+    width: 240px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative; }
+  .opcionesGrid .opcion2Hoteles {
+    height: 240px;
+    width: 240px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative; }
+  .opcionesGrid .linkVerMas2 {
+    font-family: "Pavanam";
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 20px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4; }
+    .opcionesGrid .linkVerMas2:hover {
+      color: orange; }
+
+.imgOpciones {
+  width: 100%;
+  height: 100%; }
+
+.ulOpciones {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  margin: 6px; }
+
+.li1 {
+  font-family: "Pavanam";
+  color: white;
+  font-weight: bolder; }
+
+.li2 {
+  font-family: "Pavanam";
+  color: white;
+  font-weight: lighter; }
+
 @media (max-width: 1300px) {
   .contenedorh1Argentina {
     height: 340px; }
@@ -837,7 +831,6 @@ body {
     .secciónTresPáginaHome .h3Hoteles {
       width: 75%; } }
 
-/*PÁGINA DESTINOS*/
 @media (max-width: 1210px) {
   .headerDestinos .seccionHeaderDestinos {
     height: 80%; }
@@ -899,7 +892,14 @@ body {
   .seccionDestinos .noReverseMediaQuery {
     flex-direction: column; } }
 
-/*PÁGINA DESTINOS*/
+.contenedorPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 100px; }
+
 @media (max-width: 1100px) {
   .seccionDestinos .fondoContenedor {
     width: 100%; }
@@ -946,10 +946,23 @@ body {
       grid-column-start: 1;
       grid-column-end: 3;
       grid-row-start: 6;
-      grid-row-end: 7; } }
+      grid-row-end: 7; }
+  .headerContacto {
+    height: 1100px;
+    width: 100%; }
+    .headerContacto .h1Contacto {
+      margin-top: 50px; }
+    .headerContacto .formularioContacto {
+      width: 100%;
+      height: auto; }
+      .headerContacto .formularioContacto .grid {
+        width: 700px;
+        height: 850px;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: 350px  70px 70px 70px 70px 50px;
+        grid-template-areas: "areaUno areaUno" "areaDos areaTres" "areaCuatro areaCuatro" "areaCinco areaCinco" "areaCinco areaCinco" "areaSeis areaSeis"; } }
 
 @media (max-width: 900px) {
-  /*BARRA DE NAVEGACIÓN*/
   .nav #toggle:checked ~ .contenedorNav {
     height: 270px; }
   .nav label {
@@ -975,7 +988,6 @@ body {
       background-color: #0f1035d7; }
       .nav .contenedorNav .contenedorLinksNav .liLogo {
         display: none; }
-  /*PÁGINA INDEX*/
   .headerHome {
     height: 600px; }
   .secciónDosPáginaHome {
@@ -990,7 +1002,6 @@ body {
       flex-direction: row;
       margin-left: 0px;
       margin-top: 20px; }
-  /*PÁGINA DESTINOS*/
   .heightMediaQuery1 {
     width: 100%;
     height: 1450px; }
@@ -1007,7 +1018,6 @@ body {
     width: 75%; } }
 
 @media (max-width: 720px) {
-  /*PÁGINA INDEX MODIFICACIONES*/
   .headerHome {
     height: 600px; }
     .headerHome .contenedorh1Argentina {
@@ -1066,7 +1076,6 @@ body {
     .secciónTresPáginaHome .h3Hoteles {
       width: 60%;
       font-size: 35px; }
-  /*PÁGINA DESTINOS*/
   .seccionDestinos .fondoContenedor .contenedorImagenesPrincipal .contenedorImagenes {
     width: 215px;
     height: 250px; }
@@ -1083,10 +1092,28 @@ body {
     width: 75%; }
   .seccionDestinos .fondoElBolsón .contenedorarticuloDos {
     width: 50%;
-    height: 160px; } }
+    height: 160px; }
+  .headerHoteles .seccionHeaderHoteles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+    height: 500px; }
+    .headerHoteles .seccionHeaderHoteles .h1Hoteles {
+      font-size: 50px; }
+    .headerHoteles .seccionHeaderHoteles .redesHoteles {
+      height: 50px;
+      width: 200px; }
+      .headerHoteles .seccionHeaderHoteles .redesHoteles img {
+        height: 40px;
+        width: 40px; }
+  .headerContacto .formularioContacto .grid {
+    width: 450px;
+    grid-template-columns: repeat(2, 200px); } }
 
 @media (max-width: 690px) {
-  /*PÁGINA DESTINOS*/
   .seccionDestinos {
     gap: 30px; }
     .seccionDestinos .fondoContenedor .noReverseMediaQuery {
@@ -1180,16 +1207,106 @@ body {
       grid-row-end: 9; } }
 
 @media (max-width: 665px) {
-  /*PÁGINA HOME*/
-  /*secciones*/
   .secciónTresPáginaHome {
     height: 950px; }
-  /*PÁGINA DESTINOS*/
   .headerDestinos .seccionHeaderDestinos .h1Destinos {
     font-size: 40px; }
   .headerDestinos .seccionHeaderDestinos .redesDestinos img {
-    height: 33px;
-    width: 33px; } }
+    height: 40px;
+    width: 40px; } }
+
+@media (max-width: 690px) {
+  .seccionDestinos {
+    gap: 30px; }
+    .seccionDestinos .fondoContenedor .noReverseMediaQuery {
+      background-image: none;
+      width: 100%;
+      height: 1100px; }
+    .seccionDestinos .fondoContenedor {
+      height: 1250px;
+      background-image: none; }
+    .seccionDestinos .fondoContenedor .contenedorImagenesPrincipal:not(.contenedorImgBolsón) {
+      flex-direction: column;
+      height: 2000px; }
+    .seccionDestinos .fondoContenedor .contenedorImagenesPrincipal .contenedorImagenes {
+      width: 280px;
+      height: 315px; }
+    .seccionDestinos .fondoContenedor .contenedorImagenesPrincipal .contenedorimagenesDos {
+      width: 280px;
+      height: 315px; }
+    .seccionDestinos .fondoContenedor .contenedorImgBolsón {
+      flex-direction: column;
+      width: 100%;
+      height: 650px; }
+    .seccionDestinos .fondoContenedor .contenedorArticulo {
+      width: 280px;
+      height: 365px; }
+    .seccionDestinos .fondoContenedor .contenedorarticuloDos {
+      width: 280px;
+      height: 290px; }
+    .seccionDestinos .fondoContenedor .widthMediaQuery {
+      width: 280px; }
+    .seccionDestinos .fondoElBolsón {
+      background-image: none;
+      height: 900px;
+      width: 100%; }
+      .seccionDestinos .fondoElBolsón .contenedorarticuloDos {
+        height: 210px;
+        margin-bottom: 20px; }
+  .heightMediaQuery1 {
+    height: 3500px;
+    align-items: center; }
+  .heightMediaQuery2 {
+    height: 2600px; }
+  .heightMediaQuery3 {
+    height: 1330px; }
+    .heightMediaQuery3 .noReverseMediaQuery {
+      height: 1300px;
+      width: 100%; }
+  .opcionesGrid {
+    height: 1250px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 240px 240px 30px 30px 240px 240px 30px; }
+    .opcionesGrid .opcion1H3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .opcionesGrid .opcion1Act {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    .opcionesGrid .opcion2Act {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4; }
+    .opcionesGrid .linkVerMas {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5; }
+    .opcionesGrid .opcion2H3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 6; }
+    .opcionesGrid .opcion1Hoteles {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 6;
+      grid-row-end: 7; }
+    .opcionesGrid .opcion2Hoteles {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 7;
+      grid-row-end: 8; }
+    .opcionesGrid .linkVerMas2 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 8;
+      grid-row-end: 9; } }
 
 @media (max-width: 565px) {
   .footer {
@@ -1200,10 +1317,23 @@ body {
       font-size: 23px; }
     .footer .divfooterDos .contenedorRedesFooter .imgFooter {
       width: 30px;
-      height: 30px; } }
+      height: 30px; }
+  .headerActividades .seccionHeaderActividades .redesActividades img {
+    height: 40px;
+    width: 40px; }
+  .headerActividades .seccionHeaderActividades .h1Actividades {
+    font-size: 55px; }
+  .contenedorPrincipal .contenedorSecundario {
+    width: 420px;
+    height: 860px; }
+    .contenedorPrincipal .contenedorSecundario p {
+      width: 380px; }
+    .contenedorPrincipal .contenedorSecundario .contenedorUno {
+      flex-direction: column; }
+  .contenedorPrincipal .trekking2 {
+    height: 900px; } }
 
 @media (max-width: 510px) {
-  /*PÁGINA INDEX MODIFICACIONES*/
   .headerHome {
     background-image: url(../assets/img/fondos/imgfondohome-510px.png);
     height: 550px; }
@@ -1216,10 +1346,24 @@ body {
       grid-template-columns: 1px 55px 55px 250px;
       grid-template-rows: 700px 75px 75px 75px;
       margin-bottom: 50px;
-      text-align: center; } }
+      text-align: center; }
+  .headerActividades .seccionHeaderActividades .h1Actividades {
+    font-size: 45px; }
+  .headerHoteles .seccionHeaderHoteles .h1Hoteles {
+    font-size: 45px;
+    height: 150px; } }
+
+@media (max-width: 465px) {
+  .headerContacto .formularioContacto {
+    width: 100%;
+    height: auto; }
+    .headerContacto .formularioContacto .grid {
+      width: 400px;
+      height: 830px;
+      grid-template-columns: repeat(2, 160px);
+      grid-template-rows: 330px  70px 70px 70px 70px 50px; } }
 
 @media (max-width: 436px) {
-  /*BARRA DE NAVEGACIÓN MODIFICACIONES*/
   .nav label .iconoMenu {
     font-size: 55px;
     margin-left: 0px;
@@ -1230,7 +1374,6 @@ body {
     display: inline-block; }
   .nav .divnavCuenta .logoCuenta {
     height: 45px; }
-  /*FOOTER MODIFICACIONES*/
   .footer {
     height: 350px;
     display: flex;
@@ -1248,7 +1391,6 @@ body {
       margin-right: 0px; }
       .footer .divfooterTres .listaFooter {
         text-align: center; }
-  /*PÁGINA INDEX MODIFICACIONES*/
   .headerHome {
     background-image: url(../assets/img/fondos/imgfondohome-320px.png);
     height: 100vh; }
@@ -1287,8 +1429,6 @@ body {
       width: 100%;
       font-size: 35px;
       text-align: center; }
-  /*PÁGINA DESTINOS*/
-  /*modificaciones título principal*/
   .headerDestinos .seccionHeaderDestinos .h1Destinos {
     font-size: 30px; }
   .headerDestinos .seccionHeaderDestinos .redesDestinos img {
@@ -1297,7 +1437,6 @@ body {
   .contenedorArticulo {
     width: 69%;
     height: 365px; }
-  /*aca está la card de dos imágenes*/
   .contenedorarticuloDos:not(.contenedorArticuloBsAs) {
     width: 69%;
     height: 290px; }
@@ -1306,4 +1445,37 @@ body {
     height: 390px; }
   .widthMediaQuery {
     width: 69%; }
-  /*ancho del artículo de bs as y misiones*/ }
+  .headerActividades .seccionHeaderActividades .redesActividades img {
+    height: 35px;
+    width: 35px; }
+  .headerActividades .seccionHeaderActividades .h1Actividades {
+    font-size: 35px; }
+  .contenedorPrincipal .contenedorSecundario {
+    width: 300px;
+    height: 920px; }
+    .contenedorPrincipal .contenedorSecundario .legendAct {
+      font-size: 25px; }
+    .contenedorPrincipal .contenedorSecundario p {
+      width: 280px; }
+  .contenedorPrincipal .trekking2 {
+    height: 980px; }
+  .headerHoteles .seccionHeaderHoteles .h1Hoteles {
+    font-size: 35px;
+    height: 130px; }
+  .headerContacto .h1Contacto {
+    font-size: 25px; }
+  .headerContacto {
+    height: 1000px;
+    width: 100%; }
+    .headerContacto .h1Contacto {
+      margin-top: 50px; }
+    .headerContacto .formularioContacto {
+      width: 100%;
+      height: auto; }
+      .headerContacto .formularioContacto .grid {
+        width: 330px;
+        height: 750px;
+        grid-template-columns: repeat(2, 130px);
+        grid-template-rows: 290px  70px 70px 70px 70px 50px; }
+        .headerContacto .formularioContacto .grid .areaUno img {
+          height: 280px; } }

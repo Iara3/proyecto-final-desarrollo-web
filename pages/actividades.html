@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turismo Argentina</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/img/icon.png" type="x/icon">
 </head>
@@ -15,11 +16,18 @@
 
         <nav class="nav"> 
 
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle"><i class="material-icons iconoMenu">menu</i></label> <!--esto es un menú hamburguesa para media query-->
+
+            <a href="../index.html" class="aLogoNav2"><img src="../assets/img/barra-de-nav/logo.png" class="logoNav2"></a> <!--logo para media query de 900px-->
+
+            <a href="../index.html" class="aLogoNav3"><img src="../assets/img/barra-de-nav/logo-nav-320px.png" alt=""></a> <!--logo para media query de 320px-->
+
             <div class="contenedorNav">
                 <ul class="listaNav contenedorLinksNav">
                     <li><a href="../pages/destinos.html" class="linksNav">Destinos</a></li>
                     <li><a href="#" class="linksNav">Actividades</a></li>
-                    <li><a href="../index.html"><img src="../assets/img/barra-de-nav/logo.png" class="logoNav"></a></li>
+                    <li class="liLogo"><a href="../index.html"><img src="../assets/img/barra-de-nav/logo.png" class="logoNav"></a></li>
                     <li><a href="../pages/hoteles.html" class="linksNav">Hoteles</a></li>
                     <li><a href="../pages/contacto.html" class="linksNav">Contacto</a></li>
                 </ul>
@@ -71,13 +79,12 @@
     
             </fieldset>
 
-            <fieldset class="contenedorSecundario"> <!--trekking-->
+            <fieldset class="contenedorSecundario trekking2"> <!--trekking-->
 
                 <legend class="legendAct">TREKKING</legend>
                 <p>¡Descubre la belleza natural del mundo a través del trekking! Sumérgete en paisajes impresionantes mientras exploras senderos serpenteantes y conquistas cumbres desafiantes. Desde majestuosas montañas hasta exuberantes selvas, el trekking te lleva a aventuras inolvidables donde cada paso es una experiencia nueva. ¡Únete a nosotros y haz del trekking tu próxima gran aventura!</p>
     
                 <div class="contenedorUno">
-    
                     <div class="contenedorDos">
                         <img src="../assets/img/actividades/trekking-el-bolson-1.jpg" alt="" class="imgDestinos">
                     </div>
@@ -92,7 +99,7 @@
     
             </fieldset>
 
-            <fieldset class="contenedorSecundario"> <!--salinas grandes-->
+            <fieldset class="contenedorSecundario trekking2"> <!--salinas grandes-->
 
                 <legend class="legendAct">SALINAS GRANDES</legend>
                 <p>¡Descubre un paisaje de otro mundo en Salinas Grandes, Jujuy! Sumérgete en la vastedad de este desierto blanco de sal, donde el horizonte se funde con el cielo en una escena surrealista. Camina sobre la superficie brillante y maravillante con la inmensidad de este espectáculo natural único en el mundo. ¡Ven y déjate sorprender por la magia de Salinas Grandes en Jujuy!</p>
@@ -134,7 +141,7 @@
     
             </fieldset>
 
-            <fieldset class="contenedorSecundario"> <!--trekking-->
+            <fieldset class="contenedorSecundario trekking2"> <!--trekking-->
 
                 <legend class="legendAct">TREKKING</legend>
                 <p>¡Explora la majestuosidad del glaciar Perito Moreno a través de una aventura de trekking única en su tipo! Embárcate en una emocionante travesía sobre el hielo milenario mientras te sumerges en un paisaje de belleza indescriptible. Descubre grietas azules profundas, arcos de hielo impresionantes y vistas panorámicas que te dejarán sin aliento. </br>!Únete a nosotros y vive una experiencia inolvidable en el glaciar!</p>

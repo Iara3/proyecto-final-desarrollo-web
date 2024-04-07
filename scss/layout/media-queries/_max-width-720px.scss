@@ -135,5 +135,16 @@
                 }
             }
         }
+
+        //PÁGINA CONTACTO 
+    .headerContacto{
+        .formularioContacto{
+            .grid{
+                width: 450px;
+                grid-template-columns: repeat(2, 200px);
+            }
+        }
+    }
     
 }
+

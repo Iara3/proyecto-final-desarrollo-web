@@ -1,0 +1,17 @@
+@media (max-width: 465px){
+
+    //PÁGINA CONTACTO 
+.headerContacto{
+    .formularioContacto{
+        width: 100%;
+        height: auto;
+        .grid{
+            width: 400px;
+            height: 830px;
+            grid-template-columns: repeat(2, 160px);
+            grid-template-rows: 330px  70px 70px 70px 70px 50px;
+        }
+    }
+}
+
+}

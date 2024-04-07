@@ -184,5 +184,35 @@
             }
         }
     }
-    
+
+    //PÁGINA CONTACTO
+
+    .headerContacto{
+        .h1Contacto{
+            font-size: 25px;
+        }
+    }
+
+    .headerContacto{
+        height: 1000px;
+        width: 100%;
+        .h1Contacto{
+            margin-top: 50px; 
+        }
+        .formularioContacto{
+            width: 100%;
+            height: auto;
+            .grid{
+                width: 330px;
+                height: 750px;
+                grid-template-columns: repeat(2, 130px);
+                grid-template-rows: 290px  70px 70px 70px 70px 50px;
+                .areaUno{
+                    img{
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
 }
