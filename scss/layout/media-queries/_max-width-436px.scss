@@ -140,4 +140,38 @@
         width: 69%;
     } 
     
+
+    //PÁGINA ACTIVIDADES
+    .headerActividades{
+        .seccionHeaderActividades{
+            .redesActividades{
+                img{ 
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+            .h1Actividades{
+                font-size: 35px; 
+            }
+        }
+    }
+
+
+
+    .contenedorPrincipal{
+        .contenedorSecundario{
+            width: 300px; 
+            height: 920px; 
+            .legendAct{
+                font-size: 25px;
+            }
+            p{
+                width: 280px;
+            }
+        }
+        .trekking2{
+            height: 980px;
+        }
+    }
+    
 }
