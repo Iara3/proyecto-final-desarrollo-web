@@ -45,20 +45,22 @@
             height: 75px;
             list-style: none;
             @include flex (row, center, center, 40px);
-            .linksNav{
-                font-family: map-get($font-family, secundaria);
-                color: map-get($colores, font-color);
-                font-size: map-get($font-size, link-navbar);
-                text-decoration: none;
-                &:hover{
-                    color: map-get($colores, hover);
+            li{
+                .linksNav{
+                    font-family: map-get($font-family, secundaria);
+                    color: map-get($colores, font-color);
+                    font-size: map-get($font-size, link-navbar);
+                    text-decoration: none;
+                    &:hover{
+                        color: map-get($colores, hover);
+                    }
                 }
-            }
-            .logoNav{
-                width: 200px;
-                height: auto;
-                background-color: map-get($colores, fondo-logo);
-                border-radius: 35px 35px 100px 100px;
+                .logoNav{
+                    width: 200px;
+                    height: auto;
+                    background-color: map-get($colores, fondo-logo);
+                    border-radius: 35px 35px 100px 100px;
+                }
             }
         }
     }
