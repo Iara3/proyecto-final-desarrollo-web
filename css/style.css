@@ -346,11 +346,13 @@ body {
       text-shadow: 2px 2px 3px black; }
 
 .contenedorPrincipal {
-  display: grid;
-  grid-template-columns: 570px 570px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   margin-top: 100px;
-  gap: 30px; }
+  gap: 30px;
+  width: 100%;
+  height: auto; }
   .contenedorPrincipal .contenedorSecundario {
     display: flex;
     flex-direction: column;
